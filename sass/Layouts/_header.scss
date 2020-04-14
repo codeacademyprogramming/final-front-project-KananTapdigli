@@ -1,0 +1,71 @@
+// #region container size in header
+header {
+    .container {
+        width: 1400px;
+        max-width: 100%;
+    }
+}
+// #endregion container size in header
+
+
+// #region header-top
+.header-top {
+    padding: 12px 0;
+    line-height: 24px;
+
+    .contact {
+
+        span {
+            font-size: 12px;
+            padding-right: 36px;
+            text-transform: uppercase;
+
+            i {
+                font-size: 16px;
+                padding-right: 12px;
+            }
+        }
+    }
+
+}
+// #endregion header-top
+
+// #region header-bottom
+.header-bottom {
+    box-shadow: 0px 0px 4px grey;
+
+    .logo {
+        line-height: $header-bottom-line-height;
+    }
+
+
+    .navigation {
+        margin-bottom: 0;
+
+        li {
+
+            .title {
+                line-height: $header-bottom-line-height;
+                position: relative;
+                padding: 0 19px;
+                transition: .3s all linear;
+                cursor: pointer;
+            }
+
+            &:hover .title {
+                color: $main-color;
+            }
+        }
+
+    }
+
+    .search-basket {
+        padding: 40px 0;
+        margin-left: 100px;
+
+        .search {
+            margin-right: 21px;
+        }
+    }
+}
+// #endregion header-bottom

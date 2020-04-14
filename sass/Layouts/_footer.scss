@@ -1,0 +1,33 @@
+// #region footer
+footer {
+    padding-top: 111px;
+
+    .footer-top {
+
+        .healthcare {
+            .healthcare-text {
+                line-height: $footer-line-height;
+                padding-top: 27px;
+            }
+        }
+
+        .footer-top-col-title {
+            color: $color-white;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            font-weight: $font-weight;
+        }
+
+        li {
+            padding-bottom: 5px;
+        }
+
+        .contact {
+            p {
+                font-size: 14px;
+                line-height: $footer-line-height;
+            }
+        }
+    }
+}
+// #endregion footer

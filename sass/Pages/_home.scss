@@ -1,0 +1,566 @@
+// #region header 
+.header-top {
+    background-color: $header-top-color;
+
+    span {
+        color: $font-color;
+    }
+}
+
+// #endregion header
+
+
+// #region container size in main
+main {
+    .container {
+        width: 1190px;
+        max-width: 100%;
+    }
+}
+
+// #endregion container size
+
+
+// #region banner section
+.banner {
+    height: 700px;
+    position: relative;
+
+    .banner-page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: $color-dark-gray;
+        transition: 1.5s opacity linear;
+    }
+
+    .banner-page-1 {
+        z-index: 3;
+        opacity: 1;
+    }
+
+    .banner-page-2 {
+        z-index: 2;
+        opacity: 0;
+    }
+
+    .banner-page-3 {
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .caption {
+        font-size: 65px;
+        font-weight: $font-weight;
+        position: absolute;
+        top: 224px;
+        left: 74px;
+        color: $color-dark-gray;
+    }
+
+    .caption-1 {
+        max-width: 489px;
+        min-width: 489px;
+        line-height: 95px;
+    }
+
+    .caption-2 {
+        min-width: 582px;
+        max-width: 582px;
+        line-height: 85px;
+    }
+
+    .caption-3 {
+        min-width: 446px;
+        max-width: 446px;
+        line-height: 85px;
+    }
+
+    .auxilary-caption {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 426px;
+        left: 74px;
+    }
+
+    .button {
+        position: absolute;
+        top: 500px;
+        left: 74px;
+        padding: 19px 36px;
+    }
+
+    .bullets {
+        position: absolute;
+        top: 50%;
+        left: 98%;
+        height: 46px;
+        width: 10px;
+        z-index: 99;
+    }
+
+    .bullet {
+        position: absolute;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: $border-radius;
+        background-color: $color-white;
+        transition: .3s width linear;
+        cursor: pointer;
+    }
+
+    .bullet-1 {
+        top: 0px;
+    }
+
+    .bullet-2 {
+        top: 18px;
+    }
+
+    .bullet-3 {
+        top: 36px;
+    }
+
+    .selected,
+    .bullet:hover {
+        width: 20px;
+        background: $main-color;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $overlay-color;
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+// #endregion banner section
+
+
+
+
+// #region fancy section
+
+.fancy {
+    padding: 120px 0px 90px 0px;
+
+
+    .fancy-item {
+        border: 1px solid $color-border;
+        transition: .3s all linear;
+
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+
+        .fancy-item-content {
+            padding: 59px 30px 40px;
+
+            .fancy-item-content-icon {
+                margin-bottom: 44px;
+            }
+
+            .fancy-item-content-text-title {
+                margin-bottom: 18px;
+                font-weight: $font-weight;
+                font-size: 18px;
+            }
+
+            .fancy-item-content-text-main {
+                margin-bottom: 25px;
+                font-size: 14px;
+                color: $color-dark-light;
+            }
+
+            .fancy-item-content-text-details {
+                color: $main-color;
+                font-size: 14px;
+                font-weight: $font-weight;
+            }
+        }
+    }
+
+}
+
+// #endregion fancy section
+
+// #region about section
+.about {
+    padding: 82px 0 84px;
+    background-color: $color-gray-lighter;
+
+
+    .about-content {
+        padding-top: 40px;
+        font-size: 18px;
+        font-weight: $font-weight;
+    }
+
+    .signature {
+        padding-top: 45px;
+    }
+
+    .about-images {
+        position: relative;
+
+        .about-image {
+            position: absolute;
+            box-shadow: $box-shadow;
+            width: 275px;
+        }
+
+        .about-image-1 {
+            top: 90px;
+            z-index: 1;
+        }
+
+        .about-image-2 {
+            left: 230px;
+            top: 50px;
+        }
+    }
+
+}
+
+// #endregion about section
+
+
+
+// #region vision section
+.vision {
+    padding: 120px 0 100px;
+
+
+    .vision-bottom {
+        margin-top: 80px;
+    }
+
+
+}
+
+// #endregion vision section
+
+// #region video section
+.video {
+    height: 539px;
+    position: relative;
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $overlay-color;
+
+        .play-button {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: $main-color;
+            z-index: 1;
+            cursor: pointer;
+
+            .scaling-background {
+                position: relative;
+                right: 8px;
+                height: 1px;
+                width: 1px;
+                border-radius: 50%;
+                background-color: $color-dark-gray;
+                z-index: -1;
+                transition: .3s all linear;
+            }
+
+            .triangle {
+                position: relative;
+                left: 5px;
+                font-size: 45px;
+                color: $color-white;
+            }
+
+            &:hover .scaling-background {
+                transform: scale(91.5);
+            }
+        }
+    }
+}
+
+// #endregion video section
+
+
+// #region department section
+.department {
+    padding: 82px 0;
+
+    .department-center {
+        margin-top: 50px;
+    }
+
+    .item {
+        box-shadow: $box-shadow;
+        padding: 33px 33px 27px 19px;
+    }
+
+
+    .department-bottom {
+        margin-top: 80px;
+
+        .button {
+            padding: 15.5px 35px;
+            background-color: $color-dark-gray;
+
+            &:hover {
+                background-color: $main-color;
+            }
+        }
+    }
+}
+
+// #endregion department section
+
+
+// #region why-choose section
+.why-choose {
+    background-color: $color-gray-lighter;
+    padding-bottom: 100px;
+
+    .container {
+        width: 100%;
+
+        .why-choose-left {
+            padding: 111px 0 148px calc((100% - 1190px)/2 + 10px);
+            ;
+
+            .description {
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .checks {
+                margin-top: 40px;
+
+                .check-element {
+                    padding-bottom: 14px;
+
+                    .check {
+                        color: $main-color;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        font-weight: $font-weight;
+                    }
+                }
+            }
+        }
+
+        .why-choose-right {
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+// #endregion why-choose section
+
+
+// #region doctors section
+
+.doctors {
+    padding: 100px 0 68px;
+
+    .doctors-top-right {
+        display: inline-block;
+    }
+
+    .doctor-info {
+        padding-top: 41px;
+
+        .doctor-name {
+            color: $color-black-lighter;
+            font-weight: 600;
+        }
+
+        .doctor-speciality {
+            color: $color-dark-light;
+            text-transform: uppercase;
+        }
+
+        i {
+            color: $main-color;
+        }
+    }
+
+    .doctors-bottom {
+        margin-top: 40px;
+
+        .doctor-item {
+            box-shadow: $box-shadow;
+            padding: 50px 10px 47px;
+        }
+    }
+}
+
+// #endregion doctors section
+
+
+// #region testimonials section
+.testimonials {
+    background-color: $color-gray-lighter;
+    padding: 82px 0 84px 0;
+
+    .comments {
+        overflow: hidden;
+        padding-top: 40px;
+
+        .comment-item {
+            padding: 0 15px 46px;
+            outline: none;
+
+            .comment-content {
+                background: $color-white;
+                padding: 40px 30px;
+
+                .author-info {
+                    padding-top: 30px;
+
+                    .avatar {
+                        max-width: 55px;
+                        border-radius: 50%;
+                    }
+
+                    .author-info-right {
+                        padding-left: 15px;
+                        padding-top: 5px;
+
+                        .author-name {
+                            font-size: 18px;
+                        }
+
+                        .author-position {
+                            font-size: 14px;
+                            color: $color-dark-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// #endregion testimonials section
+
+// #region latest-news section
+.latest-news {
+    padding: 74px 0;
+
+    .latest-news-bottom {
+        padding-top: 46px;
+
+        .news-item {
+            outline: none;
+
+            .date-type {
+                padding: 20px 25px 10px;
+                color: $color-dark-light;
+                font-size: 14px;
+            }
+
+            .item-text {
+                font-size: 18px;
+                padding: 0 15px;
+                font-weight: $font-weight;
+            }
+
+        }
+    }
+}
+
+// #endregion latest-news section
+
+
+
+// #region footer
+footer {
+    background-color: $color-footer;
+
+    .footer-top {
+        padding-bottom: 60px;
+
+        .healthcare-text {
+            color: $color-footer-text;
+        }
+
+        .arrow-right {
+            color: $main-color;
+            font-size: 12px;
+            padding-right: 7px;
+        }
+
+        span {
+            color: $color-footer-text;
+        }
+
+        .contact-text {
+            color: $color-footer-text;
+        }
+
+        .twitter-text {
+            background: $color-twit-news;
+            padding: 14px 19px;
+            color: $color-footer-text;
+            font-size: 14px;
+        }
+
+        .twitter-info {
+            padding-top: 23px;
+
+            .twitter-icon {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: $color-twitter;
+                line-height: 32px;
+
+                .twitter {
+                    color: $color-white;
+                    padding-left: 10px;
+                }
+            }
+
+            .twitter-info-right {
+                color: $color-footer-text;
+                padding-left: 20px;
+
+                .twitter-url {
+                    font-size: 15px;
+                }
+
+                .twitter-date {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: $color-footer-2;
+        color: $color-footer-text;
+        padding: 20px 0;
+    }
+}
+// #endregion footer
