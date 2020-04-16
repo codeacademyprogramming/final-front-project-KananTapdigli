@@ -1,6 +1,8 @@
 // #region footer
 footer {
     padding-top: 111px;
+    background-color: $color-black;
+    color: white;
 
     .footer-top {
 
@@ -29,5 +31,10 @@ footer {
             }
         }
     }
+
+    .footer-bottom {
+        padding: 20px 0;
+    }
 }
+
 // #endregion footer

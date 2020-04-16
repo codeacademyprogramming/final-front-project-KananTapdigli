@@ -1,5 +1,5 @@
 // #region header 
-.header-top {
+.header-top.index-top {
     background-color: $header-top-color;
 
     span {
@@ -9,16 +9,6 @@
 
 // #endregion header
 
-
-// #region container size in main
-main {
-    .container {
-        width: 1190px;
-        max-width: 100%;
-    }
-}
-
-// #endregion container size
 
 
 // #region banner section
@@ -68,19 +58,16 @@ main {
     .caption-1 {
         max-width: 489px;
         min-width: 489px;
-        line-height: 95px;
     }
 
     .caption-2 {
         min-width: 582px;
         max-width: 582px;
-        line-height: 85px;
     }
 
     .caption-3 {
         min-width: 446px;
         max-width: 446px;
-        line-height: 85px;
     }
 
     .auxilary-caption {
@@ -102,7 +89,7 @@ main {
     .bullets {
         position: absolute;
         top: 50%;
-        left: 98%;
+        left: 97%;
         height: 46px;
         width: 10px;
         z-index: 99;
@@ -200,43 +187,9 @@ main {
 // #endregion fancy section
 
 // #region about section
-.about {
-    padding: 82px 0 84px;
+.about-home{
     background-color: $color-gray-lighter;
-
-
-    .about-content {
-        padding-top: 40px;
-        font-size: 18px;
-        font-weight: $font-weight;
-    }
-
-    .signature {
-        padding-top: 45px;
-    }
-
-    .about-images {
-        position: relative;
-
-        .about-image {
-            position: absolute;
-            box-shadow: $box-shadow;
-            width: 275px;
-        }
-
-        .about-image-1 {
-            top: 90px;
-            z-index: 1;
-        }
-
-        .about-image-2 {
-            left: 230px;
-            top: 50px;
-        }
-    }
-
 }
-
 // #endregion about section
 
 
@@ -338,14 +291,10 @@ main {
 // #region why-choose section
 .why-choose {
     background-color: $color-gray-lighter;
-    padding-bottom: 100px;
+    padding:111px 0 100px;
 
-    .container {
-        width: 100%;
 
-        .why-choose-left {
-            padding: 111px 0 148px calc((100% - 1190px)/2 + 10px);
-            ;
+        .why-choose-left {    
 
             .description {
                 font-size: 15px;
@@ -370,16 +319,15 @@ main {
 
         .why-choose-right {
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position-x: center;
         }
-    }
+    
 }
 
 // #endregion why-choose section
 
 
 // #region doctors section
-
 .doctors {
     padding: 100px 0 68px;
 
@@ -495,7 +443,7 @@ main {
 
 
 // #region footer
-footer {
+.home-footer {
     background-color: $color-footer;
 
     .footer-top {
@@ -560,7 +508,7 @@ footer {
     .footer-bottom {
         background-color: $color-footer-2;
         color: $color-footer-text;
-        padding: 20px 0;
     }
 }
+
 // #endregion footer

@@ -1,0 +1,79 @@
+// #region contact-us-2 starts
+
+.form{
+    padding: 110px 0;
+
+    .form-title{
+        font-size: 36px;
+        font-weight: $font-weight;
+        margin-bottom: 15px;
+    }
+
+    .form-description{
+        font-size: $font-size;
+        color: $color-dark-light;
+        font-weight: $font-weight-bolder;
+    }
+
+    .form-content{
+
+        padding-top: 40px;
+
+        .form-item{
+            border-bottom: 1px solid $color-border;
+            padding: 20px 0 10px;
+    
+            .form-item-info{
+                padding-left: 33px;
+        
+                .form-item-title{
+                    font-size: 18px;
+                    font-weight: $font-weight;
+                    text-transform: uppercase;
+                }
+        
+                .form-item-text{
+                    font-size: 15px;
+                    color: $color-dark-light;
+                    line-height: 1.8;
+                }
+            }
+        }
+
+        label{
+            display: block;
+            font-size: 14px;
+            font-weight: $font-weight;
+        }
+
+        .form-input{
+            padding: 20px;
+            border: none;
+            background-color: $color-gray-lighter;
+            width: 100%;
+            font-size: 14px;
+            font-weight: $font-weight-bolder;
+            margin-bottom: 20px;
+        }
+
+        .button{
+            width: 100%;
+            padding: 17px;
+            text-align: center;
+        }
+
+        .form-alert{
+            font-size: 14px;
+            padding-top: 15px;
+            color: $color-dark-light;
+        }
+    }
+
+
+
+
+
+}
+
+
+// #endregion contact-us-2 starts

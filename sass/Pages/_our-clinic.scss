@@ -1,0 +1,73 @@
+// #region header 
+.header-top {
+    background-color: $color-white;
+}
+
+// #endregion header
+
+// #region only-photo section
+.only-photo {
+    padding: 100px;
+    background-color: $color-gray-lighter;
+
+    .photo-self {
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+
+// #endregion only-photo section
+
+
+// #region facilities section
+.facilities {
+    background-color: $color-gray-lighter;
+}
+
+// #endregion facilities section
+
+
+// #region only-3-photos section
+.only-3-photos {
+    padding: 100px 0;
+    background-color: $color-gray-lighter;
+
+    img {
+        width: 100%;
+    }
+}
+// #endregion only-3-photos section
+
+// #region clinic section
+.clinic{
+    padding: 82px 0;
+
+    img{
+        width: 100%;
+    }
+
+    .clinic-info{
+        margin-top: 20px;
+        
+        h5{
+            font-weight: $font-weight;
+        }
+
+        p{
+            font-size: $font-size;
+            color: $color-about-content;
+        }
+    }
+
+
+}
+// #endregion clinic section
+
+// #region footer section
+
+
+
+// #endregion footer section

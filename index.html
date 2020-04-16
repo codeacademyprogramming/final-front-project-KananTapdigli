@@ -27,10 +27,10 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top d-none d-md-block">
+        <div class="header-top index-top d-none d-md-block">
             <div class="container">
                 <div class="row">
-                    <div class="contact col-lg-9 col-md-12  text-md-center text-lg-left">
+                    <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
                         <span>
                             <i class="fas fa-phone-alt"></i>
                             +(123) 1800-88-66
@@ -44,7 +44,7 @@
                             34TH Avenue - New York, W2 3XE
                         </span>
                     </div>
-                    <div class="social-media col-lg-3 col-md-12  text-lg-right text-md-center mt-md-2 mt-lg-0">
+                    <div class="social-media col-md-12 col-lg-3  text-lg-right text-md-center mt-md-2 mt-lg-0">
                         <a href="#">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -71,13 +71,13 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-2">
+                    <div class="col-2">
                         <div class="logo">
                             <a href="#"><img src="assets/images/logo.svg" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-sm-10 d-flex justify-content-end">
-                        <ul class="navigation  d-sm-none d-xl-inline-flex">
+                    <nav class="col-10 d-flex justify-content-end">
+                        <ul class="navigation  d-none d-xl-inline-flex">
                             <li class="home">
                                 <span class="title">Home</span>
                                 <div class="sub-menu">
@@ -144,11 +144,43 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket d-inline-flex">
-                            <div><i class="fas fa-search search"></i></div>
-                            <div><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-inline-flex">
+                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
+                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                            <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
-                    </div>
+                    </nav>
+                    <nav class="mobile-nav d-xl-none">
+                        <ul id="accordion">
+                            <li><span>Tab 1</span>
+                                <div>
+                                    tab1
+
+                                </div>
+                            </li>
+                            <li><span>Tab 2</span>
+                                <div>
+                                    Tab 3
+                                </div>
+
+                            </li>
+
+                            <li><span>tab 3</span>
+                                <div>
+                                    tab 3
+                                </div>
+                            </li>
+
+                            <li><span>tab 4</span>
+                                <div>
+                                    Tab 4
+                                </div>
+
+
+                            </li>
+
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -212,7 +244,7 @@
         <section class="fancy">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-lg-4  mt-sm-5">
                         <div class="fancy-item text-center">
                             <div class="fancy-item-content">
                                 <div class="fancy-item-content-icon">
@@ -229,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-lg-4  mt-sm-5">
                         <div class="fancy-item text-center">
                             <div class="fancy-item-content">
                                 <div class="fancy-item-content-icon">
@@ -246,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-lg-4 mt-sm-5">
                         <div class="fancy-item text-center">
                             <div class="fancy-item-content">
                                 <div class="fancy-item-content-icon">
@@ -269,10 +301,10 @@
         <!-- fancy section ends -->
 
         <!-- about section starts -->
-        <section class="about">
+        <section class="about about-home">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-sm-12 col-md-6">
                         <div class="about-content">
                             <span class="sub-heading">About Us</span>
                             <h2 class="heading">Your Health is <br>
@@ -291,10 +323,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-images">
-                            <img src="assets/images/about-1.jpg" class="about-image about-image-1"></img>
-                            <img src="assets/images/about-2.jpg" class="about-image about-image-2"></img>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="about-images text-sm-center text-md-left">
+                            <img src="assets/images/about-1.jpg" class="about-image about-image-1 mt-sm-5"></img>
+                            <img src="assets/images/about-2.jpg" class="about-image about-image-2  mt-sm-5"></img>
                         </div>
                     </div>
                 </div>
@@ -318,7 +350,7 @@
                     </div>
                 </div>
                 <div class="vision-bottom row">
-                    <div class="col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-sm-3">
                         <div class="item">
                             <img src="assets/images/stethoscope.png" alt="" class="item-icon">
                             <div class="item-content">
@@ -329,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-sm-3 ">
                         <div class="item">
                             <img src="assets/images/physician.png" alt="" class="item-icon">
                             <div class="item-content">
@@ -339,7 +371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-3 mt-sm-3">
                         <div class="item">
                             <img src="assets/images/phone-vibration.png" alt="" class="item-icon">
                             <div class="item-content">
@@ -350,7 +382,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-3 mt-sm-3">
                         <div class="item">
                             <img src="assets/images/stopwatch.png" alt="" class="item-icon">
                             <div class="item-content">
@@ -382,7 +414,7 @@
         <!-- department section starts -->
         <section class="department">
             <div class="container">
-                <div class="department-top row  justify-content-center">
+                <div class="department-top row justify-content-center">
                     <div class="col-lg-10 text-center">
                         <h2 class="sub-heading">What we do best</h2>
                         <h2 class="heading">Medical Departments</h2>
@@ -391,65 +423,76 @@
                             experience.</span>
                     </div>
                 </div>
-                <div class="department-center row">
-                    <div class="col-lg-4">
-                        <div class="item">
-                            <img src="assets/images/stopwatch.png" alt="" class="item-icon">
-                            <div class="item-content">
-                                <h5 class="title">Attention to Service</h5>
-                                <p class="item-text">95% of appointments start on time or early, and we’re
-                                    in-network with most PPO and HMO plans.</p>
+                <div class="department-center">
+                    <div class="row ">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="item">
+                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                                <div class="item-content">
+                                    <h5 class="title">Attention to Service</h5>
+                                    <p class="item-text">95% of appointments start on time or early, and we’re
+                                        in-network with most PPO and HMO plans.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="item mt-4">
-                            <img src="assets/images/stopwatch.png" alt="" class="item-icon">
-                            <div class="item-content">
-                                <h5 class="title">Attention to Service</h5>
-                                <p class="item-text">95% of appointments start on time or early, and we’re
-                                    in-network with most PPO and HMO plans.</p>
+                        <div class="col-sm-12 col-lg-4 mt-sm-4 mt-lg-4 mt-xl-0">
+                            <div class="item">
+                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                                <div class="item-content">
+                                    <h5 class="title">Attention to Service</h5>
+                                    <p class="item-text">95% of appointments start on time or early, and we’re
+                                        in-network with most PPO and HMO plans.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="item">
-                            <img src="assets/images/stopwatch.png" alt="" class="item-icon">
-                            <div class="item-content">
-                                <h5 class="title">Attention to Service</h5>
-                                <p class="item-text">95% of appointments start on time or early, and we’re
-                                    in-network with most PPO and HMO plans.</p>
-                            </div>
-                        </div>
-                        <div class="item mt-4">
-                            <img src="assets/images/stopwatch.png" alt="" class="item-icon">
-                            <div class="item-content">
-                                <h5 class="title">Attention to Service</h5>
-                                <p class="item-text">95% of appointments start on time or early, and we’re
-                                    in-network with most PPO and HMO plans.</p>
+                        <div class="col-sm-12 col-lg-4 mt-sm-4 mt-lg-4 mt-xl-0">
+                            <div class="item">
+                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                                <div class="item-content">
+                                    <h5 class="title">Attention to Service</h5>
+                                    <p class="item-text">95% of appointments start on time or early, and we’re
+                                        in-network with most PPO and HMO plans.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="item">
-                            <img src="assets/images/stopwatch.png" alt="" class="item-icon">
-                            <div class="item-content">
-                                <h5 class="title">Attention to Service</h5>
-                                <p class="item-text">95% of appointments start on time or early, and we’re
-                                    in-network with most PPO and HMO plans.</p>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 mt-lg-4 mt-sm-4 ">
+                            <div class="item">
+                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                                <div class="item-content">
+                                    <h5 class="title">Attention to Service</h5>
+                                    <p class="item-text">95% of appointments start on time or early, and we’re
+                                        in-network with most PPO and HMO plans.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="item mt-4">
-                            <img src="assets/images/stopwatch.png" alt="" class="item-icon">
-                            <div class="item-content">
-                                <h5 class="title">Attention to Service</h5>
-                                <p class="item-text">95% of appointments start on time or early, and we’re
-                                    in-network with most PPO and HMO plans.</p>
+                        <div class="col-sm-12 col-lg-4 mt-lg-4 mt-sm-4 ">
+                            <div class="item">
+                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                                <div class="item-content">
+                                    <h5 class="title">Attention to Service</h5>
+                                    <p class="item-text">95% of appointments start on time or early, and we’re
+                                        in-network with most PPO and HMO plans.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 mt-lg-4 mt-sm-4">
+                            <div class="item">
+                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                                <div class="item-content">
+                                    <h5 class="title">Attention to Service</h5>
+                                    <p class="item-text">95% of appointments start on time or early, and we’re
+                                        in-network with most PPO and HMO plans.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="department-bottom text-center">
-                    <div class="button">View All Departments</div>
-                </div>
+            </div>
+            <div class="department-bottom text-center">
+                <div class="button">View All Departments</div>
+            </div>
             </div>
         </section>
         <!-- department section ends -->
@@ -460,11 +503,11 @@
             <div class="container">
                 <div class="row">
                     <div class="why-choose-left  col-lg-6">
-                        <h2 class="heading">Why Choose the <br>
+                        <h2 class="heading">Why Choose the
                             <span class="defaultcolor">Syring Medical Center</span></h2>
                         <p class="description">
-                            Led by the joint care coordinator, our team has been hand- <br> picked for their positive
-                            attitudes, motivational skills and a <br> desire to provide outstanding service.
+                            Led by the joint care coordinator, our team has been hand-picked for their positive
+                            attitudes, motivational skills and a desire to provide outstanding service.
                         </p>
                         <ul class="checks">
                             <li class="check-element">
@@ -509,7 +552,7 @@
                     </div>
                 </div>
                 <div class="doctors-bottom row">
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3  text-center">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-1.png" alt="">
                             <div class="doctor-info">
@@ -530,7 +573,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-sm-5 mt-md-0 text-center">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-2.png" alt="">
                             <div class="doctor-info">
@@ -551,7 +594,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-5 mt-sm-5 mt-lg-0 text-center">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-3.png" alt="">
                             <div class="doctor-info">
@@ -572,7 +615,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-5 mt-sm-5 mt-lg-0 text-center">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-4.png" alt="">
                             <div class="doctor-info">
@@ -873,7 +916,7 @@
 
 
     <!-- footer starts -->
-    <footer>
+    <footer class="home-footer">
         <div class="container">
             <div class="footer-top row">
                 <div class="healthcare col-md-4">
@@ -1043,7 +1086,7 @@
         });
     </script>
     <!--jquery-->
-    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

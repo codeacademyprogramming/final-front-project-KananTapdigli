@@ -1,10 +1,12 @@
 // #region container size in header
 header {
     .container {
-        width: 1400px;
-        max-width: 100%;
+        width: 1400px !important;
+        max-width: 100% !important;
     }
+
 }
+
 // #endregion container size in header
 
 
@@ -12,6 +14,8 @@ header {
 .header-top {
     padding: 12px 0;
     line-height: 24px;
+    background-color: $color-white;
+
 
     .contact {
 
@@ -19,6 +23,7 @@ header {
             font-size: 12px;
             padding-right: 36px;
             text-transform: uppercase;
+            color: $color-header-top;
 
             i {
                 font-size: 16px;
@@ -28,10 +33,12 @@ header {
     }
 
 }
+
 // #endregion header-top
 
 // #region header-bottom
 .header-bottom {
+    position: relative;
     box-shadow: 0px 0px 4px grey;
 
     .logo {
@@ -59,13 +66,76 @@ header {
 
     }
 
-    .search-basket {
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+
+        #accordion {
+            list-style: none;
+            padding: 2px;
+        }
+
+        #accordion>li {
+            display: block;
+            list-style: none;
+        }
+
+        #accordion>li>span {
+            display: block;
+            color: #fff;
+            margin: 4px 0;
+            padding: 6px;
+            background: url(images/expand_arrow.png) no-repeat 99.5% 6px #525252;
+            background-size: 20px;
+            font-weight: normal;
+            cursor: pointer;
+            font-size: 16px
+        }
+
+        #accordion>li>div {
+            list-style: none;
+            padding: 6px;
+            display: none;
+            overflow: auto
+        }
+
+        #accordion>ul li {
+            font-weight: normal;
+            cursor: auto;
+            padding: 0 0 0 7px;
+        }
+
+        #accordion a {
+            text-decoration: none;
+        }
+
+        #accordion li>span.active {
+            background: url(images/collapse-arrow.png) no-repeat 99.5% 6px #000;
+            background-size: 20px
+        }
+
+
+    }
+
+
+
+
+    .search-basket-menu {
         padding: 40px 0;
         margin-left: 100px;
 
         .search {
-            margin-right: 21px;
+            margin-right: 20px;
+        }
+
+        .burger-menu {
+            margin-left: 20px;
         }
     }
 }
+
 // #endregion header-bottom
