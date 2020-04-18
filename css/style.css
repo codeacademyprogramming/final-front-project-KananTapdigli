@@ -12,6 +12,10 @@ ul {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 li {
   list-style: none !important;
 }
@@ -84,6 +88,28 @@ li {
   opacity: 0 !important;
 }
 
+.line {
+  display: inline-block;
+  height: 2px;
+  width: 85px;
+  background-color: #007DF2;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+ supported by Chrome, Opera and Firefox */
+}
+
 @media only screen and (max-width: 1200px) {
   .about-image {
     width: 220px !important;
@@ -113,6 +139,16 @@ li {
   .why-choose-left {
     padding: 0 !important;
   }
+  .section-left-color {
+    background-color: #FFF !important;
+  }
+  .find-doctor-right {
+    padding-top: 0 !important;
+    padding-left: 15px !important;
+  }
+  .search-doctor-content-wrapper {
+    padding: 31px 0px 50px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,6 +170,16 @@ li {
     max-width: 320px !important;
     min-width: 320px !important;
     font-size: 45px !important;
+  }
+  .visit-photo {
+    width: 510px;
+  }
+  .doctor-item-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .doctor-item-wrapper .doctor-img {
+    width: 100% !important;
   }
 }
 
@@ -172,7 +218,8 @@ li {
   .banner-page-1 {
     background-position-x: -400px !important;
   }
-  .banner-page-2, .banner-page-3 {
+  .banner-page-2,
+  .banner-page-3 {
     background-position: right !important;
   }
 }
@@ -331,7 +378,7 @@ footer .footer-bottom {
 }
 
 .header-top.index-top {
-  background-color: #3f3f3f;
+  background-color: #080707;
 }
 
 .header-top.index-top span {
@@ -1108,32 +1155,814 @@ footer .footer-bottom {
   line-height: 1.8;
 }
 
-.form .form-content label {
+.visit-time {
+  padding: 120px 0 30px;
+}
+
+.visit-time img {
+  -webkit-box-shadow: 0px 0px 9px 0px #0000003b;
+          box-shadow: 0px 0px 9px 0px #0000003b;
+  width: 100%;
+}
+
+.visit-time .heading {
+  margin-bottom: 30px;
+}
+
+.appointment-calendar {
+  position: relative;
+}
+
+.appointment-calendar .card {
+  border: none;
+}
+
+.appointment-calendar .card .card-header {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #007DF2;
+  border: none;
+  border-radius: 0;
+}
+
+.appointment-calendar .card th {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-bottom: none;
+  color: #303030;
+}
+
+.appointment-calendar .previous-arrow {
+  position: absolute;
+  left: 30px;
+  top: 23px;
+  z-index: 1;
+  color: #FFF;
+  font-size: 17px;
+}
+
+.appointment-calendar .next-arrow {
+  position: absolute;
+  right: 30px;
+  top: 23px;
+  z-index: 1;
+  color: #FFF;
+  font-size: 17px;
+}
+
+.appointment-calendar td {
+  padding: 25px;
+  text-align: center;
+  font-size: 18px;
+  color: #303030;
+  font-weight: 400;
+}
+
+.appointment-calendar .bg-info {
+  background-color: #FCF8E3 !important;
+}
+
+.appointment-calendar .appointment-date {
+  background-color: #f5f5f5;
+}
+
+.appointment-calendar .appointment-date .appointment-date-wrapper {
+  padding: 45px 50px 75px;
+}
+
+.appointment-calendar .appointment-date .appointment-date-wrapper .appointment-date-title {
+  font-size: 24px;
+  padding-bottom: 30px;
+  font-weight: 600;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour {
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour .button {
+  padding: 16px 36px;
+}
+
+.doctor-timetable {
+  padding-top: 133px;
+}
+
+.doctor-timetable .timetable-title {
+  font-size: 24px;
+  color: #303030;
+  font-weight: 600;
+}
+
+.doctor-timetable .timetable-select {
+  border: none;
+  padding: 13px 100px 13px 31px;
+  color: #303030;
+  background: url(../assets/images/down-arrow.svg) no-repeat 90% 6px #f5f5f5;
+  background-size: 13px;
+  background-position-y: center;
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+.doctor-timetable .timetable-bottom {
+  padding-top: 50px;
+}
+
+.doctor-timetable .timetable-bottom thead th {
+  font-size: 16px;
+  padding: 16px 5px;
+  background-color: #303030;
+  border: 1px solid #e1e1e1;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.doctor-timetable .timetable-bottom thead th:nth-of-type(1) {
+  background-color: #FFF;
+}
+
+.doctor-timetable .timetable-bottom tbody th {
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #303030;
+  font-weight: 500;
+}
+
+.doctor-timetable .timetable-bottom tbody td .doctor-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 5px 0;
+}
+
+.doctor-timetable .timetable-bottom tbody td .speciality {
+  font-size: 14px;
+  color: #777777;
+}
+
+.find-doctor {
+  position: relative;
+}
+
+.find-doctor .section-left-color {
+  background-color: #f5f5f5;
+}
+
+.find-doctor .find-doctor-left {
+  padding-top: 100px;
+  padding-right: 30px;
+}
+
+.find-doctor .find-doctor-left .search-doctor-title {
+  font-size: 24px;
+  color: #303030;
+  font-weight: 600;
+  margin: 0;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content {
+  background-color: #FFF;
+  margin-top: 20px;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper {
+  padding: 31px 25px 50px;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper label {
   display: block;
+  font-size: 14px;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper input {
+  border: none;
+  padding: 15px 23px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper .button {
+  margin-top: 30px;
+  padding: 15px 36px;
+  width: 100%;
+}
+
+.find-doctor .find-doctor-right {
+  padding-top: 100px;
+  padding-left: 30px;
+  background-color: #FFF;
+}
+
+.find-doctor .find-doctor-right .associated-doctor-title {
+  font-size: 24px;
+  color: #303030;
+  font-weight: 600;
+}
+
+.find-doctor .find-doctor-right .associated-description {
+  font-size: 14px;
+  color: #777777;
+  max-width: 79%;
+}
+
+.find-doctor .find-doctor-right .doctor-items {
+  margin-top: 40px;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item {
+  margin-top: 15px;
+  border: 1px solid #e1e1e1;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper {
+  padding: 10px 10px 7px;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-img {
+  width: 50%;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-img img {
+  width: 100%;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info {
+  padding: 0 30px 25px;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .doctor-name {
+  padding-top: 9px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .doctor-subtitle {
+  font-size: 14px;
+  color: #888;
+  padding-top: 9px;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .doctor-skill {
+  padding-top: 9px;
   font-size: 14px;
   font-weight: 600;
 }
 
-.form .form-content .form-input {
-  padding: 20px;
-  border: none;
-  background-color: #f5f5f5;
-  width: 100%;
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment {
+  padding-top: 30px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .view {
+  margin-right: 30px;
+}
+
+.doctor-single {
+  position: relative;
+}
+
+.doctor-single .section-left-color {
+  background-color: #f5f5f5;
+}
+
+.doctor-single .section-left {
+  padding-top: 100px;
+  padding-right: 30px;
+}
+
+.doctor-single .section-left .img-container {
+  width: 95%;
+}
+
+.doctor-single .section-left .img-container img {
+  max-width: 100%;
+}
+
+.doctor-single .section-left .doctor-name {
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+.doctor-single .section-left .sub-heading {
+  padding-top: 20px;
+}
+
+.doctor-single .section-left .social-media a {
+  width: 35px !important;
+  height: 35px !important;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: #eee;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  -webkit-transition: .5s background-color linear;
+  transition: .5s background-color linear;
+}
+
+.doctor-single .section-left .social-media a:hover {
+  background-color: #007DF2;
+}
+
+.doctor-single .section-left .social-media a:hover i {
+  color: #FFF;
+}
+
+.doctor-single .section-left .social-media a i {
+  color: #303030;
+}
+
+.doctor-single .section-left .qualification {
+  padding-top: 70px;
+}
+
+.doctor-single .section-left .qualification .qualification-title {
   margin-bottom: 20px;
 }
 
-.form .form-content .button {
-  width: 100%;
-  padding: 17px;
-  text-align: center;
+.doctor-single .section-left .qualification .qualification-title i {
+  color: #007DF2;
+  font-size: 25px;
+  margin-right: 15px;
 }
 
-.form .form-content .form-alert {
+.doctor-single .section-left .qualification .qualification-title h4 {
+  font-weight: 600;
+}
+
+.doctor-single .section-left .qualification .qualification-description {
+  font-size: 15px;
+  color: #777777;
+  padding-top: 23px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.doctor-single .section-left .contact-info {
+  padding-top: 70px;
+}
+
+.doctor-single .section-left .contact-info .contact-info-title {
+  margin-bottom: 20px;
+}
+
+.doctor-single .section-left .contact-info .contact-info-title i {
+  color: #007DF2;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.doctor-single .section-left .contact-info .contact-info-title h4 {
+  font-weight: 600;
+}
+
+.doctor-single .section-left .contact-info .contact-info-description {
+  padding-top: 24px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.doctor-single .section-left .contact-info .contact-info-description i {
+  margin-right: 15px;
+}
+
+.doctor-single .section-left .contact-info .contact-info-description span {
+  color: #777777;
+}
+
+.doctor-single .section-left .working-time {
+  padding-top: 70px;
+}
+
+.doctor-single .section-left .working-time .working-time-title {
+  margin-bottom: 20px;
+}
+
+.doctor-single .section-left .working-time .working-time-title i {
+  color: #007DF2;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.doctor-single .section-left .working-time .working-time-title h4 {
+  font-weight: 600;
+}
+
+.doctor-single .section-left .working-time .working-time-description {
+  padding-top: 24px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.doctor-single .section-left .working-time .working-time-description li {
   font-size: 14px;
-  padding-top: 15px;
-  color: #888;
+  padding-bottom: 10px;
+}
+
+.doctor-single .section-left .working-time .working-time-description li .day {
+  color: #777777;
+}
+
+.doctor-single .section-right {
+  padding-top: 100px;
+  padding-left: 30px;
+  background-color: #FFF;
+}
+
+.doctor-single .section-right .introducting h4 {
+  font-weight: 600;
+}
+
+.doctor-single .section-right .introducting .introducting-subtitle {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.doctor-single .section-right .introducting .introducting-subtitle blockquote {
+  padding-right: 20px;
+  color: #007DF2;
+  font-size: 18px;
+}
+
+.doctor-single .section-right .introducting .introducting-subtitle span {
+  color: #303030;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.doctor-single .section-right .introducting .introducting-text p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.doctor-single .section-right .skill {
+  padding-top: 70px;
+}
+
+.doctor-single .section-right .skill .skill-title h4 {
+  font-weight: 600;
+}
+
+.doctor-single .section-right .skill .skill-content {
+  padding-top: 40px;
+}
+
+.doctor-single .section-right .skill .skill-content li {
+  padding-bottom: 14px;
+  font-weight: 600;
+}
+
+.doctor-single .section-right .skill .skill-content li i {
+  color: #007DF2;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.doctor-single .section-right .skill .skill-content li span {
+  font-size: 14px;
+  color: #303030;
+}
+
+.items {
+  padding-top: 100px;
+}
+
+.items .description {
+  font-size: 18px;
+}
+
+.items .items-content {
+  padding-top: 50px;
+}
+
+.items .items-content .md-item {
+  padding: 35px 45px 36px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 9px 0px #0000003b;
+          box-shadow: 0px 0px 9px 0px #0000003b;
+}
+
+.items .items-content .md-item .title {
+  font-size: 24px;
+  padding-top: 24px;
+  font-weight: 600;
+}
+
+.items .items-content .md-item .subtitle {
+  font-size: 14px;
+  color: #777777;
+  padding-top: 20px;
+  line-height: 2;
+}
+
+.items .items-content .md-item .button {
+  padding: 18px 35px;
+  margin-top: 20px;
+  background-color: white;
+  color: #007DF2;
+  border: 2px solid #e1e1e1;
+  width: 100%;
+}
+
+.frame-item {
+  background-color: #FFF;
+  position: relative;
+  max-width: 600px;
+  top: 50px;
+  padding: 30px 50px 63px;
+  display: inline-block;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 9px 0px #0000003b;
+          box-shadow: 0px 0px 9px 0px #0000003b;
+  border-bottom: 4px solid #007DF2;
+}
+
+.frame-item .heading {
+  padding-top: 19px;
+}
+
+.frame-item .description {
+  padding-top: 19px;
+}
+
+.dental-main-section {
+  position: relative;
+}
+
+.dental-main-section .section-right-color {
+  background-color: #f5f5f5;
+}
+
+.dental-main-section .section-left {
+  background-color: #FFF;
+  padding-top: 150px;
+  padding-right: 30px;
+}
+
+.dental-main-section .section-left .left-main-photo {
+  max-width: 100%;
+  padding-bottom: 100px;
+}
+
+.dental-main-section .section-left .oral-examination h4 {
+  font-weight: 600;
+}
+
+.dental-main-section .section-left .oral-examination .examination-subtitle {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.dental-main-section .section-left .oral-examination .examination-subtitle blockquote {
+  padding-right: 20px;
+  color: #007DF2;
+  font-size: 18px;
+}
+
+.dental-main-section .section-left .oral-examination .examination-subtitle span {
+  color: #303030;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.dental-main-section .section-left .oral-examination .examination-text p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.dental-main-section .section-left .oral-examination .examination-text .subtitle {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.dental-main-section .section-left .oral-examination .examination-text .therapy {
+  padding-left: 30px;
+}
+
+.dental-main-section .section-left .oral-examination .examination-text .therapy li {
+  list-style: disc !important;
+  color: #777777;
+}
+
+.dental-main-section .section-left .sc-content {
+  padding-top: 40px;
+}
+
+.dental-main-section .section-left .sc-content li {
+  padding-bottom: 14px;
+  font-weight: 600;
+}
+
+.dental-main-section .section-left .sc-content li i {
+  color: #007DF2;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.dental-main-section .section-left .sc-content li span {
+  font-size: 14px;
+  color: #303030;
+}
+
+.dental-main-section .section-left .treatment-investigation .treatment-title,
+.dental-main-section .section-left .treatment-investigation .investigation-title {
+  padding: 17px 25px;
+  background-color: #E5F2FE;
+  font-weight: 600;
+}
+
+.dental-main-section .section-left .treatment-investigation .treatment-ul,
+.dental-main-section .section-left .treatment-investigation .investigation-ul {
+  padding: 11px 25px;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.dental-main-section .section-left .treatment-investigation .treatment-ul li,
+.dental-main-section .section-left .treatment-investigation .investigation-ul li {
+  padding: 12.5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.dental-main-section .section-left .treatment-investigation .treatment-ul li:last-of-type,
+.dental-main-section .section-left .treatment-investigation .investigation-ul li:last-of-type {
+  border: none;
+}
+
+.dental-main-section .section-left .our-gallery {
+  padding-top: 50px;
+}
+
+.dental-main-section .section-left .our-gallery h4 {
+  font-weight: 600;
+}
+
+.dental-main-section .section-right {
+  padding-left: 30px;
+}
+
+.dental-main-section .section-right h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.dental-main-section .section-right .department-ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dental-main-section .section-right .department-ul .clinic-heart {
+  padding-right: 5px;
+}
+
+.dental-main-section .section-right .department-ul .clinic-brain {
+  padding-right: 7px;
+}
+
+.dental-main-section .section-right .department-ul .clinic-bone {
+  padding-right: 5px;
+}
+
+.dental-main-section .section-right .department-ul .clinic-tooth {
+  position: relative;
+  left: 6px;
+  padding-right: 10px;
+}
+
+.dental-main-section .section-right .department-ul .clinic-liver {
+  position: relative;
+  left: 6px;
+  padding-right: 10px;
+}
+
+.dental-main-section .section-right .department-ul .clinic-stomach {
+  position: relative;
+  left: 6px;
+  padding-right: 10px;
+}
+
+.dental-main-section .section-right .clinic-form {
+  padding: 32px 25px 26px;
+  background-color: #FFF;
+}
+
+.dental-main-section .section-right .clinic-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.dental-main-section .section-right .clinic-form label:first-of-type {
+  margin: 0 0 8px 0;
+}
+
+.dental-main-section .section-right .clinic-form input,
+.dental-main-section .section-right .clinic-form select {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 10px 23px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  color: #777777;
+}
+
+.dental-main-section .section-right .clinic-form select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  background: url(../assets/images/down-arrow.svg) no-repeat 90% 6px #f5f5f5;
+  background-size: 10px;
+  background-position-y: center;
+}
+
+.dental-main-section .section-right .clinic-form .button {
+  padding: 18px 35px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dental-main-section .section-right .working-time {
+  padding-top: 80px;
+}
+
+.dental-main-section .section-right .working-time .working-time-ul {
+  padding: 15px 23px 14px;
+  background-color: #FFF;
+}
+
+.dental-main-section .section-right .working-time .working-time-ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0 14px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 14px;
+}
+
+.dental-main-section .section-right .working-time .working-time-ul li:last-of-type {
+  border: none;
+}
+
+.dental-main-section .section-right .working-time .working-time-ul .day {
+  color: #777777;
+}
+
+.dental-main-section .section-right .working-time .working-time-ul .hour {
+  color: #303030;
+}
+
+.dental-main-section .section-right .quick-contact {
+  padding-top: 80px;
+}
+
+.dental-main-section .section-right .quick-contact .quick-contact-content {
+  padding: 28px 24px;
+  background-color: #FFF;
+}
+
+.dental-main-section .section-right .quick-contact .quick-contact-content p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dental-main-section .section-right .quick-contact .quick-contact-content span {
+  color: #777777;
+  font-size: 15px;
 }
 
 .button {
@@ -1170,7 +1999,7 @@ footer .footer-bottom {
 
 .description {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   color: #888888;
 }
 
@@ -1266,7 +2095,7 @@ footer .footer-bottom {
 .main-frame .main-frame-title .main-frame-title-text {
   font-size: 36px;
   font-weight: 600;
-  color: #303030;
+  color: #FFF;
 }
 
 .about {
@@ -1320,5 +2149,79 @@ footer .footer-bottom {
   padding: 16.5px 35px;
   background-color: white;
   border-radius: 5px;
+}
+
+.main-frame-2 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-frame-2 .main-frame-2-title {
+  padding: 105px 0;
+}
+
+.main-frame-2 .main-frame-2-title .main-frame-2-title-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #FFF;
+  z-index: 1;
+}
+
+.main-frame-2 .main-frame-2-title .main-frame-2-title-breadcrumb {
+  color: #FFF;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section-left-color {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.section-right-color {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.form-self label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-self .form-input {
+  padding: 20px;
+  border: none;
+  background-color: #f5f5f5;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.form-self .button {
+  width: 100%;
+  padding: 17px;
+  text-align: center;
+}
+
+.form-self .form-alert {
+  font-size: 14px;
+  padding-top: 15px;
+  color: #888;
 }
 /*# sourceMappingURL=style.css.map */

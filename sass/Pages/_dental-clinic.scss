@@ -1,0 +1,296 @@
+.frame-item {
+    background-color: $color-white;
+    position: relative;
+    max-width: 600px;
+    top: 50px;
+    padding: 30px 50px 63px;
+    display: inline-block;
+    z-index: 1;
+    box-shadow: $box-shadow;
+    border-bottom: 4px solid $main-color;
+
+    .heading {
+        padding-top: 19px;
+    }
+
+    .description {
+        padding-top: 19px;
+    }
+}
+
+.dental-main-section {
+    position: relative;
+
+    .section-right-color {
+        background-color: $color-gray-lighter;
+    }
+
+    .section-left {
+        background-color: $color-white;
+        padding-top: 150px;
+        padding-right: 30px;
+
+        .left-main-photo {
+            max-width: 100%;
+            padding-bottom: 100px;
+        }
+
+        .oral-examination {
+            h4 {
+                font-weight: $font-weight;
+            }
+
+            .examination-subtitle {
+                padding-top: 40px;
+                padding-bottom: 20px;
+
+                blockquote {
+                    padding-right: 20px;
+                    color: $main-color;
+                    font-size: 18px;
+                }
+
+                span {
+                    color: $color-black-lighter;
+                    font-weight: $font-weight;
+                    font-size: 15px;
+                }
+
+            }
+
+            .examination-text {
+                p {
+                    font-size: $font-size;
+                    color: $color-header-top;
+                }
+
+                .subtitle {
+                    font-weight: $font-weight;
+                    font-size: 18px;
+                }
+
+                .therapy {
+                    padding-left: 30px;
+
+                    li {
+                        list-style: disc !important;
+                        color: $color-header-top;
+                    }
+
+                }
+
+
+            }
+
+        }
+
+        .sc-content {
+            padding-top: 40px;
+
+            li {
+                padding-bottom: 14px;
+                font-weight: $font-weight;
+
+                i {
+                    color: $main-color;
+                    font-size: 12px;
+                    padding-right: 15px;
+                }
+
+                span {
+                    font-size: $font-size;
+                    color: $main-frame-color;
+                }
+            }
+        }
+
+        .treatment-investigation {
+
+            .treatment-title,
+            .investigation-title {
+                padding: 17px 25px;
+                background-color: $color-light-blue;
+                font-weight: $font-weight;
+
+            }
+
+            .treatment-ul,
+            .investigation-ul {
+                padding: 11px 25px;
+                border-left: 1px solid $color-border;
+                border-right: 1px solid $color-border;
+                border-bottom: 1px solid $color-border;
+
+                li {
+                    padding: 12.5px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    border-bottom: 1px solid $color-border;
+                }
+
+                li:last-of-type {
+                    border: none;
+                }
+
+            }
+        }
+
+        .our-gallery {
+            padding-top: 50px;
+
+            h4 {
+                font-weight: $font-weight;
+            }
+
+
+        }
+    }
+
+    .section-right {
+        padding-left: 30px;
+
+
+        h4 {
+            margin: 0;
+            font-weight: $font-weight;
+        }
+
+        .department-ul {
+            li {
+                display: flex;
+                align-items: center;
+                background-color: $color-white;
+                padding: 8px 10px;
+                border-bottom: 1px solid $color-border;
+                font-size: 18px;
+                font-weight: $font-weight;
+            }
+
+            .clinic-heart {
+                padding-right: 5px;
+            }
+
+            .clinic-brain {
+                padding-right: 7px;
+            }
+
+            .clinic-bone {
+                padding-right: 5px;
+            }
+
+            .clinic-tooth {
+                position: relative;
+                left: 6px;
+                padding-right: 10px;
+            }
+
+            .clinic-liver {
+                position: relative;
+                left: 6px;
+                padding-right: 10px;
+            }
+
+            .clinic-stomach {
+                position: relative;
+                left: 6px;
+                padding-right: 10px;
+            }
+        }
+
+        .clinic-form {
+            padding: 32px 25px 26px;
+            background-color: $color-white;
+
+            label {
+                display: block;
+                font-size: 14px;
+                font-weight: $font-weight;
+                margin-top: 20px;
+            }
+
+            label:first-of-type {
+                margin: 0 0 8px 0;
+            }
+
+            input,
+            select {
+                border: none;
+                background-color: $color-gray-lighter;
+                padding: 10px 23px;
+                width: 100%;
+                font-weight: $font-weight-bolder;
+                font-size: $font-size;
+                color: $color-header-top;
+            }
+
+            select {
+                /* for Firefox */
+                -moz-appearance: none;
+                /* for Chrome */
+                -webkit-appearance: none;
+                background: url(../assets/images/down-arrow.svg) no-repeat 90% 6px $color-gray-lighter;
+                background-size: 10px;
+                background-position-y: center;
+            }
+
+            .button{
+                padding: 18px 35px;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+
+        .working-time{
+            padding-top: 80px;
+
+            .working-time-ul{
+                padding: 15px 23px 14px;
+                background-color: $color-white;
+
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px 0 14px;
+                    border-bottom: 1px solid $color-border;
+                    font-size: $font-size;
+                }
+
+                li:last-of-type{
+                    border: none;
+                }
+
+                .day{
+                    color: $color-header-top;
+                }
+
+                .hour{
+                    color: $main-frame-color;
+                }
+            }
+        }
+
+        .quick-contact{
+            padding-top: 80px;
+
+            .quick-contact-content{
+                padding: 28px 24px;
+                background-color: $color-white;
+
+                p{
+                    font-weight: $font-weight;
+                    font-size: 14px;
+                }
+    
+                span{
+                    color: $color-header-top;
+                    font-size: 15px;
+                }
+            }
+
+        }
+
+    }
+
+}

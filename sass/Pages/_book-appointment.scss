@@ -1,6 +1,107 @@
 // #region book-appointment 
+.visit-time {
+    padding: 120px 0 30px;
 
+    img {
+        box-shadow: $box-shadow;
+        width: 100%;
+    }
 
-
+    .heading {
+        margin-bottom: 30px;
+    }
+}
 
 // #endregion book-appoinment
+
+
+// #region appointment-calendar
+
+.appointment-calendar {
+    position: relative;
+
+    .card {
+        border: none;
+
+        .card-header {
+            padding: 20px 0;
+            font-size: 18px;
+            font-weight: $font-weight;
+            color: $color-white;
+            background-color: $main-color;
+            border: none;
+            border-radius: 0;
+        }
+
+        th {
+            text-align: center;
+            font-weight: 400;
+            font-size: $font-size;
+            background-color: $color-gray-lighter;
+            padding: 16px;
+            border-bottom: none;
+            color: $color-black-lighter;
+        }
+
+    }
+
+    .previous-arrow {
+        position: absolute;
+        left: 30px;
+        top: 23px;
+        z-index: 1;
+        color: $color-white;
+        font-size: 17px;
+    }
+
+    .next-arrow {
+        position: absolute;
+        right: 30px;
+        top: 23px;
+        z-index: 1;
+        color: $color-white;
+        font-size: 17px;
+    }
+
+    td {
+        padding: 25px;
+        text-align: center;
+        font-size: 18px;
+        color: $color-black-lighter;
+        font-weight: 400;
+
+    }
+
+    .bg-info {
+        background-color: $color-today !important;
+    }
+
+    .appointment-date {
+        background-color: $color-gray-lighter;
+
+        .appointment-date-wrapper {
+            padding: 45px 50px 75px;
+
+            .appointment-date-title {
+                font-size: 24px;
+                padding-bottom: 30px;
+                font-weight: $font-weight;
+                border-bottom: 1px solid $color-border;
+            }
+
+            .appointment-hour {
+                padding: 10px;
+                border-bottom: 1px solid $color-border;
+
+                .button{
+                    padding: 16px 36px;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+// #endregion appointment-calendar

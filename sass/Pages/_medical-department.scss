@@ -1,0 +1,40 @@
+.items {
+    padding-top: 100px;
+
+    .description {
+        font-size: 18px;
+    }
+
+    .items-content {
+        padding-top: 50px;
+
+        .md-item {
+            padding: 35px 45px 36px;
+            text-align: center;
+            box-shadow: $box-shadow;
+
+            .title{
+                font-size: 24px;
+                padding-top: 24px;
+                font-weight: $font-weight;
+            }
+
+            .subtitle{
+                font-size: $font-size;
+                color: $color-header-top;
+                padding-top: 20px;
+                line-height: 2;
+            }
+
+            .button{
+                padding: 18px 35px;
+                margin-top: 20px;
+                background-color: white;
+                color: $main-color;
+                border: 2px solid $color-border;
+                width: 100%;
+            }
+        }
+
+    }
+}

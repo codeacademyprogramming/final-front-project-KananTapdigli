@@ -40,33 +40,6 @@
             }
         }
 
-        label{
-            display: block;
-            font-size: 14px;
-            font-weight: $font-weight;
-        }
-
-        .form-input{
-            padding: 20px;
-            border: none;
-            background-color: $color-gray-lighter;
-            width: 100%;
-            font-size: 14px;
-            font-weight: $font-weight-bolder;
-            margin-bottom: 20px;
-        }
-
-        .button{
-            width: 100%;
-            padding: 17px;
-            text-align: center;
-        }
-
-        .form-alert{
-            font-size: 14px;
-            padding-top: 15px;
-            color: $color-dark-light;
-        }
     }
 
 

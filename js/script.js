@@ -217,10 +217,9 @@ $(document).ready(function () {
       }
     ]
   });
-
-
-
   //#endregion Pricing-Slider
+
+
 
 
 

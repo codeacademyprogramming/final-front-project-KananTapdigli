@@ -1,0 +1,137 @@
+// #region find-doctor section
+
+.find-doctor {
+    position: relative;
+
+    .section-left-color {
+        background-color: $color-gray-lighter;
+    }
+
+
+    .find-doctor-left {
+        padding-top: 100px;
+        padding-right: 30px;
+
+        .search-doctor-title {
+            font-size: 24px;
+            color: $color-black-lighter;
+            font-weight: $font-weight;
+            margin: 0;
+        }
+
+
+        .search-doctor-content {
+            background-color: $color-white;
+            margin-top: 20px;
+
+            .search-doctor-content-wrapper {
+                padding: 31px 25px 50px;
+
+                label {
+                    display: block;
+                    font-size: 14px;
+                }
+
+                input {
+                    border: none;
+                    padding: 15px 23px;
+                    background-color: $color-gray-lighter;
+                    font-size: $font-size;
+                    width: 100%;
+                    outline: none;
+                }
+
+                .button {
+                    margin-top: 30px;
+                    padding: 15px 36px;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+    .find-doctor-right {
+        padding-top: 100px;
+        padding-left: 30px;
+        background-color: $color-white;
+
+        .associated-doctor-title {
+            font-size: 24px;
+            color: $color-black-lighter;
+            font-weight: $font-weight;
+        }
+
+        .associated-description {
+            font-size: $font-size;
+            color: $color-header-top;
+            max-width: 79%;
+        }
+
+        .doctor-items {
+            margin-top: 40px;
+
+            .doctor-item {
+                margin-top: 15px;
+                border: 1px solid $color-border;
+            }
+
+
+
+            .doctor-item-wrapper {
+                padding: 10px 10px 7px;
+
+
+
+
+                .doctor-img {
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+
+                .doctor-info {
+                    padding: 0 30px 25px;
+
+                    .doctor-name {
+                        padding-top: 9px;
+                        font-size: 18px;
+                        font-weight: $font-weight;
+                    }
+
+                    .doctor-subtitle {
+                        font-size: 14px;
+                        color: $color-dark-light;
+                        padding-top: 9px;
+                    }
+
+                    .doctor-skill {
+                        padding-top: 9px;
+                        font-size: 14px;
+                        font-weight: $font-weight;
+                    }
+
+                    .view-appointment {
+                        padding-top: 30px;
+                        font-size: $font-size;
+                        font-weight: $font-weight;
+                        line-height: 1;
+
+                        .view {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// #endregion find-doctor section
