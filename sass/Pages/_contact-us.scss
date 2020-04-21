@@ -1,0 +1,173 @@
+// #region header 
+.cu-header-top {
+    span {
+        color: $color-gray;
+    }
+
+    i {
+        color: $color-gray;
+    }
+}
+
+// #endregion header
+
+
+
+// #region form section starts
+.form{
+    padding: 80px 0;
+
+    .form-title{
+        font-size: 36px;
+        font-weight: $font-weight;
+        margin-bottom: 15px;
+        color: $color-black-lighter;
+    }
+
+    .form-description{
+        font-size: $font-size;
+        color: $color-dark-light;
+        font-weight: $font-weight-bolder;
+    }
+
+    .form-content{
+        padding-top: 40px;
+
+        .social-media{
+            padding-top: 30px;
+            a{
+                padding:0 16.5px;
+                font-size: 24px;
+                color: $color-black-lighter;
+            }
+
+            &:hover{
+                color: $color-black-lighter ;
+            }
+        }
+
+        .form-item{
+            border-bottom: 1px solid $color-border;
+            padding: 20px 0;
+    
+            .form-item-info{
+                padding-left: 33px;
+        
+                .form-item-title{
+                    font-size: 18px;
+                    font-weight: $font-weight;
+                    text-transform: uppercase;
+                }
+        
+                .form-item-text{
+                    font-size: 15px;
+                    color: $color-dark-light;
+                    line-height: 1.8;
+                }
+            }
+        }
+
+        .form-item:last-child{
+            border-bottom: none;
+        }
+
+    }
+}
+
+
+// #endregion form section ends
+
+// #region footer section
+.cu-footer {
+    background-color: $color-footer-3;
+
+    .footer-top {
+        padding-bottom: 60px;
+
+        .healthcare-text {
+            color: $color-gray-light;
+        }
+
+        .footer-pass {
+            position: relative;
+            left: 0;
+            transition: .3s all linear;
+
+            .arrow-right {
+                color: $main-color;
+                font-size: 12px;
+                padding-right: 7px;
+            }
+
+            &:hover {
+                left: 10px;
+
+                a {
+                    color: $main-color;
+                }
+            }
+        }
+
+
+        a {
+            color: $color-gray-light;
+        }
+
+        .contact {
+
+            .contact-text {
+                color: $color-gray-light;
+            }
+
+            .social-media {
+                margin-top: 15px;
+
+                a {
+                    padding: 0 9.5px;
+
+                    i {
+                        font-size: 13px;
+                        color: $color-gray-light;
+                    }
+                }
+            }
+
+        }
+
+        .instagram{
+            .col-4{
+                padding: 0 5px;
+            }
+            img{
+                max-width:100%;
+            }
+
+            .instagram-content{
+                position: relative;
+
+                .overlay{
+                    opacity: 0;
+                    transition:opacity .3s;
+
+                    .insta-icon{
+                        color: $color-white;
+                        font-size: 25px;
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover{
+                    .overlay{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        color: $color-gray-light;
+    }
+}
+
+// #endregion footer section

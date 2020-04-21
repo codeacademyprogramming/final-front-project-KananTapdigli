@@ -2,17 +2,19 @@ body {
   margin: 0;
   font-family: $main-font;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none !important;
+  color: inherit;
 }
 
 ul {
   padding: 0;
 }
 
-p{
+p {
   margin: 0;
 }
 
@@ -73,6 +75,15 @@ li {
   }
 }
 
+.active-nav {
+  color: $main-color;
+}
+
+.active-m {
+  display: flex;
+  align-items: center;
+}
+
 .first-banner {
   z-index: 3 !important;
   opacity: 1 !important;
@@ -93,6 +104,51 @@ li {
   height: 2px;
   width: 85px;
   background-color: $main-color;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: $font-weight;
+}
+
+.slick-dots {
+
+  li {
+    margin: 0 4px !important;
+  }
+
+}
+
+.header-fixed {
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  width: 100% !important;
+
+  .logo {
+    line-height: 70px !important;
+  }
+
+  .title {
+    line-height: 70px !important;
+  }
+
+  .search-basket-menu {
+    padding: 20px 0 !important;
+  }
+  
+
+  li:hover .sub-menu {
+    top: 76px !important;
+  }
+
+
+
+
+  .mobile-nav {
+    top: 60px !important;
+  }
+
 }
 
 .no-select {
@@ -145,23 +201,19 @@ li {
     left: 150px !important;
   }
 
-  .why-choose-left {
-    padding: 0 !important;
-  }
-
-  .section-left-color{
+  .section-left-color {
     background-color: $color-white !important;
   }
 
-  .find-doctor-right{
+  .find-doctor-right {
     padding-top: 0 !important;
     padding-left: 15px !important;
   }
 
-  .search-doctor-content-wrapper{
+  .search-doctor-content-wrapper {
     padding: 31px 0px 50px !important;
   }
-  
+
 }
 
 
@@ -195,13 +247,17 @@ li {
     width: 510px;
   }
 
-  
-  .doctor-item-wrapper{
+
+  .doctor-item-wrapper {
     flex-wrap: wrap;
 
-    .doctor-img{
+    .doctor-img {
       width: 100% !important;
     }
+  }
+
+  .modal-video {
+    height: 400px !important;
   }
 
 }
@@ -254,6 +310,30 @@ li {
   .banner-page-2,
   .banner-page-3 {
     background-position: right !important;
+  }
+
+  .modal-video {
+    height: 300px !important;
+  }
+
+  .logo {
+    line-height: 70px !important;
+
+    img {
+      width: 100px !important;
+    }
+  }
+
+  .title {
+    line-height: 70px !important;
+  }
+
+  .search-basket-menu {
+    padding: 20px 0 !important;
+  }
+
+  footer{
+    padding: 60px 0 !important;
   }
 
 

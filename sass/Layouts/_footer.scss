@@ -2,13 +2,12 @@
 footer {
     padding-top: 111px;
     background-color: $color-black;
-    color: white;
 
     .footer-top {
 
         .healthcare {
             .healthcare-text {
-                line-height: $footer-line-height;
+                line-height: 2;
                 padding-top: 27px;
             }
         }
@@ -27,13 +26,17 @@ footer {
         .contact {
             p {
                 font-size: 14px;
-                line-height: $footer-line-height;
+                line-height: 2;
             }
         }
     }
 
     .footer-bottom {
         padding: 20px 0;
+
+        .policy {
+            margin-left: 15px;
+        }
     }
 }
 

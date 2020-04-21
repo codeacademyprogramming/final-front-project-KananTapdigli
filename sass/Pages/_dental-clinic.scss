@@ -61,7 +61,6 @@
             .examination-text {
                 p {
                     font-size: $font-size;
-                    color: $color-header-top;
                 }
 
                 .subtitle {
@@ -74,7 +73,6 @@
 
                     li {
                         list-style: disc !important;
-                        color: $color-header-top;
                     }
 
                 }
@@ -99,7 +97,6 @@
 
                 span {
                     font-size: $font-size;
-                    color: $main-frame-color;
                 }
             }
         }
@@ -221,7 +218,6 @@
                 width: 100%;
                 font-weight: $font-weight-bolder;
                 font-size: $font-size;
-                color: $color-header-top;
             }
 
             select {
@@ -262,11 +258,9 @@
                 }
 
                 .day{
-                    color: $color-header-top;
                 }
 
                 .hour{
-                    color: $main-frame-color;
                 }
             }
         }
@@ -284,7 +278,6 @@
                 }
     
                 span{
-                    color: $color-header-top;
                     font-size: 15px;
                 }
             }

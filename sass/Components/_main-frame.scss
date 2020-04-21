@@ -10,7 +10,11 @@
         .main-frame-title-text{
             font-size: 36px;
             font-weight: $font-weight;
-            color: $color-white;
+            color: $color-black-lighter;
+        }
+
+        .main-frame-breadcrumb{
+            color: $color-black-lighter;
         }
     }
 }

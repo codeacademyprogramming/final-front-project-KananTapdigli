@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     <!--main css-->
     <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top index-top d-none d-md-block">
+        <div class="header-top index-header-top  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -45,19 +46,19 @@
                         </span>
                     </div>
                     <div class="social-media col-md-12 col-lg-3  text-lg-right text-md-center mt-md-2 mt-lg-0">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -68,7 +69,7 @@
 
 
         <!-- header-bottom-starts -->
-        <div class="header-bottom">
+        <div class="header-bottom no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -77,12 +78,12 @@
                         </div>
                     </div>
                     <nav class="col-10 d-flex justify-content-end">
-                        <ul class="navigation  d-none d-xl-inline-flex">
+                        <ul class="navigation  d-none d-xl-flex">
                             <li class="home">
-                                <span class="title">Home</span>
+                                <span class="title active-nav">Home</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Home Main</a>
+                                        <a href="index.html" class="active-nav">Home</a>
                                     </div>
                                 </div>
                             </li>
@@ -90,12 +91,12 @@
                                 <span class="title">Pages</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Our Clinic</a>
-                                        <a>FAQ</a>
-                                        <a>Pricing</a>
-                                        <a>Contact us 2</a>
-                                        <a>Book an Appointment</a>
-                                        <a>Schedule</a>
+                                        <a href="our-clinic.html">Our Clinic</a>
+                                        <a href="contact-us.html">Contact us</a>
+                                        <a href="faq.html">FAQ</a>
+                                        <a href="book-appointment.html">Book an Appointment</a>
+                                        <a href="pricings.html">Pricings</a>
+                                        <a href="schedule.html">Schedule</a>
                                     </div>
                                 </div>
                             </li>
@@ -103,8 +104,8 @@
                                 <span class="title">Doctors</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Find A Doctor</a>
-                                        <a>Doctor Single</a>
+                                        <a href="find-doctor.html">Find A Doctor</a>
+                                        <a href="doctor-single.html">Doctor Single</a>
                                     </div>
                                 </div>
                             </li>
@@ -112,8 +113,8 @@
                                 <span class="title">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Medical Department</a>
-                                        <a>Dental Clinic</a>
+                                        <a href="medical-department.html">Medical Department</a>
+                                        <a href="dental-clinic.html">Dental Clinic</a>
                                     </div>
                                 </div>
                             </li>
@@ -121,7 +122,7 @@
                                 <span class="title">Blog</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Single Post Standard</a>
+                                        <a href="post-standard.html">Single Post Standard</a>
                                     </div>
                                 </div>
                             </li>
@@ -129,9 +130,9 @@
                                 <span class="title">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Sidebar left</a>
-                                        <a>Card</a>
-                                        <a>Checkout</a>
+                                        <a href="sidebar-left.html">Sidebar left</a>
+                                        <a href="cart.html">Card</a>
+                                        <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
                             </li>
@@ -144,41 +145,67 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket-menu d-inline-flex">
-                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
-                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-flex align-items-center">
+                            <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
+                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
-                            <li><span>Tab 1</span>
-                                <div>
-                                    tab1
-
+                            <li>
+                                <span class="active-nav">Home</span>
+                                <div class="mn-sub-menu">
+                                    <a href="index.html" class="active-nav">Home</a>
                                 </div>
                             </li>
-                            <li><span>Tab 2</span>
-                                <div>
-                                    Tab 3
+                            <li>
+                                <span>Pages</span>
+                                <div class="mn-sub-menu">
+                                    <a href="our-clinic.html">Our Clinic</a>
+                                    <a href="contact-us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="book-appointment.html">Book an Appointment</a>
+                                    <a href="pricings.html">Pricings</a>
+                                    <a href="schedule.html">Schedule</a>
                                 </div>
-
                             </li>
 
-                            <li><span>tab 3</span>
-                                <div>
-                                    tab 3
+                            <li>
+                                <span>Doctors</span>
+                                <div class="mn-sub-menu">
+                                    <a href="find-doctor.html">Find A Doctor</a>
+                                    <a href="doctor-single.html">Doctor Single</a>
                                 </div>
                             </li>
 
-                            <li><span>tab 4</span>
-                                <div>
-                                    Tab 4
+                            <li>
+                                <span>Departments</span>
+                                <div class="mn-sub-menu">
+                                    <a href="medical-department.html">Medical Department</a>
+                                    <a href="dental-clinic.html">Dental Clinic</a>
                                 </div>
-
-
                             </li>
-
+                            <li>
+                                <span>Blog</span>
+                                <div class="mn-sub-menu">
+                                    <a href="post-standard.html">Single Post Standard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Shop</span>
+                                <div class="mn-sub-menu">
+                                    <a href="sidebar-left.html">Sidebar left</a>
+                                    <a href="cart.html">Card</a>
+                                    <a href="checkout.html">Checkout</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Elements</span>
+                                <div class="mn-sub-menu">
+                                    <a>Coming Soon</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -192,15 +219,15 @@
     <!-- main starts -->
     <main>
         <!-- banner section starts -->
-        <section class="banner">
+        <section class="banner no-select">
             <div class="banner-page banner-page-1" style="background-image: url(assets/images/banner-image-1.jpg);">
-                <div class="caption caption-1" data-aos="fade-down" data-aos-duration="1500">
+                <div class="caption caption-1" data-aos="fade-up" data-aos-duration="2000">
                     Inspiring Better Health
                 </div>
-                <div class="auxilary-caption" data-aos="fade-down" data-aos-duration="1500">
+                <div class="auxilary-caption" data-aos="fade-up" data-aos-duration="2000">
                     17 years of experience
                 </div>
-                <div class="button" data-aos="fade-up" data-aos-duration="1500">
+                <div class="button" data-aos="fade-up" data-aos-duration="2000">
                     Learn more
                 </div>
             </div>
@@ -211,18 +238,18 @@
                 <div class="auxilary-caption">
                     17 years of experience
                 </div>
-                <div class="button" data-aos="fade-up" data-aos-duration="1500">
+                <div class="button">
                     Learn more
                 </div>
             </div>
             <div class="banner-page banner-page-3" style="background-image: url(assets/images/banner-image-3.jpg);">
-                <div class="caption caption-3" data-aos="fade-down" data-aos-duration="1500">
+                <div class="caption caption-3 ">
                     Trusted for our expertise
                 </div>
-                <div class="auxilary-caption" data-aos="fade-down" data-aos-duration="1500">
+                <div class="auxilary-caption">
                     17 years of experience
                 </div>
-                <div class="button" data-aos="fade-up" data-aos-duration="1500">
+                <div class="button">
                     Learn more
                 </div>
             </div>
@@ -241,11 +268,11 @@
 
 
         <!-- fancy section starts -->
-        <section class="fancy">
+        <section class="fancy no-select">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-4  mt-sm-5">
-                        <div class="fancy-item text-center">
+                    <div class="col-sm-12 col-lg-4  mt-5 mt-lg-0">
+                        <div class="fancy-item text-center" data-aos="fade-up" data-aos-duration="2000">
                             <div class="fancy-item-content">
                                 <div class="fancy-item-content-icon">
                                     <img src="assets/images/plus.png" alt="">
@@ -254,15 +281,15 @@
                                     <h5 class="fancy-item-content-text-title">Appointment</h5>
                                     <div class="fancy-item-content-text-main">There are several ways to make an
                                         appointment at Syring Medical Center.</div>
-                                    <div class="fancy-item-content-text-details">
+                                    <a class="fancy-item-content-text-details">
                                         More details
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-4  mt-sm-5">
-                        <div class="fancy-item text-center">
+                    <div class="col-sm-12 col-lg-4  mt-5  mt-lg-0">
+                        <div class="fancy-item text-center" data-aos="fade-up" data-aos-duration="2000">
                             <div class="fancy-item-content">
                                 <div class="fancy-item-content-icon">
                                     <img src="assets/images/nurse.png" alt="">
@@ -271,15 +298,15 @@
                                     <h5 class="fancy-item-content-text-title">Appointment</h5>
                                     <div class="fancy-item-content-text-main">There are several ways to make an
                                         appointment at Syring Medical Center.</div>
-                                    <div class="fancy-item-content-text-details">
+                                    <a class="fancy-item-content-text-details">
                                         More details
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-4 mt-sm-5">
-                        <div class="fancy-item text-center">
+                    <div class="col-sm-12 col-lg-4 mt-5  mt-lg-0">
+                        <div class="fancy-item text-center" data-aos="fade-up" data-aos-duration="2000">
                             <div class="fancy-item-content">
                                 <div class="fancy-item-content-icon">
                                     <img src="assets/images/file.png" alt="">
@@ -288,9 +315,9 @@
                                     <h5 class="fancy-item-content-text-title">Appointment</h5>
                                     <div class="fancy-item-content-text-main">There are several ways to make an
                                         appointment at Syring Medical Center.</div>
-                                    <div class="fancy-item-content-text-details">
+                                    <a class="fancy-item-content-text-details">
                                         More details
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -301,11 +328,11 @@
         <!-- fancy section ends -->
 
         <!-- about section starts -->
-        <section class="about about-home">
+        <section class="about about-home no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <div class="about-content">
+                        <div class="about-content" data-aos="fade-up" data-aos-duration="2000">
                             <span class="sub-heading">About Us</span>
                             <h2 class="heading">Your Health is <br>
                                 Our <span class="defaultcolor">Primary Concern</span></h2>
@@ -324,9 +351,10 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <div class="about-images text-sm-center text-md-left">
-                            <img src="assets/images/about-1.jpg" class="about-image about-image-1 mt-sm-5"></img>
-                            <img src="assets/images/about-2.jpg" class="about-image about-image-2  mt-sm-5"></img>
+                        <div class="about-images text-sm-center text-md-left" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <img src="assets/images/about-1.jpg" class="about-image about-image-1 mt-5 mt-md-0"></img>
+                            <img src="assets/images/about-2.jpg" class="about-image about-image-2  mt-5 mt-md-0"></img>
                         </div>
                     </div>
                 </div>
@@ -336,9 +364,10 @@
 
 
         <!-- vision section starts -->
-        <section class="vision">
+        <section class="vision no-select">
             <div class="container">
-                <div class="vision-top row  justify-content-center">
+                <div class="vision-top row  justify-content-center" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div class="col-lg-10 text-center">
                         <h2 class="sub-heading">Our vision</h2>
                         <h2 class="heading">Combining Quality Care& Modern Conveniences.</h2>
@@ -350,8 +379,8 @@
                     </div>
                 </div>
                 <div class="vision-bottom row">
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-sm-3">
-                        <div class="item">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <img src="assets/images/stethoscope.png" alt="" class="item-icon">
                             <div class="item-content">
                                 <h5 class="title">World-Class Care</h5>
@@ -361,8 +390,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-sm-3 ">
-                        <div class="item">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mt-md-0">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2300">
                             <img src="assets/images/physician.png" alt="" class="item-icon">
                             <div class="item-content">
                                 <h5 class="title">Putting You First</h5>
@@ -371,8 +400,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-3 mt-sm-3">
-                        <div class="item">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2600">
                             <img src="assets/images/phone-vibration.png" alt="" class="item-icon">
                             <div class="item-content">
                                 <h5 class="title">Everywhere Access</h5>
@@ -382,8 +411,8 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-3 mt-sm-3">
-                        <div class="item">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2900">
                             <img src="assets/images/stopwatch.png" alt="" class="item-icon">
                             <div class="item-content">
                                 <h5 class="title">Attention to Service</h5>
@@ -400,7 +429,8 @@
 
 
         <!-- video section starts -->
-        <section class="video" style="background-image: url(assets/images/covervideo.jpg)">
+        <section class="video" style="background-image: url(assets/images/covervideo.jpg)" data-aos="fade-up"
+            data-aos-duration="2000">
             <div class="video-overlay d-flex justify-content-center align-items-center">
                 <div class="play-button d-flex justify-content-center align-items-center">
                     <i class="fas fa-caret-right triangle"></i>
@@ -412,9 +442,9 @@
 
 
         <!-- department section starts -->
-        <section class="department">
+        <section class="department no-select">
             <div class="container">
-                <div class="department-top row justify-content-center">
+                <div class="department-top row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-lg-10 text-center">
                         <h2 class="sub-heading">What we do best</h2>
                         <h2 class="heading">Medical Departments</h2>
@@ -426,64 +456,65 @@
                 <div class="department-center">
                     <div class="row ">
                         <div class="col-sm-12 col-lg-4">
-                            <div class="item">
-                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="assets/images/home-heart.png" alt="" class="item-icon">
                                 <div class="item-content">
-                                    <h5 class="title">Attention to Service</h5>
-                                    <p class="item-text">95% of appointments start on time or early, and we’re
-                                        in-network with most PPO and HMO plans.</p>
+                                    <h5 class="title">Pulmonary</h5>
+                                    <p class="item-text">Provides medical care to patients who have problems with their
+                                        heart or circulation.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 mt-sm-4 mt-lg-4 mt-xl-0">
-                            <div class="item">
-                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                        <div class="col-sm-12 col-lg-4 mt-4 mt-lg-0">
+                            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="assets/images/home-brain.png" alt="" class="item-icon">
                                 <div class="item-content">
-                                    <h5 class="title">Attention to Service</h5>
-                                    <p class="item-text">95% of appointments start on time or early, and we’re
-                                        in-network with most PPO and HMO plans.</p>
+                                    <h5 class="title">Neurology</h5>
+                                    <p class="item-text">This unit deals with disorders of the nervous system, including
+                                        the brain and spinal cord.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 mt-sm-4 mt-lg-4 mt-xl-0">
-                            <div class="item">
-                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                        <div class="col-sm-12 col-lg-4 mt-4 mt-lg-0">
+                            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="assets/images/home-bone.png" alt="" class="item-icon">
                                 <div class="item-content">
-                                    <h5 class="title">Attention to Service</h5>
-                                    <p class="item-text">95% of appointments start on time or early, and we’re
-                                        in-network with most PPO and HMO plans.</p>
+                                    <h5 class="title">
+                                        Prthopaedics</h5>
+                                    <p class="item-text">Orthopaedic departments treat problems that affect your
+                                        musculoskeletal system.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-lg-4 mt-lg-4 mt-sm-4 ">
-                            <div class="item">
-                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                        <div class="col-sm-12 col-lg-4 mt-4">
+                            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="assets/images/home-tooth.png" alt="" class="item-icon">
                                 <div class="item-content">
-                                    <h5 class="title">Attention to Service</h5>
-                                    <p class="item-text">95% of appointments start on time or early, and we’re
-                                        in-network with most PPO and HMO plans.</p>
+                                    <h5 class="title">Dental Clinic</h5>
+                                    <p class="item-text">We are here to provide a full range of exceptional quality care
+                                        for dental services.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 mt-lg-4 mt-sm-4 ">
-                            <div class="item">
-                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                        <div class="col-sm-12 col-lg-4 mt-4">
+                            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="assets/images/home-liver.png" alt="" class="item-icon">
                                 <div class="item-content">
-                                    <h5 class="title">Attention to Service</h5>
-                                    <p class="item-text">95% of appointments start on time or early, and we’re
-                                        in-network with most PPO and HMO plans.</p>
+                                    <h5 class="title">Pulmonary</h5>
+                                    <p class="item-text">Syring is one of the leading medical facilities for the
+                                        diagnostic and tearment of lung</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 mt-lg-4 mt-sm-4">
-                            <div class="item">
-                                <img src="assets/images/stopwatch.png" alt="" class="item-icon">
+                        <div class="col-sm-12 col-lg-4 mt-4">
+                            <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="assets/images/home-stomach.png" alt="" class="item-icon">
                                 <div class="item-content">
-                                    <h5 class="title">Attention to Service</h5>
-                                    <p class="item-text">95% of appointments start on time or early, and we’re
-                                        in-network with most PPO and HMO plans.</p>
+                                    <h5 class="title">Urology</h5>
+                                    <p class="item-text">The urology department is run by consultant urology surgeons
+                                        and their surgical teams.</p>
                                 </div>
                             </div>
                         </div>
@@ -491,7 +522,7 @@
                 </div>
             </div>
             <div class="department-bottom text-center">
-                <div class="button">View All Departments</div>
+                <div class="button" data-aos="fade-up" data-aos-duration="2000">View All Departments</div>
             </div>
             </div>
         </section>
@@ -499,10 +530,10 @@
 
 
         <!-- why-choose section starts -->
-        <section class="why-choose">
+        <section class="why-choose no-select">
             <div class="container">
                 <div class="row">
-                    <div class="why-choose-left  col-lg-6">
+                    <div class="why-choose-left col-lg-6" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="heading">Why Choose the
                             <span class="defaultcolor">Syring Medical Center</span></h2>
                         <p class="description">
@@ -532,27 +563,60 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="why-choose-right col-lg-6"
-                        style="background-image: url(assets/images/why-choose-photo.jpg)">
+                    <div class="why-choose-right col-lg-6 text-lg-right" data-aos="fade-up" data-aos-duration="2000">
+                        <div style="background-image: url(assets/images/why-choose-photo.jpg)">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- why-choose section ends -->
 
+        <!-- count-to starts -->
+        <div class="container">
+            <div class="row align-items-center count-to no-select  data-aos="fade-up" data-aos-duration="2000">
+                <div class=" col-12 col-md-4 col-lg-3  text-center count-item">
+                    <i class="fas fa-plus count-plus"></i>
+                    <p class='numscroller' data-min='1' data-max='980' data-delay='30' data-increment='30'></p>
+                    <span class="satisfied-patients">Satisfied Patients</span>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mt-4 mt-md-0  text-center count-item">
+                    <i class="fas fa-plus count-plus"></i>
+                    <p class='numscroller' data-min='1' data-max='300' data-delay='30' data-increment='30'></p>
+                    <span class="pro-doctor">Professional Doctor</span>
+                </div>
+                <div class=" col-12 col-md-4 col-lg-3 mt-4 mt-md-0 text-center count-item">
+                    <div class="d-flex justify-content-center">
+                        <p class='numscroller d-inline-block' data-min='1' data-max='100' data-delay='20'
+                            data-increment='12'></p>
+                        <p>%</p>
+                    </div>
+                    <span class="quality">Quality</span>
+                </div>
+                <div class="d-block  d-md-none d-lg-block col-12 col-lg-3 mt-4 mt-md-0 text-center count-item">
+                    <i class="fas fa-plus count-plus plus-experience"></i>
+                    <p class='numscroller' data-min='1' data-max='17' data-delay='2' data-increment='1'></p>
+                    <span class="year-experience">Year Experience</span>
+                </div>
+            </div>
+        </div>
+        <!-- count-to ends -->
+
+
 
         <!-- doctors section starts -->
-        <section class="doctors">
+        <section class="doctors no-select">
             <div class="container">
-                <div class="doctors-top row d-flex justify-content-between">
+                <div class="doctors-top row d-flex justify-content-between" data-aos="fade-up" data-aos-duration="2000">
                     <h2 class="sub-heading">Our Professional Doctor</h2>
                     <div class="doctors-top-right">
                         <span>View all members</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
-                <div class="doctors-bottom row">
-                    <div class="col-sm-12 col-md-6 col-lg-3  text-center">
+                <div class="doctors-bottom row ">
+                    <div class="col-sm-12 col-md-6 col-lg-3  text-center" data-aos="fade-up" data-aos-duration="2000">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-1.png" alt="">
                             <div class="doctor-info">
@@ -573,7 +637,8 @@
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-sm-5 mt-md-0 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-5 mt-md-0 text-center" data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-2.png" alt="">
                             <div class="doctor-info">
@@ -594,7 +659,8 @@
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-5 mt-sm-5 mt-lg-0 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3  mt-5 mt-lg-0 text-center" data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-3.png" alt="">
                             <div class="doctor-info">
@@ -615,7 +681,8 @@
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-md-5 mt-sm-5 mt-lg-0 text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-5 mt-lg-0 text-center" data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div class="doctor-item">
                             <img src="assets/images/doctor-4.png" alt="">
                             <div class="doctor-info">
@@ -643,14 +710,14 @@
 
 
         <!-- testimonials section starts -->
-        <section class="testimonials">
-            <div class="container text-center">
+        <section class="testimonials no-select">
+            <div class="container text-center" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="sub-heading">testimonials</h2>
                 <h2 class="heading">Feedback from our patients</h2>
             </div>
 
             <div class="comments">
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “For me it was much better than going to another doctor for a second opinion. I appreciate
@@ -668,7 +735,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “From the moment she was wheeled through the doors of the emergency room, my fears were
@@ -685,7 +752,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “I am writing this letter to thank everyone at your wonderful hospital for the exellent care
@@ -702,7 +769,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “For me it was much better than going to another doctor for a second opinion. I appreciate
@@ -720,7 +787,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “From the moment she was wheeled through the doors of the emergency room, my fears were
@@ -737,7 +804,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “I am writing this letter to thank everyone at your wonderful hospital for the exellent care
@@ -754,7 +821,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="comment-item">
+                <div class="comment-item" data-aos="fade-up" data-aos-duration="2000">
                     <div class="comment-content">
                         <span class="description">
                             “For me it was much better than going to another doctor for a second opinion. I appreciate
@@ -777,16 +844,17 @@
         <!-- testimonials section ends -->
 
         <!-- latest-news section starts -->
-        <section class="latest-news">
+        <section class="latest-news no-select">
             <div class="container">
-                <div class="latest-news-top row d-flex justify-content-between align-items-center">
-                    <h2 class="heading">Our Professional Doctor</h2>
+                <div class="latest-news-top row d-flex justify-content-between align-items-center" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <h2 class="heading">Lastest News</h2>
                     <div class="doctors-top-right">
                         <span>View all members</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
-                <div class="latest-news-bottom">
+                <div class="latest-news-bottom" data-aos="fade-up" data-aos-duration="2000">
                     <div class="news-item">
                         <div class="item-photo">
                             <img src="assets/images/news-photo-1.jpg" alt="">
@@ -916,10 +984,11 @@
 
 
     <!-- footer starts -->
-    <footer class="home-footer">
+    <footer class="home-footer no-select">
         <div class="container">
+            <!-- footer-top starts -->
             <div class="footer-top row">
-                <div class="healthcare col-md-4">
+                <div class="healthcare col-12 col-lg-4">
                     <div class="logo">
                         <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
                     </div>
@@ -927,66 +996,65 @@
                         build great technology to
                         help companies succeed in making healthcare better.</p>
                 </div>
-                <div class="about-us col-md-2">
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Quick Links</h5>
                     <ul>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>About Us</span>
+                            <a href="">About Us</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Departments</span>
+                            <a href="medical-department.html">Departments</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Find A Doctor</span>
+                            <a href="find-doctor.html">Find A Doctor</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>FAQ</span>
+                            <a href="faq.html">FAQ</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Timetable</span>
+                            <a href="schedule.html">Timetable</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>News</span>
+                            <a href="">News</a>
                         </li>
                     </ul>
                 </div>
-                <div class="contact col-md-3">
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Contact</h5>
                     <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
                         info@yourdomain.com<br>
                         +(123) 1800-88-66</p>
                     <div class="social-media d-inline-block">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
-                <div class="news-twitter col-md-3">
+                <div class="news-twitter col-12 col-lg-3 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">News Twitter</h5>
                     <div class="news-twitter-slider">
-                        <div class="twitter-slider-element">
+                        <div class="twitter-slider-element no-select">
                             <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
+                                ZK Clever – High School WordPress Theme
+                                Thanks for building clever &amp; for your support. Nice work @Zookadotio team!
                             </div>
                             <div class="twitter-info d-flex">
                                 <div class="twitter-icon">
@@ -1000,9 +1068,8 @@
                         </div>
                         <div class="twitter-slider-element">
                             <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
+                                ZK Clever – High School WordPress Theme
+                                Thanks for building clever &amp; for your support. Nice work @Zookadotio team!
                             </div>
                             <div class="twitter-info d-flex">
                                 <div class="twitter-icon">
@@ -1016,9 +1083,8 @@
                         </div>
                         <div class="twitter-slider-element">
                             <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
+                                ZK Clever – High School WordPress Theme
+                                Thanks for building clever &amp; for your support. Nice work @Zookadotio team!
                             </div>
                             <div class="twitter-info d-flex">
                                 <div class="twitter-icon">
@@ -1032,9 +1098,8 @@
                         </div>
                         <div class="twitter-slider-element">
                             <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
+                                ZK Clever – High School WordPress Theme
+                                Thanks for building clever &amp; for your support. Nice work @Zookadotio team!
                             </div>
                             <div class="twitter-info d-flex">
                                 <div class="twitter-icon">
@@ -1048,9 +1113,8 @@
                         </div>
                         <div class="twitter-slider-element">
                             <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
+                                ZK Clever – High School WordPress Theme
+                                Thanks for building clever &amp; for your support. Nice work @Zookadotio team!
                             </div>
                             <div class="twitter-info d-flex">
                                 <div class="twitter-icon">
@@ -1066,16 +1130,44 @@
                 </div>
             </div>
         </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row justify-content-between">
-                    <span>© 2019 Spyropress. All Rights Reserved</span>
-                    <span>Term & Conditions Privacy Policy</span>
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
                 </div>
             </div>
         </div>
+        <!-- footer-bottom ends -->
     </footer>
     <!-- footer ends -->
+
+    <!-- modal section starts -->
+    <section class="modal">
+        <div class="container">
+            <div class="quit-button d-flex justify-content-end"><i class="fas fa-times quit-x"></i></div>
+            <div class="modal-content">
+                <iframe class="modal-video" width="auto" height="500" src="https://www.youtube.com/embed/h59cKcb_J2M"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <!-- modal section ends -->
+
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- scroll-top button ends -->
+
+
+
 
     <!--scripts start-->
     <!--Animations-->
@@ -1087,6 +1179,8 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!--CountTo-->
+    <script src="js/countTo.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

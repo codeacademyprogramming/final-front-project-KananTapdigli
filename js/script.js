@@ -15,6 +15,7 @@ $(document).ready(function () {
     $('.banner-page-2').removeClass('first-banner third-banner').addClass('second-banner')
     $('.banner-page-3').removeClass('first-banner second-banner').addClass('third-banner')
 
+
   })
   //#endregion showing-banner-page-1
 
@@ -43,7 +44,7 @@ $(document).ready(function () {
 
 
   //#region showing banner-pages with setInterval
-  let customIndex = 0;
+  let customIndex = 1;
   window.setInterval(() => {
 
     if (customIndex > 2) {
@@ -125,6 +126,7 @@ $(document).ready(function () {
     slidesToScroll: 3,
     autoplay: true,
     dots: true,
+    arrows: false,
     autoplaySpeed: 1500,
     responsive: [{
         breakpoint: 1200,
@@ -135,13 +137,15 @@ $(document).ready(function () {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
         breakpoint: 630,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
@@ -218,6 +222,70 @@ $(document).ready(function () {
     ]
   });
   //#endregion Pricing-Slider
+
+
+
+  //#region Open-Video
+  $(document).on('click', '.play-button', () => {
+    $('.modal').addClass('active-m');
+    $('body').css('overflow', 'hidden');
+  })
+  //#endregion Open-Video
+
+
+  //#region Close-Video
+  $(window).on('click', () => {
+    let target = $(event.target);
+    if (target.is('.modal')) {
+      $('.modal').removeClass('active-m');
+      $('body').css('overflow', 'auto');
+    }
+  })
+
+  $(document).on('click', '.quit-x', () => {
+    $('.modal').removeClass('active-m');
+    $('body').css('overflow', 'auto');
+  })
+
+  $('.modal').each(function () {
+    var src = $(this).find('iframe').attr('src');
+
+    $(this).on('click', function () {
+
+      $(this).find('iframe').attr('src', '');
+      $(this).find('iframe').attr('src', src);
+
+    });
+  });
+  //#endregion Close-Video
+
+
+  //#region Showing-Nav-On-Scroll
+  $(window).scroll(function () {
+    var height = $(window).scrollTop();
+
+    if (height > $('header').outerHeight()) {
+      $('.header-bottom').addClass('header-fixed');
+      $('.st-btn').addClass('st-btn-active');
+    } else {
+      $('.header-bottom').removeClass('header-fixed');
+      $('.st-btn').removeClass('st-btn-active');
+    }
+  });
+  //#endregion Showing-Nav-On-Scroll
+
+  //#region Scroll-Top-Page
+  $(document).on('click', '.st-btn', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  })
+   //#endregion Scroll-Top-Page
+
+
+
+
 
 
 

@@ -28,7 +28,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top  d-none d-md-block">
+        <div class="header-top oc-header-top  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -46,19 +46,19 @@
                         </span>
                     </div>
                     <div class="social-media col-md-12 col-lg-3  text-lg-right text-md-center mt-md-2 mt-lg-0">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -69,7 +69,7 @@
 
 
         <!-- header-bottom-starts -->
-        <div class="header-bottom">
+        <div class="header-bottom no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -78,25 +78,25 @@
                         </div>
                     </div>
                     <nav class="col-10 d-flex justify-content-end">
-                        <ul class="navigation  d-none d-xl-inline-flex">
+                        <ul class="navigation  d-none d-xl-flex">
                             <li class="home">
                                 <span class="title">Home</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Home Main</a>
+                                        <a href="index.html">Home</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="pages">
-                                <span class="title">Pages</span>
+                                <span class="title active-nav">Pages</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Our Clinic</a>
-                                        <a>FAQ</a>
-                                        <a>Pricing</a>
-                                        <a>Contact us 2</a>
-                                        <a>Book an Appointment</a>
-                                        <a>Schedule</a>
+                                        <a href="our-clinic.html" class="active-nav">Our Clinic</a>
+                                        <a href="contact-us.html">Contact us</a>
+                                        <a href="faq.html">FAQ</a>
+                                        <a href="book-appointment.html">Book an Appointment</a>
+                                        <a href="pricings.html">Pricings</a>
+                                        <a href="schedule.html">Schedule</a>
                                     </div>
                                 </div>
                             </li>
@@ -104,8 +104,8 @@
                                 <span class="title">Doctors</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Find A Doctor</a>
-                                        <a>Doctor Single</a>
+                                        <a href="find-doctor.html">Find A Doctor</a>
+                                        <a href="doctor-single.html">Doctor Single</a>
                                     </div>
                                 </div>
                             </li>
@@ -113,8 +113,8 @@
                                 <span class="title">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Medical Department</a>
-                                        <a>Dental Clinic</a>
+                                        <a href="medical-department.html">Medical Department</a>
+                                        <a href="dental-clinic.html">Dental Clinic</a>
                                     </div>
                                 </div>
                             </li>
@@ -122,7 +122,7 @@
                                 <span class="title">Blog</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Single Post Standard</a>
+                                        <a href="post-standard.html">Single Post Standard</a>
                                     </div>
                                 </div>
                             </li>
@@ -130,9 +130,9 @@
                                 <span class="title">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Sidebar left</a>
-                                        <a>Card</a>
-                                        <a>Checkout</a>
+                                        <a href="sidebar-left.html">Sidebar left</a>
+                                        <a href="cart.html">Card</a>
+                                        <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
                             </li>
@@ -145,52 +145,68 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket-menu d-inline-flex">
-                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
-                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-flex align-items-center">
+                            <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
+                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
                     <nav class="mobile-nav d-xl-none">
-                        <button class="accordion">Home</button>
-                        <div class="panel">
-                            <a>Home Main</a>
-                        </div>
+                        <ul id="accordion">
+                            <li>
+                                <span>Home</span>
+                                <div class="mn-sub-menu">
+                                    <a href="index.html">Home</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="active-nav">Pages</span>
+                                <div class="mn-sub-menu">
+                                    <a href="our-clinic.html" class="active-nav">Our Clinic</a>
+                                    <a href="contact-us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="book-appointment.html">Book an Appointment</a>
+                                    <a href="pricings.html">Pricings</a>
+                                    <a href="schedule.html">Schedule</a>
+                                </div>
+                            </li>
 
-                        <button class="accordion">Pages</button>
-                        <div class="panel">
-                            <a>Our Clinic</a>
-                            <a>FAQ</a>
-                            <a>Pricing</a>
-                            <a>Contact us 2</a>
-                            <a>Book an Appointment</a>
-                            <a>Schedule</a>
-                        </div>
+                            <li>
+                                <span>Doctors</span>
+                                <div class="mn-sub-menu">
+                                    <a href="find-doctor.html">Find A Doctor</a>
+                                    <a href="doctor-single.html">Doctor Single</a>
+                                </div>
+                            </li>
 
-                        <button class="accordion">Doctors</button>
-                        <div class="panel">
-                            <a>Find A Doctor</a>
-                            <a>Doctor Single</a>
-                        </div>
-                        <button class="accordion">Departments</button>
-                        <div class="panel">
-                            <a>Medical Department</a>
-                            <a>Dental Clinic</a>
-                        </div>
-                        <button class="accordion">Blog</button>
-                        <div class="panel">
-                            <a>Single Post Standard</a>
-                        </div>
-                        <button class="accordion">Shop</button>
-                        <div class="panel">
-                            <a>Sidebar left</a>
-                            <a>Card</a>
-                            <a>Checkout</a>
-                        </div>
-                        <button class="accordion">Elements</button>
-                        <div class="panel">
-                            <a>Coming Soon</a>
-                        </div>
+                            <li>
+                                <span>Departments</span>
+                                <div class="mn-sub-menu">
+                                    <a href="medical-department.html">Medical Department</a>
+                                    <a href="dental-clinic.html">Dental Clinic</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Blog</span>
+                                <div class="mn-sub-menu">
+                                    <a href="post-standard.html">Single Post Standard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Shop</span>
+                                <div class="mn-sub-menu">
+                                    <a href="sidebar-left.html">Sidebar left</a>
+                                    <a href="cart.html">Card</a>
+                                    <a href="checkout.html">Checkout</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Elements</span>
+                                <div class="mn-sub-menu">
+                                    <a>Coming Soon</a>
+                                </div>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </div>
@@ -201,6 +217,7 @@
 
     <!-- main starts -->
     <main>
+
         <!-- main-frame section starts -->
         <section class="main-frame" style="background-image: url(assets/images/main-frame-photo.jpg);">
             <div class="main-frame-title">
@@ -224,11 +241,11 @@
 
 
         <!-- about section starts -->
-        <section class="about">
+        <section class="about about-oc no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <div class="about-content">
+                        <div class="about-content" data-aos="fade-right" data-aos-duration="2000">
                             <span class="sub-heading">About Us</span>
                             <h2 class="heading">Your Health is <br>
                                 Our <span class="defaultcolor">Primary Concern</span></h2>
@@ -247,9 +264,10 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <div class="about-images text-sm-center text-md-left">
-                            <img src="assets/images/about-1.jpg" class="about-image about-image-1 mt-sm-5"></img>
-                            <img src="assets/images/about-2.jpg" class="about-image about-image-2  mt-sm-5"></img>
+                        <div class="about-images text-sm-center text-md-left no-select" data-aos="fade-left"
+                            data-aos-duration="2000">
+                            <img src="assets/images/about-1.jpg" class="about-image about-image-1 mt-5 mt-md-0"></img>
+                            <img src="assets/images/about-2.jpg" class="about-image about-image-2  mt-5 mt-md-0"></img>
                         </div>
                     </div>
                 </div>
@@ -257,75 +275,73 @@
         </section>
         <!-- about section ends -->
 
-        <!-- only-photo section starts -->
-        <section class="only-photo">
-            <div class="container">
-                <div class="photo-self" style="background-image: url(assets/images/our-clinic-2.jpg);">
-                </div>
-            </div>
-        </section>
-        <!-- only-photo section ends -->
+
 
 
         <!-- facilities section starts -->
-        <section class="facilities">
+        <section class="facilities no-select">
             <div class="container">
-                <div class="row">
-
+                <div class="row facilities-top" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-12 photo-self" style="background-image: url(assets/images/our-clinic-2.jpg);"></div>
+                </div>
+                <div class="row facilities-center" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-sm-12 col-md-6">
                         <div class="facilities-photo">
                             <img src="assets/images/our-clinic-3.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
-                        <div class="facilities-content">
+                    <div class="col-sm-12 col-md-6 d-flex align-items-center ">
+                        <div class="facilities-content pt-4 pt-md-0">
                             <span class="sub-heading">Facilities</span>
                             <h2 class="heading mb-5">We constantly invest in <br>
                                 high-end equipment</h2>
 
                             <p class="description">
-                                Over 180 physicians in 40 diffrent specialties work together with the 2,000+ employees
-                                at Syring Medical Center to offer a full spectrum of diagnostic and treatment services
-                                for people of all ages.
+                                Our team strives to achieve excellence in every aspect of the production process, from
+                                the preliminary hand-drawn sketches to the aftersales support. We carefully design our
+                                themes to be easy and flexible while making sure that most FAQ of our customers can be
+                                answered by our detailed documentation.
                             </p>
+                            <br>
                             <p class="description">
-                                Over 180 physicians in 40 diffrent specialties work together with the 2,000+ employees
-                                at Syring Medical Center to offer a full spectrum of diagnostic and treatment services
-                                for people of all ages.
+                                We focus on using the latest web standards and practices regarding UX guidelines and
+                                WordPress theme development and strongly encourage our customers to follow us on this.
+                                The use of a child theme and the plugin-based development of ©Plethora Framework ensure
+                                hassle-free updates and peace of mind.
                             </p>
                         </div>
                     </div>
                 </div>
+                <div class="facilities-bottom" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <img src="assets/images/photos-sec-1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-12 col-md-4 pt-5 pt-md-0">
+                                <img src="assets/images/photos-sec-2.jpg" alt="">
+                            </div>
+                            <div class="col-sm-12 col-md-4 pt-5 pt-md-0">
+                                <img src="assets/images/photos-sec-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
         <!-- facilities section ends -->
 
-        <!-- only-3-photos section starts -->
-        <section class="only-3-photos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <img src="assets/images/photos-sec-1.jpg" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img src="assets/images/photos-sec-2.jpg" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img src="assets/images/photos-sec-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- only-3-photos section ends -->
 
         <!-- clinic section starts -->
-        <section class="clinic">
+        <section class="clinic no-select">
             <div class="container text-center">
-                <h2 class="sub-heading">Our Clinic</h2>
-                <h2 class="heading mb-5">Health & Medical Center</h2>
+                <div data-aos="fade-up" data-aos-duration="2000">
+                    <h2 class="sub-heading">Our Clinic</h2>
+                    <h2 class="heading mb-5">Health & Medical Center</h2>
+                </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
                         <img src="assets/images/clinic1.jpg" alt="">
                         <div class="clinic-info text-left">
                             <h5>Washington Clinic</h5>
@@ -335,34 +351,34 @@
                                 info@bixbang.com</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 pt-5 pt-md-0" data-aos="fade-up" data-aos-duration="2000">
                         <img src="assets/images/clinic2.jpg" alt="">
                         <div class="clinic-info text-left">
-                            <h5>Washington Clinic</h5>
-                            <p>70 Washington Square South<br>
-                                New York, NY 10012, United States<br>
+                            <h5>Brooklyn Clinic</h5>
+                            <p>101 Johnson St<br>
+                                Brooklyn, NY 11201, United States<br>
                                 +92 423 567<br>
                                 info@bixbang.com</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 pt-5 pt-lg-0" data-aos="fade-up" data-aos-duration="2000">
                         <img src="assets/images/clinic3.jpg" alt="">
                         <div class="clinic-info text-left">
-                            <h5>Washington Clinic</h5>
-                            <p>70 Washington Square South<br>
+                            <h5>Los Angeles Clinic</h5>
+                            <p>22 Washington Square N<br>
                                 New York, NY 10012, United States<br>
                                 +92 423 567<br>
                                 info@bixbang.com</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 pt-5 pt-lg-0" data-aos="fade-up" data-aos-duration="2000">
                         <img src="assets/images/clinic4.jpg" alt="">
                         <div class="clinic-info text-left">
-                            <h5>Washington Clinic</h4>
-                                <p>70 Washington Square South<br>
-                                    New York, NY 10012, United States<br>
-                                    +92 423 567<br>
-                                    info@bixbang.com</p>
+                            <h5>Los Angeles Clinic</h5>
+                            <p>753 Washington Square S<br>
+                                New York, NY 10011, United States<br>
+                                +92 423 567<br>
+                                info@bixbang.com</p>
                         </div>
                     </div>
                 </div>
@@ -373,10 +389,11 @@
     <!-- main ends -->
 
     <!-- footer starts -->
-    <footer>
+    <footer class="oc-footer no-select">
         <div class="container">
+            <!-- footer-top starts -->
             <div class="footer-top row">
-                <div class="healthcare col-md-4">
+                <div class="healthcare col-12 col-lg-4">
                     <div class="logo">
                         <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
                     </div>
@@ -384,138 +401,104 @@
                         build great technology to
                         help companies succeed in making healthcare better.</p>
                 </div>
-                <div class="about-us col-md-2">
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Quick Links</h5>
                     <ul>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>About Us</span>
+                            <a href="">About Us</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Departments</span>
+                            <a href="medical-department.html">Departments</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Find A Doctor</span>
+                            <a href="find-doctor.html">Find A Doctor</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>FAQ</span>
+                            <a href="faq.html">FAQ</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Timetable</span>
+                            <a href="schedule.html">Timetable</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>News</span>
+                            <a href="">News</a>
                         </li>
                     </ul>
                 </div>
-                <div class="contact col-md-3">
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Contact</h5>
                     <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
                         info@yourdomain.com<br>
                         +(123) 1800-88-66</p>
                     <div class="social-media d-inline-block">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
-                <div class="news-twitter col-md-3">
-                    <h5 class="footer-top-col-title">News Twitter</h5>
-                    <div class="news-twitter-slider">
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                <div class="instagram col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Instagram</h5>
+                    <div class="container">
+                        <div class="row instagram-contents">
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-1.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-2.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-3.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4 pt-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-4.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
+                            <div class="col-4 pt-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-5.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            </div>
+                            <div class="col-4 pt-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-6.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -523,17 +506,27 @@
                 </div>
             </div>
         </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row justify-content-between">
-                    <span>© 2019 Spyropress. All Rights Reserved</span>
-                    <span>Term & Conditions Privacy Policy</span>
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
                 </div>
             </div>
         </div>
+        <!-- footer-bottom ends -->
     </footer>
     <!-- footer ends -->
 
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- scroll-top button ends -->
 
 
     <!--scripts start-->

@@ -1,0 +1,116 @@
+.products {
+    margin-top: 100px;
+
+    .left-sidebar {
+        padding: 54px 30px 49px;
+        border: 1px solid $color-border;
+
+        h4 {
+            font-size: 18px;
+            font-weight: $font-weight;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $color-border;
+        }
+
+        input {
+            border: 1px solid $color-border;
+            padding: 17px 0px 17px 20px;
+            width: 100%;
+            font-size: $font-size;
+            font-weight: $font-weight-bolder;
+            background: url(../assets/images/search.svg) no-repeat 90% 6px;
+            background-size: 17px;
+            background-position-y: center;
+        }
+
+        .categories {
+            margin-top: 40px;
+
+            li {
+                padding: 12px 0;
+                color: $color-dark-light;
+                font-size: $font-size;
+            }
+        }
+
+        .top-rated-products {
+            margin-top: 40px;
+
+            .single-product {
+                margin-top: 20px;
+            }
+
+            .product-photo {
+                max-width: 70px;
+                margin-right: 25px;
+            }
+
+            .product-title {
+                font-size: 14px;
+                font-weight: $font-weight;
+            }
+
+            .stars {
+                color: #ffb805;
+                font-size: 12px;
+                margin: 5px 0;
+            }
+
+            .product-price {
+                color: $main-color;
+            }
+        }
+
+        .product-tags {
+            margin-top: 40px;
+
+            .tags {
+                line-height: 2;
+                font-size: 14px;
+
+                span {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    .products-side {
+
+        .col-lg-4 {
+            padding: 0 25px;
+
+            .product-image {
+                background-size: cover;
+                background-position: center;
+                height: 337px;
+            }
+
+            .product-inf{
+                text-align: center;
+                margin-top: 20px;
+                
+                h5{
+                    font-weight: $font-weight;
+                    font-size: 18px;
+                    line-height: 1.7;
+                }
+
+                .stars {
+                    color: #ffb805;
+                    margin: 10px 0;
+                }
+    
+
+                p{
+                    color: $color-green;
+                    font-size: 18px;
+                    font-weight: $font-weight;
+                }
+            }
+        }
+
+    }
+
+}

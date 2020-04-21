@@ -1,9 +1,13 @@
 // #region header 
-.header-top.index-top {
-    background-color: $header-top-color;
+.index-header-top {
+    background-color: $color-gray-darker;
 
     span {
-        color: $font-color;
+        color: $color-gray-lighter;
+    }
+
+    i {
+        color: $color-gray-lighter;
     }
 }
 
@@ -142,14 +146,13 @@
 
 
 // #region fancy section
-
 .fancy {
     padding: 120px 0px 90px 0px;
 
-
     .fancy-item {
         border: 1px solid $color-border;
-        transition: .3s all linear;
+        cursor: pointer;
+        transition-property: opacity, transform, box-shadow !important;
 
         &:hover {
             box-shadow: $box-shadow;
@@ -187,11 +190,11 @@
 // #endregion fancy section
 
 // #region about section
-.about-home{
+.about-home {
     background-color: $color-gray-lighter;
 }
-// #endregion about section
 
+// #endregion about section
 
 
 // #region vision section
@@ -203,10 +206,10 @@
         margin-top: 80px;
     }
 
-
 }
 
 // #endregion vision section
+
 
 // #region video section
 .video {
@@ -268,6 +271,19 @@
     .item {
         box-shadow: $box-shadow;
         padding: 33px 33px 27px 19px;
+        transition-property: opacity, transform, background-color !important;
+
+        .item-icon {
+            margin-right: 19px;
+        }
+
+        .item-text {
+            line-height: 1.8;
+        }
+
+        .title {
+            font-weight: $font-weight;
+        }
     }
 
 
@@ -291,45 +307,88 @@
 // #region why-choose section
 .why-choose {
     background-color: $color-gray-lighter;
-    padding:111px 0 100px;
+    position: relative;
 
 
-        .why-choose-left {    
+    .why-choose-left {
+        padding: 111px 15px 100px;
 
-            .description {
-                font-size: 15px;
-                font-weight: 400;
-            }
+        .description {
+            font-size: 15px;
+            font-weight: 400;
+        }
 
-            .checks {
-                margin-top: 40px;
+        .checks {
+            margin-top: 40px;
 
-                .check-element {
-                    padding-bottom: 14px;
+            .check-element {
+                padding-bottom: 14px;
 
-                    .check {
-                        color: $main-color;
-                        font-size: 12px;
-                        margin-right: 10px;
-                        font-weight: $font-weight;
-                    }
+                .check {
+                    color: $main-color;
+                    font-size: 12px;
+                    margin-right: 10px;
+                    font-weight: $font-weight;
                 }
             }
         }
+    }
 
-        .why-choose-right {
+    .why-choose-right {
+
+        div{
+            height: 100%;
             background-repeat: no-repeat;
             background-position-x: center;
         }
-    
+    }
 }
 
 // #endregion why-choose section
 
+// #region count-to
+.count-to{
+    padding: 92px 15px 95px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    position: relative;
+    top: -70px;
+
+    .count-item{
+        position: relative;
+
+        p{
+            font-size: 60px;
+            color: $main-color;
+        }
+    
+        span{
+            font-size: 20px;
+            margin-top: 20px;
+            color: $color-dark-light;
+        }
+
+        .count-plus{
+            position: absolute;
+            right: 75px;
+            top: 10px;
+            color: $main-color;
+        }
+
+        .plus-experience{
+            right: 95px;
+        }
+    }
+
+}
+// #endregion count-to
+
+
+
 
 // #region doctors section
 .doctors {
-    padding: 100px 0 68px;
+    padding: 0 0 68px;
 
     .doctors-top-right {
         display: inline-block;
@@ -359,7 +418,41 @@
         .doctor-item {
             box-shadow: $box-shadow;
             padding: 50px 10px 47px;
+            transition: .5s all linear;
+            position: relative;
+            top:0;
+
+            .social-media {
+
+                a {
+                    padding: 0 9.5px;
+
+                    i {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            &:hover{
+                background-color: $main-color;
+                top: -10px;
+
+                .doctor-name{
+                    color: $color-white
+                }
+
+                .doctor-speciality{
+                    color: $color-white;
+                }
+
+                i{
+                    color: $color-white;
+                }
+
+              
+            }
         }
+
     }
 }
 
@@ -382,6 +475,27 @@
             .comment-content {
                 background: $color-white;
                 padding: 40px 30px;
+                position: relative;
+                top: 0;
+                transition: .5s all linear;
+
+                &:hover{
+                    background-color: $main-color;
+                    top: -10px;
+                    
+                    .author-info{
+                        color: $color-white;
+
+                        .author-position{
+                            color: $color-white !important;
+                        }
+                    }
+
+                    .description{
+                        color: $color-white;
+                    }
+
+                }
 
                 .author-info {
                     padding-top: 30px;
@@ -419,6 +533,10 @@
     .latest-news-bottom {
         padding-top: 46px;
 
+        img{
+            width: 100%;
+        }
+
         .news-item {
             outline: none;
 
@@ -450,65 +568,119 @@
         padding-bottom: 60px;
 
         .healthcare-text {
-            color: $color-footer-text;
+            color: $color-grey-lighter;
         }
 
-        .arrow-right {
-            color: $main-color;
-            font-size: 12px;
-            padding-right: 7px;
-        }
+        .footer-pass{
+            position: relative;
+            left: 0;
+            transition: .3s all linear;
 
-        span {
-            color: $color-footer-text;
-        }
-
-        .contact-text {
-            color: $color-footer-text;
-        }
-
-        .twitter-text {
-            background: $color-twit-news;
-            padding: 14px 19px;
-            color: $color-footer-text;
-            font-size: 14px;
-        }
-
-        .twitter-info {
-            padding-top: 23px;
-
-            .twitter-icon {
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                background-color: $color-twitter;
-                line-height: 32px;
-
-                .twitter {
-                    color: $color-white;
-                    padding-left: 10px;
-                }
+            .arrow-right {
+                color: $main-color;
+                font-size: 12px;
+                padding-right: 7px;
             }
 
-            .twitter-info-right {
-                color: $color-footer-text;
-                padding-left: 20px;
+            &:hover{
+                left: 10px;
 
-                .twitter-url {
-                    font-size: 15px;
-                }
-
-                .twitter-date {
-                    font-size: 10px;
+                a{
+                    color: $main-color;
                 }
             }
         }
+
+
+        a {
+            color: $color-grey-lighter;
+        }
+
+        .contact{
+
+            .contact-text {
+                color: $color-grey-lighter;
+            }
+
+            .social-media {
+                margin-top: 15px;
+                a {
+                    padding: 0 9.5px;
+        
+                    i {
+                        font-size: 13px;
+                        color: $color-grey-lighter;
+                    }
+                }
+            }
+
+        }
+
+        .twitter-slider-element{
+            outline: none;
+            .twitter-text {
+                background: $color-twit-news;
+                padding: 14px 19px;
+                color: $color-grey-lighter;
+                font-size: 14px;
+            }
+    
+            .twitter-info {
+                padding-top: 23px;
+    
+                .twitter-icon {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background-color: $color-twitter;
+                    line-height: 32px;
+    
+                    .twitter {
+                        color: $color-white;
+                        padding-left: 10px;
+                    }
+                }
+    
+                .twitter-info-right {
+                    color: $color-grey-lighter;
+                    padding-left: 20px;
+    
+                    .twitter-url {
+                        font-size: 15px;
+                    }
+    
+                    .twitter-date {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+
     }
 
     .footer-bottom {
         background-color: $color-footer-2;
-        color: $color-footer-text;
+        color: $color-grey-lighter;
     }
 }
 
 // #endregion footer
+
+
+// #region modal section
+.modal {
+    background-color: $overlay-color;
+
+    .quit-button {
+        color: $color-white;
+        position: relative;
+        top: -10px;
+
+        .quit-x {
+            cursor: pointer;
+        }
+    }
+}
+
+// #endregion modal section

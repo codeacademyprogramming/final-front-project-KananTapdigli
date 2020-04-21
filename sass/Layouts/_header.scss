@@ -14,7 +14,7 @@ header {
 .header-top {
     padding: 12px 0;
     line-height: 24px;
-    background-color: $color-white;
+    border-bottom: 1px solid $color-border;
 
 
     .contact {
@@ -23,11 +23,21 @@ header {
             font-size: 12px;
             padding-right: 36px;
             text-transform: uppercase;
-            color: $color-header-top;
 
             i {
                 font-size: 16px;
                 padding-right: 12px;
+            }
+        }
+    }
+
+    .social-media {
+
+        a {
+            padding: 0 9.5px;
+
+            i {
+                font-size: 13px;
             }
         }
     }
@@ -38,8 +48,10 @@ header {
 
 // #region header-bottom
 .header-bottom {
-    position: relative;
-    box-shadow: 0px 0px 4px grey;
+    background-color: $color-white;
+    transition: .5s linear;
+    top: -150px;
+
 
     .logo {
         line-height: $header-bottom-line-height;
@@ -50,63 +62,103 @@ header {
         margin-bottom: 0;
 
         li {
+            position: relative;
+            cursor: pointer;
+
 
             .title {
                 line-height: $header-bottom-line-height;
-                position: relative;
                 padding: 0 19px;
-                transition: .3s all linear;
-                cursor: pointer;
+                transition: .3s color linear;
+
+            }
+
+            &:hover .sub-menu {
+               display: block;
             }
 
             &:hover .title {
                 color: $main-color;
             }
+
         }
 
+        .sub-menu {
+            background-color: $color-white;
+            position: absolute;
+            top: 100px;
+            border-bottom: 4px solid $main-color;
+            display: none;
+            z-index: 99;
+
+
+            .sub-menu-wrapper {
+                padding: 20px 30px;
+            }
+
+            a {
+                display: inline-block;
+                font-size: 14px;
+                padding: 8px;
+                cursor: pointer;
+                transition: .3s all linear;
+                min-width: 200px;
+
+
+                &:hover {
+                    color: $main-color !important;
+                }
+
+                &:focus {
+                    color: $main-color !important;
+                }
+            }
+        }
     }
 
     .mobile-nav {
         display: none;
         position: absolute;
-        top: 100px;
+        top: 76px;
         left: 0;
         right: 0;
         z-index: 999;
 
         #accordion {
             list-style: none;
-            padding: 2px;
         }
 
         #accordion>li {
             display: block;
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         #accordion>li>span {
             display: block;
-            color: #fff;
-            margin: 4px 0;
-            padding: 6px;
-            background: url(images/expand_arrow.png) no-repeat 99.5% 6px #525252;
-            background-size: 20px;
-            font-weight: normal;
+            padding: 12px 30px 12px 15px;
+            background: url(../assets/images/plus.svg) no-repeat 98% 6px $color-white;
+            background-size: 10px;
+            background-position-y: center;
+            font-weight: $font-weight-bolder;
             cursor: pointer;
-            font-size: 16px
+            font-size: $font-size;
         }
 
         #accordion>li>div {
             list-style: none;
-            padding: 6px;
             display: none;
-            overflow: auto
+            overflow: auto;
+            background-color: $color-white;
+            font-weight: $font-weight-bolder;
+            cursor: pointer;
+            font-size: $font-size;
         }
 
         #accordion>ul li {
             font-weight: normal;
             cursor: auto;
-            padding: 0 0 0 7px;
         }
 
         #accordion a {
@@ -114,26 +166,40 @@ header {
         }
 
         #accordion li>span.active {
-            background: url(images/collapse-arrow.png) no-repeat 99.5% 6px #000;
-            background-size: 20px
+            background: url(../assets/images/minus.svg) no-repeat 98% 6px $color-white;
+            background-size: 10px;
+            background-position-y: center;
+        }
+
+        .mn-sub-menu {
+            padding: 0 15px;
+
+            a {
+                padding: 13px 15px;
+                display: block;
+            }
         }
 
 
     }
 
 
-
-
     .search-basket-menu {
-        padding: 40px 0;
+        padding: 35px 0;
         margin-left: 100px;
 
         .search {
-            margin-right: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .basket {
+            cursor: pointer;
         }
 
         .burger-menu {
             margin-left: 20px;
+            cursor: pointer;
         }
     }
 }

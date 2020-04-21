@@ -47,7 +47,6 @@
             margin-bottom: 20px;
 
             .help-link {
-                color: $main-frame-color;
                 transition: .3s all linear;
 
                 &:hover {
@@ -95,7 +94,6 @@
         overflow: auto;
         padding: 23px 30px;
         font-size: 14px;
-        color: $color-header-top;
         border-left: 1px solid $color-border;
         border-right: 1px solid $color-border;
         border-bottom: 1px solid $color-border;
