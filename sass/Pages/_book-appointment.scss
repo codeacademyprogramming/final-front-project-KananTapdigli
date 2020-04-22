@@ -1,6 +1,6 @@
 // #region book-appointment 
 .visit-time {
-    padding: 120px 0 30px;
+    padding: 120px 0;
 
     img {
         box-shadow: $box-shadow;
@@ -16,9 +16,12 @@
 
 
 // #region appointment-calendar
-
 .appointment-calendar {
     position: relative;
+
+    .container {
+        position: relative;
+    }
 
     .card {
         border: none;
@@ -72,12 +75,9 @@
 
     }
 
-    .bg-info {
-        background-color: $color-today !important;
-    }
-
     .appointment-date {
         background-color: $color-gray-lighter;
+        margin-bottom: 100px;
 
         .appointment-date-wrapper {
             padding: 45px 50px 75px;
@@ -87,21 +87,33 @@
                 padding-bottom: 30px;
                 font-weight: $font-weight;
                 border-bottom: 1px solid $color-border;
+                line-height: 1.6;
             }
 
             .appointment-hour {
                 padding: 10px;
                 border-bottom: 1px solid $color-border;
 
-                .button{
+                .button {
                     padding: 16px 36px;
+                }
+
+                .clock-icon{
+                    color: $main-color;
+                    margin-right: 10px;
                 }
             }
 
         }
     }
 
-}
+    .appointment-form {
+        width: 100%;
+        max-width: 700px;
+        background: white;
+        padding: 41px 50px;
+    }
 
+}
 
 // #endregion appointment-calendar

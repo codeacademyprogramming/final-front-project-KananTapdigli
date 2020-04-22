@@ -1,7 +1,7 @@
 // questions section starts
 .questions {
     background-color: $color-gray-lighter;
-    padding: 100px;
+    padding: 100px 0;
 
     .tab {
         padding: 23px 34px 23px;
@@ -9,6 +9,7 @@
         margin-bottom: 20px;
         border: 1px solid $color-border;
         transition: .5s all linear;
+        cursor: pointer;
 
         &:hover {
             border-color: $main-color;
@@ -48,6 +49,7 @@
 
             .help-link {
                 transition: .3s all linear;
+                color: $color-dark-gray;
 
                 &:hover {
                     color: $main-color;
@@ -70,7 +72,7 @@
         display: block;
         margin-top: 20px;
         padding: 15px 20px;
-        background: url(../assets/images/expand-arrow.svg) no-repeat 98% 6px $color-white;
+        background: url(../assets/images/down-arrow.svg) no-repeat 96% 6px $color-white;
         background-position-y: center;
         background-size: 10px;
         border: 1px solid $color-border;
@@ -111,7 +113,7 @@
 
 
     #accordion li>span.active {
-        background: url(../assets/images/down-arrow.svg) no-repeat 98% 6px $main-color;
+        background: url(../assets/images/expand-arrow.svg) no-repeat 96% 6px $main-color;
         background-position-y: center;
         background-size: 10px;
         color: white;
@@ -127,6 +129,7 @@
 
     .appoinment-text{
         font-size: 36px;
+        font-weight: $font-weight;
         color: $color-white;
     }
 
@@ -135,6 +138,13 @@
         padding: 16.5px 35px;
         background-color: white;
         border-radius: $border-radius;
+        cursor: pointer;
+        transition: .5s all linear;
+
+        &:hover{
+            background-color: $color-black;
+            color: $color-white;
+        }
     }
 }
 

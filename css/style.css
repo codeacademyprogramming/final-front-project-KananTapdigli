@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  overflow-x: hidden;
 }
 
 a {
@@ -86,6 +85,26 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.active-app-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  position: absolute !important;
+}
+
+.bg-info {
+  background-color: #FCF8E3 !important;
+}
+
+.active-date {
+  color: #FFF !important;
+  background-color: #007DF2 !important;
 }
 
 .first-banner {
@@ -197,6 +216,14 @@ h3 {
   .search-doctor-content-wrapper {
     padding: 31px 0px 50px !important;
   }
+  .instagram-contents .col-4 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .appointment-form {
+    max-height: 570px !important;
+    overflow-y: scroll !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -231,6 +258,14 @@ h3 {
   }
   .modal-video {
     height: 400px !important;
+  }
+  .instagram-contents .col-4 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .appointment-form {
+    max-height: 450px !important;
+    overflow-y: scroll !important;
   }
 }
 
@@ -288,8 +323,22 @@ h3 {
   .search-basket-menu {
     padding: 20px 0 !important;
   }
-  footer {
-    padding: 60px 0 !important;
+  .footer-1, .footer-2 {
+    padding-top: 60px;
+  }
+  .main-frame .main-frame-title {
+    padding-top: 100px !important;
+  }
+  .instagram-contents .col-4 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .appointment-form {
+    padding: 41px 25px !important;
+  }
+  .appointment-form {
+    max-height: 350px !important;
+    overflow-y: scroll !important;
   }
 }
 
@@ -398,7 +447,7 @@ header .container {
 .header-bottom .mobile-nav {
   display: none;
   position: absolute;
-  top: 76px;
+  top: 75px;
   left: 0;
   right: 0;
   z-index: 999;
@@ -511,6 +560,192 @@ footer .footer-bottom {
 
 footer .footer-bottom .policy {
   margin-left: 15px;
+}
+
+.footer-1 {
+  background-color: #3e3e3e;
+}
+
+.footer-1 .footer-top {
+  padding-bottom: 60px;
+}
+
+.footer-1 .footer-top .healthcare-text {
+  color: #D4D3D3;
+}
+
+.footer-1 .footer-top .footer-pass {
+  position: relative;
+  left: 0;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.footer-1 .footer-top .footer-pass .arrow-right {
+  color: #007DF2;
+  font-size: 12px;
+  padding-right: 7px;
+}
+
+.footer-1 .footer-top .footer-pass:hover {
+  left: 10px;
+}
+
+.footer-1 .footer-top .footer-pass:hover a {
+  color: #007DF2;
+}
+
+.footer-1 .footer-top a {
+  color: #D4D3D3;
+}
+
+.footer-1 .footer-top .contact .contact-text {
+  color: #D4D3D3;
+}
+
+.footer-1 .footer-top .contact .social-media {
+  margin-top: 15px;
+}
+
+.footer-1 .footer-top .contact .social-media a {
+  padding: 0 9.5px;
+}
+
+.footer-1 .footer-top .contact .social-media a i {
+  font-size: 13px;
+  color: #D4D3D3;
+}
+
+.footer-1 .footer-top .twitter-slider-element {
+  outline: none;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-text {
+  background: #737373;
+  padding: 14px 19px;
+  color: #D4D3D3;
+  font-size: 14px;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-info {
+  padding-top: 23px;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-info .twitter-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1da1f2;
+  line-height: 32px;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-info .twitter-icon .twitter {
+  color: #FFF;
+  padding-left: 10px;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-info .twitter-info-right {
+  color: #D4D3D3;
+  padding-left: 20px;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-info .twitter-info-right .twitter-url {
+  font-size: 15px;
+}
+
+.footer-1 .footer-top .twitter-slider-element .twitter-info .twitter-info-right .twitter-date {
+  font-size: 10px;
+}
+
+.footer-1 .footer-bottom {
+  background-color: #222222;
+  color: #D4D3D3;
+}
+
+.footer-2 {
+  background-color: #111111;
+}
+
+.footer-2 .footer-top {
+  padding-bottom: 60px;
+}
+
+.footer-2 .footer-top .healthcare-text {
+  color: #999999;
+}
+
+.footer-2 .footer-top .footer-pass {
+  position: relative;
+  left: 0;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.footer-2 .footer-top .footer-pass .arrow-right {
+  color: #007DF2;
+  font-size: 12px;
+  padding-right: 7px;
+}
+
+.footer-2 .footer-top .footer-pass:hover {
+  left: 10px;
+}
+
+.footer-2 .footer-top .footer-pass:hover a {
+  color: #007DF2;
+}
+
+.footer-2 .footer-top a {
+  color: #999999;
+}
+
+.footer-2 .footer-top .contact .contact-text {
+  color: #999999;
+}
+
+.footer-2 .footer-top .contact .social-media {
+  margin-top: 15px;
+}
+
+.footer-2 .footer-top .contact .social-media a {
+  padding: 0 9.5px;
+}
+
+.footer-2 .footer-top .contact .social-media a i {
+  font-size: 14px;
+  color: #FFF;
+}
+
+.footer-2 .footer-top .instagram .col-4 {
+  padding: 0 5px;
+}
+
+.footer-2 .footer-top .instagram img {
+  max-width: 100%;
+}
+
+.footer-2 .footer-top .instagram .instagram-content {
+  position: relative;
+}
+
+.footer-2 .footer-top .instagram .instagram-content .overlay {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.footer-2 .footer-top .instagram .instagram-content .overlay .insta-icon {
+  color: #FFF;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.footer-2 .footer-top .instagram .instagram-content:hover .overlay {
+  opacity: 1;
+}
+
+.footer-2 .footer-bottom {
+  color: #999999;
 }
 
 .index-header-top {
@@ -1024,106 +1259,6 @@ footer .footer-bottom .policy {
   font-weight: 600;
 }
 
-.home-footer {
-  background-color: #3e3e3e;
-}
-
-.home-footer .footer-top {
-  padding-bottom: 60px;
-}
-
-.home-footer .footer-top .healthcare-text {
-  color: #D4D3D3;
-}
-
-.home-footer .footer-top .footer-pass {
-  position: relative;
-  left: 0;
-  -webkit-transition: .3s all linear;
-  transition: .3s all linear;
-}
-
-.home-footer .footer-top .footer-pass .arrow-right {
-  color: #007DF2;
-  font-size: 12px;
-  padding-right: 7px;
-}
-
-.home-footer .footer-top .footer-pass:hover {
-  left: 10px;
-}
-
-.home-footer .footer-top .footer-pass:hover a {
-  color: #007DF2;
-}
-
-.home-footer .footer-top a {
-  color: #D4D3D3;
-}
-
-.home-footer .footer-top .contact .contact-text {
-  color: #D4D3D3;
-}
-
-.home-footer .footer-top .contact .social-media {
-  margin-top: 15px;
-}
-
-.home-footer .footer-top .contact .social-media a {
-  padding: 0 9.5px;
-}
-
-.home-footer .footer-top .contact .social-media a i {
-  font-size: 13px;
-  color: #D4D3D3;
-}
-
-.home-footer .footer-top .twitter-slider-element {
-  outline: none;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-text {
-  background: #737373;
-  padding: 14px 19px;
-  color: #D4D3D3;
-  font-size: 14px;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-info {
-  padding-top: 23px;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-info .twitter-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #1da1f2;
-  line-height: 32px;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-info .twitter-icon .twitter {
-  color: #FFF;
-  padding-left: 10px;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-info .twitter-info-right {
-  color: #D4D3D3;
-  padding-left: 20px;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-info .twitter-info-right .twitter-url {
-  font-size: 15px;
-}
-
-.home-footer .footer-top .twitter-slider-element .twitter-info .twitter-info-right .twitter-date {
-  font-size: 10px;
-}
-
-.home-footer .footer-bottom {
-  background-color: #222222;
-  color: #D4D3D3;
-}
-
 .modal {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -1205,95 +1340,9 @@ footer .footer-bottom .policy {
   line-height: 0;
 }
 
-.oc-footer {
-  background-color: #111111;
-}
-
-.oc-footer .footer-top {
-  padding-bottom: 60px;
-}
-
-.oc-footer .footer-top .healthcare-text {
-  color: #999999;
-}
-
-.oc-footer .footer-top .footer-pass {
-  position: relative;
-  left: 0;
-  -webkit-transition: .3s all linear;
-  transition: .3s all linear;
-}
-
-.oc-footer .footer-top .footer-pass .arrow-right {
-  color: #007DF2;
-  font-size: 12px;
-  padding-right: 7px;
-}
-
-.oc-footer .footer-top .footer-pass:hover {
-  left: 10px;
-}
-
-.oc-footer .footer-top .footer-pass:hover a {
-  color: #007DF2;
-}
-
-.oc-footer .footer-top a {
-  color: #999999;
-}
-
-.oc-footer .footer-top .contact .contact-text {
-  color: #999999;
-}
-
-.oc-footer .footer-top .contact .social-media {
-  margin-top: 15px;
-}
-
-.oc-footer .footer-top .contact .social-media a {
-  padding: 0 9.5px;
-}
-
-.oc-footer .footer-top .contact .social-media a i {
-  font-size: 13px;
-  color: #999999;
-}
-
-.oc-footer .footer-top .instagram .col-4 {
-  padding: 0 5px;
-}
-
-.oc-footer .footer-top .instagram img {
-  max-width: 100%;
-}
-
-.oc-footer .footer-top .instagram .instagram-content {
-  position: relative;
-}
-
-.oc-footer .footer-top .instagram .instagram-content .overlay {
-  opacity: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-}
-
-.oc-footer .footer-top .instagram .instagram-content .overlay .insta-icon {
-  color: #FFF;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.oc-footer .footer-top .instagram .instagram-content:hover .overlay {
-  opacity: 1;
-}
-
-.oc-footer .footer-bottom {
-  color: #999999;
-}
-
 .questions {
   background-color: #f5f5f5;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .questions .tab {
@@ -1303,6 +1352,7 @@ footer .footer-bottom .policy {
   border: 1px solid #e1e1e1;
   -webkit-transition: .5s all linear;
   transition: .5s all linear;
+  cursor: pointer;
 }
 
 .questions .tab:hover {
@@ -1344,6 +1394,7 @@ footer .footer-bottom .policy {
 .questions .questions-content .help-center .help-link {
   -webkit-transition: .3s all linear;
   transition: .3s all linear;
+  color: #303030;
 }
 
 .questions .questions-content .help-center .help-link:hover {
@@ -1364,7 +1415,7 @@ footer .footer-bottom .policy {
   display: block;
   margin-top: 20px;
   padding: 15px 20px;
-  background: url(../assets/images/expand-arrow.svg) no-repeat 98% 6px #FFF;
+  background: url(../assets/images/down-arrow.svg) no-repeat 96% 6px #FFF;
   background-position-y: center;
   background-size: 10px;
   border: 1px solid #e1e1e1;
@@ -1403,7 +1454,7 @@ footer .footer-bottom .policy {
 }
 
 .questions #accordion li > span.active {
-  background: url(../assets/images/down-arrow.svg) no-repeat 98% 6px #007DF2;
+  background: url(../assets/images/expand-arrow.svg) no-repeat 96% 6px #007DF2;
   background-position-y: center;
   background-size: 10px;
   color: white;
@@ -1416,6 +1467,7 @@ footer .footer-bottom .policy {
 
 .book-appoinment .appoinment-text {
   font-size: 36px;
+  font-weight: 600;
   color: #FFF;
 }
 
@@ -1424,11 +1476,23 @@ footer .footer-bottom .policy {
   padding: 16.5px 35px;
   background-color: white;
   border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: .5s all linear;
+  transition: .5s all linear;
+}
+
+.book-appoinment .appoinment-button:hover {
+  background-color: #000000;
+  color: #FFF;
 }
 
 .pricings {
   padding: 100px 0;
   background-color: #f5f5f5;
+}
+
+.pricings .pricing-top {
+  padding-bottom: 60px;
 }
 
 .pricings .pricing-slider-element {
@@ -1575,98 +1639,12 @@ footer .footer-bottom .policy {
   line-height: 1.8;
 }
 
-.form .form-content .form-item:last-child {
-  border-bottom: none;
-}
-
-.cu-footer {
-  background-color: #111111;
-}
-
-.cu-footer .footer-top {
-  padding-bottom: 60px;
-}
-
-.cu-footer .footer-top .healthcare-text {
-  color: #999999;
-}
-
-.cu-footer .footer-top .footer-pass {
-  position: relative;
-  left: 0;
-  -webkit-transition: .3s all linear;
-  transition: .3s all linear;
-}
-
-.cu-footer .footer-top .footer-pass .arrow-right {
-  color: #007DF2;
-  font-size: 12px;
-  padding-right: 7px;
-}
-
-.cu-footer .footer-top .footer-pass:hover {
-  left: 10px;
-}
-
-.cu-footer .footer-top .footer-pass:hover a {
-  color: #007DF2;
-}
-
-.cu-footer .footer-top a {
-  color: #999999;
-}
-
-.cu-footer .footer-top .contact .contact-text {
-  color: #999999;
-}
-
-.cu-footer .footer-top .contact .social-media {
-  margin-top: 15px;
-}
-
-.cu-footer .footer-top .contact .social-media a {
-  padding: 0 9.5px;
-}
-
-.cu-footer .footer-top .contact .social-media a i {
-  font-size: 13px;
-  color: #999999;
-}
-
-.cu-footer .footer-top .instagram .col-4 {
-  padding: 0 5px;
-}
-
-.cu-footer .footer-top .instagram img {
-  max-width: 100%;
-}
-
-.cu-footer .footer-top .instagram .instagram-content {
-  position: relative;
-}
-
-.cu-footer .footer-top .instagram .instagram-content .overlay {
-  opacity: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-}
-
-.cu-footer .footer-top .instagram .instagram-content .overlay .insta-icon {
-  color: #FFF;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.cu-footer .footer-top .instagram .instagram-content:hover .overlay {
-  opacity: 1;
-}
-
-.cu-footer .footer-bottom {
-  color: #999999;
+.form .form-content .last-form-item {
+  border: none;
 }
 
 .visit-time {
-  padding: 120px 0 30px;
+  padding: 120px 0;
 }
 
 .visit-time img {
@@ -1680,6 +1658,10 @@ footer .footer-bottom .policy {
 }
 
 .appointment-calendar {
+  position: relative;
+}
+
+.appointment-calendar .container {
   position: relative;
 }
 
@@ -1733,12 +1715,9 @@ footer .footer-bottom .policy {
   font-weight: 400;
 }
 
-.appointment-calendar .bg-info {
-  background-color: #FCF8E3 !important;
-}
-
 .appointment-calendar .appointment-date {
   background-color: #f5f5f5;
+  margin-bottom: 100px;
 }
 
 .appointment-calendar .appointment-date .appointment-date-wrapper {
@@ -1750,6 +1729,7 @@ footer .footer-bottom .policy {
   padding-bottom: 30px;
   font-weight: 600;
   border-bottom: 1px solid #e1e1e1;
+  line-height: 1.6;
 }
 
 .appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour {
@@ -1759,6 +1739,18 @@ footer .footer-bottom .policy {
 
 .appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour .button {
   padding: 16px 36px;
+}
+
+.appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour .clock-icon {
+  color: #007DF2;
+  margin-right: 10px;
+}
+
+.appointment-calendar .appointment-form {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 41px 50px;
 }
 
 .doctor-timetable {
@@ -2836,6 +2828,10 @@ footer .footer-bottom .policy {
   border-radius: 5px;
   -webkit-transition: .3s background-color linear;
   transition: .3s background-color linear;
+  -webkit-transition-property: opacity,background-color,-webkit-transform !important;
+  transition-property: opacity,background-color,-webkit-transform !important;
+  transition-property: opacity,transform,background-color !important;
+  transition-property: opacity,transform,background-color,-webkit-transform !important;
   cursor: pointer;
 }
 
@@ -2863,6 +2859,7 @@ footer .footer-bottom .policy {
   font-weight: 500;
   font-size: 15px;
   color: #777777;
+  line-height: 1.7;
 }
 
 .item {
@@ -2973,6 +2970,10 @@ footer .footer-bottom .policy {
   padding: 16.5px 35px;
   background-color: white;
   border-radius: 5px;
+  -webkit-transition-property: opacity,background-color,-webkit-transform !important;
+  transition-property: opacity,background-color,-webkit-transform !important;
+  transition-property: opacity,transform,background-color !important;
+  transition-property: opacity,transform,background-color,-webkit-transform !important;
 }
 
 .main-frame-2 {
@@ -3035,6 +3036,20 @@ footer .footer-bottom .policy {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 20px;
+  outline: none;
+  -webkit-transition: .5s all linear;
+  transition: .5s all linear;
+  border: 1px solid white;
+}
+
+.form-self .form-input:hover {
+  background-color: white;
+  border: 1px solid #007DF2;
+}
+
+.form-self .form-input:focus {
+  background-color: white;
+  border: 1px solid #007DF2;
 }
 
 .form-self .button {

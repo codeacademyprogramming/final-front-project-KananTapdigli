@@ -4,6 +4,7 @@ let currentYear = today.getFullYear();
 let selectYear = document.getElementById("year");
 let selectMonth = document.getElementById("month");
 
+
 let months = ["January", "February", "Mart", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 let monthAndYear = document.getElementById("monthAndYear");
@@ -22,11 +23,8 @@ function previous() {
     showCalendar(currentMonth, currentYear);
 }
 
-function jump() {
-    currentYear = parseInt(selectYear.value);
-    currentMonth = parseInt(selectMonth.value);
-    showCalendar(currentMonth, currentYear);
-}
+
+
 
 function showCalendar(month, year) {
 

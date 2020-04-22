@@ -197,23 +197,16 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -281,14 +274,46 @@ $(document).ready(function () {
       behavior: 'smooth'
     });
   })
-   //#endregion Scroll-Top-Page
+  //#endregion Scroll-Top-Page
+
+  //#region Showing Date Appointment
+  $(document).on('click', '#calendar-body td', function (element) {
+    month_year = $(element.target).parent().parent().parent().siblings().eq(0).text();
+    for (let i = 1; i < 32; i++) {
+      num_text = i.toString();
+      if ($(element.target).text().indexOf(`${num_text}`) !== -1) {
+        $('.choosing-date').text(`${num_text} ${month_year} `)
+        $('#calendar-body td').removeClass('active-date');
+        $(element.target).addClass('active-date');
+      }
+    }
+  })
+  //#endregion Showing Date Appointment
 
 
+  // #region Opening-Closing Appointment Form
+  $(document).on('click', '.appointment-hour .button', () => {
+    $('.modal').addClass('active-app-form');
+  })
+  $(window).on('click', () => {
+    let target = $(event.target);
+    console.log($(event.target))
+    if (target.is('.modal') || target.is('.modal-container')) {
+      $('.modal').removeClass('active-app-form');
+    }
+  })
+  // #endregion Opening-Closing Appointment Form
 
 
-
-
-
+  // #region AOS animation
+  AOS.init({
+    offset: 100,
+    duration: 2000,
+    easing: "ease-out-quad",
+    once: !0
+  });
+  window.addEventListener('load', AOS.refresh);
+  // #endregion AOS animation
 
 
 });
