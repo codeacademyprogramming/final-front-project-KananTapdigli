@@ -25,10 +25,10 @@
 
 <body>
 
-    <!-- header start -->
-    <header>
+     <!-- header start -->
+     <header>
         <!-- header-top-start -->
-        <div class="header-top d-none d-md-block">
+        <div class="header-top cu-header-top  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -46,19 +46,19 @@
                         </span>
                     </div>
                     <div class="social-media col-md-12 col-lg-3  text-lg-right text-md-center mt-md-2 mt-lg-0">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -69,7 +69,7 @@
 
 
         <!-- header-bottom-starts -->
-        <div class="header-bottom">
+        <div class="header-bottom no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -78,25 +78,25 @@
                         </div>
                     </div>
                     <nav class="col-10 d-flex justify-content-end">
-                        <ul class="navigation  d-none d-xl-inline-flex">
+                        <ul class="navigation  d-none d-xl-flex">
                             <li class="home">
                                 <span class="title">Home</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Home Main</a>
+                                        <a href="index.html">Home</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="pages">
-                                <span class="title">Pages</span>
+                                <span class="title active-nav">Pages</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Our Clinic</a>
-                                        <a>FAQ</a>
-                                        <a>Pricing</a>
-                                        <a>Contact us 2</a>
-                                        <a>Book an Appointment</a>
-                                        <a>Schedule</a>
+                                        <a href="our-clinic.html">Our Clinic</a>
+                                        <a href="contact-us.html">Contact us</a>
+                                        <a href="faq.html">FAQ</a>
+                                        <a href="book-appointment.html">Book an Appointment</a>
+                                        <a href="pricings.html">Pricings</a>
+                                        <a href="schedule.html" class="active-nav" >Schedule</a>
                                     </div>
                                 </div>
                             </li>
@@ -104,8 +104,8 @@
                                 <span class="title">Doctors</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Find A Doctor</a>
-                                        <a>Doctor Single</a>
+                                        <a href="find-doctor.html">Find A Doctor</a>
+                                        <a href="doctor-single.html">Doctor Single</a>
                                     </div>
                                 </div>
                             </li>
@@ -113,8 +113,8 @@
                                 <span class="title">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Medical Department</a>
-                                        <a>Dental Clinic</a>
+                                        <a href="medical-department.html">Medical Department</a>
+                                        <a href="dental-clinic.html">Dental Clinic</a>
                                     </div>
                                 </div>
                             </li>
@@ -122,7 +122,7 @@
                                 <span class="title">Blog</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Single Post Standard</a>
+                                        <a href="post-standard.html">Single Post Standard</a>
                                     </div>
                                 </div>
                             </li>
@@ -130,9 +130,9 @@
                                 <span class="title">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Sidebar left</a>
-                                        <a>Card</a>
-                                        <a>Checkout</a>
+                                        <a href="sidebar-left.html">Sidebar left</a>
+                                        <a href="cart.html">Card</a>
+                                        <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
                             </li>
@@ -145,41 +145,67 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket-menu d-inline-flex">
-                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
-                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-flex align-items-center">
+                            <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
+                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
-                            <li><span>Tab 1</span>
-                                <div>
-                                    tab1
-
+                            <li>
+                                <span>Home</span>
+                                <div class="mn-sub-menu">
+                                    <a href="index.html">Home</a>
                                 </div>
                             </li>
-                            <li><span>Tab 2</span>
-                                <div>
-                                    Tab 3
+                            <li>
+                                <span class="active-nav">Pages</span>
+                                <div class="mn-sub-menu">
+                                    <a href="our-clinic.html">Our Clinic</a>
+                                    <a href="contact-us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="book-appointment.html">Book an Appointment</a>
+                                    <a href="pricings.html">Pricings</a>
+                                    <a href="schedule.html" class="active-nav">Schedule</a>
                                 </div>
-
                             </li>
 
-                            <li><span>tab 3</span>
-                                <div>
-                                    tab 3
+                            <li>
+                                <span>Doctors</span>
+                                <div class="mn-sub-menu">
+                                    <a href="find-doctor.html">Find A Doctor</a>
+                                    <a href="doctor-single.html">Doctor Single</a>
                                 </div>
                             </li>
 
-                            <li><span>tab 4</span>
-                                <div>
-                                    Tab 4
+                            <li>
+                                <span>Departments</span>
+                                <div class="mn-sub-menu">
+                                    <a href="medical-department.html">Medical Department</a>
+                                    <a href="dental-clinic.html">Dental Clinic</a>
                                 </div>
-
-
                             </li>
-
+                            <li>
+                                <span>Blog</span>
+                                <div class="mn-sub-menu">
+                                    <a href="post-standard.html">Single Post Standard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Shop</span>
+                                <div class="mn-sub-menu">
+                                    <a href="sidebar-left.html">Sidebar left</a>
+                                    <a href="cart.html">Card</a>
+                                    <a href="checkout.html">Checkout</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Elements</span>
+                                <div class="mn-sub-menu">
+                                    <a>Coming Soon</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -193,18 +219,18 @@
     <!-- main starts -->
     <main>
         <!-- main-frame section starts -->
-        <section class="main-frame" style="background-image: url(assets/images/our-clinic-2.jpg);">
+        <section class="main-frame no-select" style="background-image: url(assets/images/our-clinic-2.jpg);">
             <div class="main-frame-title">
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-md-12">
                             <div class="main-frame-title-text">
-                                Pricings
+                                Schedule
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="main-frame-breadcrumb">
-                                Home / Pricings
+                                Home / Schedule
                             </div>
                         </div>
                     </div>
@@ -214,7 +240,7 @@
         <!-- main-frame section ends -->
 
         <!-- doctor-timetable section starts -->
-        <section class="doctor-timetable">
+        <section class="doctor-timetable no-select" data-aos="fade-up" data-aos-duration="1500">
             <div class="container">
                 <div class="timetable-top">
                     <p class="timetable-title">Doctors' Timetable</p>
@@ -228,7 +254,7 @@
                                 other duties.
                             </p>
                         </div>
-                        <div class="col-lg-5 text-lg-right">
+                        <div class="col-lg-5 pt-5 pt-lg-0 text-lg-right">
                             <select name="" id="" class="timetable-select">
                                 <option value="all-department">All Department</option>
                                 <option value="pulmonologist">Pulmonologist</option>
@@ -263,26 +289,26 @@
                         <tbody>
                             <tr>
                                 <th>8:00 - 9:00</th>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Will Smith</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
-                                <td>
+                                <td  class="peditrician">
                                     <p class="doctor-name">Alan</p>
                                     <p class="speciality">Peditrician</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td  class="neurologist">
                                     <p class="doctor-name">John Harry</p>
                                     <p class="speciality">Neurologist</p>
                                 </td>
-                                <td>
+                                <td class="geriatrician">
                                     <p class="doctor-name">Nellie Rose</p>
                                     <p class="speciality">Geriatrician</p>
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Will Smith</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
@@ -295,11 +321,11 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="cardologist">
                                     <p class="doctor-name">Alexandro</p>
                                     <p class="speciality">Cardologist</p>
                                 </td>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Minie White</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
@@ -309,11 +335,11 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="prthopaedics">
                                     <p class="doctor-name">Michelle</p>
                                     <p class="speciality">Prthopaedics</p>
                                 </td>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Barbara N.</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
@@ -324,23 +350,23 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="neurologist">
                                     <p class="doctor-name">Sarah Paker</p>
                                     <p class="speciality">Neurologist</p>
                                 </td>
-                                <td>
+                                <td class="cardiologist">
                                     <p class="doctor-name">Jon Warner</p>
                                     <p class="speciality">Cardiologist</p>
                                 </td>
-                                <td>
+                                <td class="cardiologist">
                                     <p class="doctor-name">Alexandro</p>
                                     <p class="speciality">Cardiologist</p>
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Jesus Lover</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
-                                <td>
+                                <td class="geriatrician">
                                     <p class="doctor-name">Steven Elliott</p>
                                     <p class="speciality">Geriatrician</p>
                                 </td>
@@ -351,30 +377,30 @@
 
                             <tr>
                                 <th>11:00 - 12:00</th>
-                                <td>
+                                <td class="pediatrician">
                                     <p class="doctor-name">Robert Low</p>
                                     <p class="speciality">Pediatrician</p>
                                 </td>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Jeremy Mosley</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
-                                <td>
+                                <td class="prtjopaedisc">
                                     <p class="doctor-name">Jordan Kelley</p>
                                     <p class="speciality">Prtjopaedisc</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Jesus Lover</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Will Smith</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
-                                <td>
+                                <td class="cardiologist">
                                     <p class="doctor-name">Jerry Edwards</p>
                                     <p class="speciality">Cardiologist</p>
                                 </td>
@@ -382,18 +408,18 @@
 
                             <tr>
                                 <th>12:00 - 13:00</th>
-                                <td>
+                                <td class="gynecological ">
                                     <p class="doctor-name">Nicole Dixon</p>
                                     <p class="speciality">Gynecological</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Angela Adams</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Will Smith</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
@@ -403,7 +429,7 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Minie White</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
@@ -411,29 +437,29 @@
 
                             <tr>
                                 <th>13:00 - 14:00</th>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Minie White</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="cardiologist">
                                     <p class="doctor-name">Jon Warner</p>
                                     <p class="speciality">Cardiologist</p>
                                 </td>
-                                <td>
+                                <td class="prthopaedics">
                                     <p class="doctor-name">Michelle</p>
                                     <p class="speciality">Prthopaedics</p>
                                 </td>
-                                <td>
+                                <td class="pediatrician">
                                     <p class="doctor-name">Robert Low</p>
                                     <p class="speciality">Pediatrician</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="cardiologist">
                                     <p class="doctor-name">Jon Warner</p>
                                     <p class="speciality">Cardiologist</p>
                                 </td>
@@ -442,29 +468,29 @@
                             <tr>
                                 <th>14:00 - 15:00</th>
 
-                                <td>
+                                <td class="cardiologist">
                                     <p class="doctor-name">Jon Warner</p>
                                     <p class="speciality">Cardiologist</p>
                                 </td>
-                                <td>
+                                <td class="peditrician">
                                     <p class="doctor-name">Alan</p>
                                     <p class="speciality">Peditrician</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="geriatrician">
                                     <p class="doctor-name">Steven Elliott</p>
                                     <p class="speciality">Geriatrician</p>
                                 </td>
-                                <td>
+                                <td class="gynecological">
                                     <p class="doctor-name">Nicole Dixon</p>
                                     <p class="speciality">Gynecological</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="prtjopaedisc">
                                     <p class="doctor-name">Jordan Kelley</p>
                                     <p class="speciality">Prtjopaedisc</p>
                                 </td>
@@ -473,7 +499,7 @@
                             <tr>
                                 <th>15:00 - 16:00</th>
 
-                                <td>
+                                <td class="prtjopaedisc">
                                     <p class="doctor-name">Jordan Kelley</p>
                                     <p class="speciality">Prtjopaedisc</p>
                                 </td>
@@ -483,7 +509,7 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Will Smith</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
@@ -493,7 +519,7 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="dentist">
                                     <p class="doctor-name">Angela Adams</p>
                                     <p class="speciality">Dentist</p>
                                 </td>
@@ -506,18 +532,18 @@
 
                                 </td>
 
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Will Smith</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
-                                <td>
+                                <td class="peditrician">
                                     <p class="doctor-name">Alan</p>
                                     <p class="speciality">Peditrician</p>
                                 </td>
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="neurologist">
                                     <p class="doctor-name">John Harry</p>
                                     <p class="speciality">Neurologist</p>
                                 </td>
@@ -540,7 +566,7 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="gynecological">
                                     <p class="doctor-name">Nicole Dixon</p>
                                     <p class="speciality">Gynecological</p>
                                 </td>
@@ -550,7 +576,7 @@
                                 <td>
 
                                 </td>
-                                <td>
+                                <td class="pulmonologist">
                                     <p class="doctor-name">Jesus Lover</p>
                                     <p class="speciality">Pulmonologist</p>
                                 </td>
@@ -563,32 +589,33 @@
         <!-- doctor-timetable section ends -->
 
 
-        <!-- book-appoinment section starts -->
-        <section class="book-appoinment">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-7">
-                        <div class="appoinment-text">
-                            Contact to book your appointment!
-                        </div>
+       <!-- book-appoinment section starts -->
+       <section class="book-appoinment no-select">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-lg-7">
+                    <div class="appoinment-text" data-aos="fade-up" data-aos-duration="1500">
+                        Contact to book your appointment!
                     </div>
-                    <div class="col-sm-12 col-lg-5 text-lg-right">
-                        <div class="appoinment-button">
-                            Book An Appoinment
-                        </div>
+                </div>
+                <div class="col-sm-12 col-lg-5 text-lg-right pt-4 pt-lg-0">
+                    <div class="appoinment-button" data-aos="fade-up" data-aos-duration="1500">
+                        Book An Appoinment
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- book-appoinment section ends -->
+        </div>
+    </section>
+    <!-- book-appoinment section ends -->
     </main>
     <!-- main ends -->
 
      <!-- footer starts -->
-     <footer>
+     <footer class="footer-2 no-select">
         <div class="container">
+            <!-- footer-top starts -->
             <div class="footer-top row">
-                <div class="healthcare col-md-4">
+                <div class="healthcare col-12 col-lg-4">
                     <div class="logo">
                         <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
                     </div>
@@ -596,138 +623,104 @@
                         build great technology to
                         help companies succeed in making healthcare better.</p>
                 </div>
-                <div class="about-us col-md-2">
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Quick Links</h5>
                     <ul>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>About Us</span>
+                            <a href="">About Us</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Departments</span>
+                            <a href="medical-department.html">Departments</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Find A Doctor</span>
+                            <a href="find-doctor.html">Find A Doctor</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>FAQ</span>
+                            <a href="faq.html">FAQ</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Timetable</span>
+                            <a href="schedule.html">Timetable</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>News</span>
+                            <a href="">News</a>
                         </li>
                     </ul>
                 </div>
-                <div class="contact col-md-3">
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Contact</h5>
                     <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
                         info@yourdomain.com<br>
                         +(123) 1800-88-66</p>
                     <div class="social-media d-inline-block">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
-                <div class="news-twitter col-md-3">
-                    <h5 class="footer-top-col-title">News Twitter</h5>
-                    <div class="news-twitter-slider">
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                <div class="instagram col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Instagram</h5>
+                    <div class="container">
+                        <div class="row instagram-contents">
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-1.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-2.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-3.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4 pt-3  pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-4.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-5.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-6.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -735,22 +728,21 @@
                 </div>
             </div>
         </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row justify-content-between">
-                    <span>© 2019 Spyropress. All Rights Reserved</span>
-                    <span>Term & Conditions Privacy Policy</span>
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
                 </div>
             </div>
         </div>
+        <!-- footer-bottom ends -->
     </footer>
     <!-- footer ends -->
-
-
-
-
-
-
 
 
     <!--scripts start-->

@@ -90,6 +90,18 @@ li {
   position: absolute !important;
 }
 
+.active-td{
+  background-color:$main-color ;
+   
+  .doctor-name{
+    color: $color-white !important;
+  }
+
+  .speciality{
+    color: $color-white !important;
+  }
+}
+
 .bg-info {
   background-color: $color-today !important;
 }
@@ -394,6 +406,10 @@ h3 {
   .appointment-form{
     max-height: 350px !important;
     overflow-y: scroll !important;
+  }
+
+  .doctor-timetable{
+    padding: 80px 0 !important;
   }
 }
 

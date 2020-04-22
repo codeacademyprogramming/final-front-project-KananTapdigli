@@ -98,6 +98,18 @@ li {
   position: absolute !important;
 }
 
+.active-td {
+  background-color: #007DF2;
+}
+
+.active-td .doctor-name {
+  color: #FFF !important;
+}
+
+.active-td .speciality {
+  color: #FFF !important;
+}
+
 .bg-info {
   background-color: #FCF8E3 !important;
 }
@@ -339,6 +351,9 @@ h3 {
   .appointment-form {
     max-height: 350px !important;
     overflow-y: scroll !important;
+  }
+  .doctor-timetable {
+    padding: 80px 0 !important;
   }
 }
 
@@ -1754,7 +1769,7 @@ footer .footer-bottom .policy {
 }
 
 .doctor-timetable {
-  padding-top: 133px;
+  padding: 133px 0;
 }
 
 .doctor-timetable .timetable-title {
@@ -1772,6 +1787,8 @@ footer .footer-bottom .policy {
   -moz-appearance: none;
   /* for Chrome */
   -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .doctor-timetable .timetable-bottom {
@@ -1782,8 +1799,9 @@ footer .footer-bottom .policy {
   font-size: 16px;
   padding: 16px 5px;
   border: 1px solid #e1e1e1;
-  color: #FFF;
   font-weight: 500;
+  color: #FFF;
+  background-color: #303030;
 }
 
 .doctor-timetable .timetable-bottom thead th:nth-of-type(1) {
@@ -1796,14 +1814,29 @@ footer .footer-bottom .policy {
   font-weight: 500;
 }
 
+.doctor-timetable .timetable-bottom tbody td {
+  -webkit-transition: .3s background-color linear;
+  transition: .3s background-color linear;
+}
+
 .doctor-timetable .timetable-bottom tbody td .doctor-name {
   font-size: 15px;
   font-weight: 600;
-  margin: 20px 0 5px 0;
+  margin: 10px 0 5px 0;
+  color: #303030;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+  cursor: pointer;
+}
+
+.doctor-timetable .timetable-bottom tbody td .doctor-name:hover {
+  color: #007DF2;
 }
 
 .doctor-timetable .timetable-bottom tbody td .speciality {
   font-size: 14px;
+  margin-bottom: 10px;
+  color: #777777;
 }
 
 .find-doctor {

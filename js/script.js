@@ -305,6 +305,53 @@ $(document).ready(function () {
   // #endregion Opening-Closing Appointment Form
 
 
+  //#region schedule active trs
+  $('.timetable-select').change(function () {
+    $('.timetable-bottom td').removeClass('active-td')
+
+    var value = $(this).val();
+
+    if (value == 'pulmonologist') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'peditrician') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'neurologist') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'geriatrician') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'cardologist') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'dentist') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'prthopaedics') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'cardiologist') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'pediatrician') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'prtjopaedisc') {
+      $(`.${value}`).addClass('active-td');
+    }
+    else if (value == 'gynecological') {
+      $(`.${value}`).addClass('active-td');
+    }
+  });
+  //#endregion schedule active trs
+
+
+
+
+
+
   // #region AOS animation
   AOS.init({
     offset: 100,
