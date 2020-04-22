@@ -355,6 +355,9 @@ h3 {
   .doctor-timetable {
     padding: 80px 0 !important;
   }
+  .space {
+    height: 40px !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1512,6 +1515,7 @@ footer .footer-bottom .policy {
 
 .pricings .pricing-slider-element {
   margin-right: 30px;
+  margin-left: 12px;
   border: 1px solid white;
   -webkit-transition: .5s all linear;
   transition: .5s all linear;
@@ -1748,7 +1752,7 @@ footer .footer-bottom .policy {
 }
 
 .appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour {
-  padding: 10px;
+  padding: 20px 10px;
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -1849,6 +1853,7 @@ footer .footer-bottom .policy {
 
 .find-doctor .find-doctor-left {
   padding-top: 100px;
+  padding-bottom: 100px;
   padding-right: 30px;
 }
 
@@ -1880,6 +1885,19 @@ footer .footer-bottom .policy {
   font-size: 14px;
   width: 100%;
   outline: none;
+  border: 1px solid white;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper input:hover {
+  background-color: #FFF;
+  border: 1px solid #007DF2;
+}
+
+.find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper input:focus {
+  background-color: #FFF;
+  border: 1px solid #007DF2;
 }
 
 .find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper .button {
@@ -1888,8 +1906,47 @@ footer .footer-bottom .policy {
   width: 100%;
 }
 
+.find-doctor .find-doctor-left .help-contact {
+  padding: 42px 40px 0;
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  margin-top: 60px;
+}
+
+.find-doctor .find-doctor-left .help-contact h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.find-doctor .find-doctor-left .help-contact p {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.find-doctor .find-doctor-left .help-contact .contact-button {
+  background-color: #FFF;
+  color: #000000;
+  padding: 16px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .3s background-color linear;
+  transition: .3s background-color linear;
+}
+
+.find-doctor .find-doctor-left .help-contact .contact-button:hover {
+  background-color: #007DF2;
+  color: #FFF;
+}
+
+.find-doctor .find-doctor-left .help-contact .space {
+  height: 219px;
+}
+
 .find-doctor .find-doctor-right {
   padding-top: 100px;
+  padding-bottom: 100px;
   padding-left: 30px;
   background-color: #FFF;
 }
@@ -1898,11 +1955,13 @@ footer .footer-bottom .policy {
   font-size: 24px;
   color: #303030;
   font-weight: 600;
+  padding-bottom: 20px;
 }
 
 .find-doctor .find-doctor-right .associated-description {
   font-size: 14px;
   max-width: 79%;
+  color: #777777;
 }
 
 .find-doctor .find-doctor-right .doctor-items {
@@ -1957,6 +2016,78 @@ footer .footer-bottom .policy {
 
 .find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .view {
   margin-right: 30px;
+  cursor: pointer;
+  line-height: .9;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .view a {
+  display: block;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .view:hover a {
+  color: #007DF2;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .view:hover .line {
+  background-color: #007DF2;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .appointment {
+  line-height: .9;
+  cursor: pointer;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .appointment:hover a {
+  color: #007DF2;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .appointment:hover .line {
+  background-color: #007DF2;
+}
+
+.find-doctor .find-doctor-right .doctor-items .doctor-item-wrapper .doctor-info .view-appointment .line {
+  background-color: #f5f5f5;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.find-doctor .find-doctor-right .pagination {
+  padding-top: 80px;
+}
+
+.find-doctor .find-doctor-right .pagination .pagination-element {
+  height: 41px;
+  width: 41px;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  line-height: 41px;
+  color: #777777;
+  margin-right: 10px;
+  -webkit-transition: .5s background-color linear;
+  transition: .5s background-color linear;
+  cursor: pointer;
+}
+
+.find-doctor .find-doctor-right .pagination .pagination-element:hover {
+  color: #FFF;
+  background-color: #007DF2;
+  border: 1px solid #FFF;
+}
+
+.find-doctor .find-doctor-right .pagination .pagination-active {
+  color: #FFF;
+  background-color: #007DF2;
+  border: 1px solid #FFF;
+}
+
+.appointment-form {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 41px 50px;
 }
 
 .doctor-single {

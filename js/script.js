@@ -313,39 +313,64 @@ $(document).ready(function () {
 
     if (value == 'pulmonologist') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'peditrician') {
+    } else if (value == 'peditrician') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'neurologist') {
+    } else if (value == 'neurologist') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'geriatrician') {
+    } else if (value == 'geriatrician') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'cardologist') {
+    } else if (value == 'cardologist') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'dentist') {
+    } else if (value == 'dentist') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'prthopaedics') {
+    } else if (value == 'prthopaedics') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'cardiologist') {
+    } else if (value == 'cardiologist') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'pediatrician') {
+    } else if (value == 'pediatrician') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'prtjopaedisc') {
+    } else if (value == 'prtjopaedisc') {
       $(`.${value}`).addClass('active-td');
-    }
-    else if (value == 'gynecological') {
+    } else if (value == 'gynecological') {
       $(`.${value}`).addClass('active-td');
     }
   });
   //#endregion schedule active trs
+
+  //#region search-doctor
+  $(document).on("click", '.search-button', function () {
+    let searchValue = $('.search-doctor-input').val().toLowerCase().trim();
+    $(".doctor-name").filter(function () {
+      $(this).parent().parent().parent().toggle($(this).text().toLowerCase().trim().indexOf(searchValue) > -1)
+    });
+  })
+
+  $(document).on('keypress', function (element) {
+    if (element.which == 13) {
+      let searchValue = $('.search-doctor-input').val().toLowerCase().trim();
+      $(".doctor-name").filter(function () {
+        $(this).parent().parent().parent().toggle($(this).text().toLowerCase().trim().indexOf(searchValue) > -1)
+      });
+    }
+  });
+  //#endregion search-doctor
+
+
+  // #region opening-closing form in find-doctor
+  $(document).on('click', '.doctor-item .appointment', () => {
+    $('.modal').addClass('active-m');
+    $('body').css('overflow', 'hidden');
+  })
+  $(window).on('click', () => {
+    let target = $(event.target);
+    console.log($(event.target))
+    if (target.is('.modal') || target.is('.modal-container')) {
+      $('.modal').removeClass('active-m');
+      $('body').css('overflow', 'auto');
+    }
+  })
+  // #region opening-closing form in find-doctor
+
 
 
 

@@ -3,21 +3,22 @@
     padding: 100px 0;
     background-color: $color-gray-lighter;
 
-    .pricing-top{
+    .pricing-top {
         padding-bottom: 60px;
     }
 
     .pricing-slider-element {
         margin-right: 30px;
+        margin-left: 12px;
         border: 1px solid white;
         transition: .5s all linear;
         outline: none;
 
-        &:hover{
+        &:hover {
             border: 1px solid $main-color;
         }
- 
-        &:hover .get-started{
+
+        &:hover .get-started {
             color: white;
             background-color: $main-color !important;
         }
@@ -26,53 +27,54 @@
             padding: 43px 36px 50px;
             background-color: $color-white;
 
-            .title-pricing{
+            .title-pricing {
                 font-weight: $font-weight;
                 margin-bottom: 15px;
             }
 
-            .subtitle-pricing{
+            .subtitle-pricing {
                 font-size: 15px;
             }
 
-            .price{
+            .price {
                 color: $main-color;
 
-                .unitprice{
+                .unitprice {
                     font-size: 24px;
                     font-weight: $font-weight;
                     position: relative;
                     top: -15px;
                 }
 
-                .price-value{
+                .price-value {
                     font-size: 48px;
                     font-weight: $font-weight;
                 }
 
-                .per{
+                .per {
                     font-weight: 300;
                 }
             }
 
-            .features{
+            .features {
                 padding-top: 60px;
-                li{
+
+                li {
                     padding-bottom: 12px;
                     margin-bottom: 12px;
                     border-bottom: 1px solid $color-border;
 
-                    span{
+                    span {
                         font-size: $font-size;
                     }
 
-                    i{
+                    i {
                         padding-right: 10px;
                     }
                 }
             }
 
-            .get-started{
+            .get-started {
                 margin-top: 40px;
                 background-color: $color-lighter;
                 padding: 16px 0;
@@ -84,4 +86,5 @@
         }
     }
 }
+
 // pricings  ends
