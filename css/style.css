@@ -110,6 +110,14 @@ li {
   color: #FFF !important;
 }
 
+.non-active-slide {
+  opacity: 0 !important;
+}
+
+.active-slide {
+  opacity: 1 !important;
+}
+
 .bg-info {
   background-color: #FCF8E3 !important;
 }
@@ -117,6 +125,13 @@ li {
 .active-date {
   color: #FFF !important;
   background-color: #007DF2 !important;
+}
+
+.active-clinic-tab {
+  -webkit-box-shadow: 0px 0px 9px 0px #0000003b !important;
+          box-shadow: 0px 0px 9px 0px #0000003b !important;
+  border-right: 5px solid #007DF2 !important;
+  color: #007DF2 !important;
 }
 
 .first-banner {
@@ -209,6 +224,9 @@ h3 {
     min-width: 510px !important;
     font-size: 54px !important;
   }
+  .heading-standard {
+    padding: 0 80px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -246,6 +264,16 @@ h3 {
   .section-left {
     padding-right: 15px !important;
     padding-bottom: 0 !important;
+  }
+  .clinic-slider {
+    height: 450px !important;
+    width: 80% !important;
+  }
+  .prev, .next {
+    padding: 15px 15px 0 15px !important;
+  }
+  .standard-main {
+    padding-top: 70px !important;
   }
 }
 
@@ -289,6 +317,31 @@ h3 {
   .appointment-form {
     max-height: 450px !important;
     overflow-y: scroll !important;
+  }
+  .clinic-slider {
+    height: 400px !important;
+    width: 100% !important;
+  }
+  .user-img-container {
+    padding: 0 !important;
+  }
+  .standard-comments-item-2 {
+    padding-left: 10px !important;
+  }
+  .standard-comments-item-3 {
+    padding-left: 20px !important;
+  }
+  .standard-comments-item-4 {
+    padding-left: 30px !important;
+  }
+  .standard-comments-item-5 {
+    padding-left: 40px !important;
+  }
+  .standard-comments-item-6 {
+    padding-left: 30px !important;
+  }
+  .heading-standard {
+    padding: 0 !important;
   }
 }
 
@@ -2500,8 +2553,48 @@ footer .footer-bottom .policy {
   padding-top: 50px;
 }
 
+.dental-main-section .section-left .our-gallery img {
+  max-width: 100%;
+}
+
 .dental-main-section .section-left .our-gallery h4 {
   font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.dental-main-section .section-left .our-gallery .gallery-photo {
+  position: relative;
+}
+
+.dental-main-section .section-left .our-gallery .gallery-photo .plus-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 125, 242, 0.6);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+  font-size: 35px;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.dental-main-section .section-left .our-gallery .gallery-photo .plus-overlay i {
+  cursor: pointer;
+}
+
+.dental-main-section .section-left .our-gallery .gallery-photo:hover .plus-overlay {
+  opacity: 1;
 }
 
 .dental-main-section .section-right {
@@ -2512,6 +2605,10 @@ footer .footer-bottom .policy {
 .dental-main-section .section-right h4 {
   margin: 0;
   font-weight: 600;
+}
+
+.dental-main-section .section-right .department-ul {
+  padding-top: 50px;
 }
 
 .dental-main-section .section-right .department-ul li {
@@ -2526,6 +2623,15 @@ footer .footer-bottom .policy {
   border-bottom: 1px solid #e1e1e1;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+  border-right: 5px solid #FFF;
+}
+
+.dental-main-section .section-right .department-ul li:hover {
+  color: #007DF2;
+  border-right: 5px solid #007DF2;
 }
 
 .dental-main-section .section-right .department-ul .clinic-heart {
@@ -2559,6 +2665,7 @@ footer .footer-bottom .policy {
 }
 
 .dental-main-section .section-right .clinic-form {
+  margin-top: 30px;
   padding: 32px 25px 26px;
   background-color: #FFF;
 }
@@ -2582,6 +2689,7 @@ footer .footer-bottom .policy {
   width: 100%;
   font-weight: 500;
   font-size: 14px;
+  color: #777777;
 }
 
 .dental-main-section .section-right .clinic-form select {
@@ -2606,6 +2714,7 @@ footer .footer-bottom .policy {
 }
 
 .dental-main-section .section-right .working-time .working-time-ul {
+  margin-top: 30px;
   padding: 15px 23px 14px;
   background-color: #FFF;
 }
@@ -2626,11 +2735,20 @@ footer .footer-bottom .policy {
   border: none;
 }
 
+.dental-main-section .section-right .working-time .working-time-ul .day {
+  color: #777777;
+}
+
+.dental-main-section .section-right .working-time .working-time-ul .hour {
+  color: #303030;
+}
+
 .dental-main-section .section-right .quick-contact {
   padding-top: 80px;
 }
 
 .dental-main-section .section-right .quick-contact .quick-contact-content {
+  margin-top: 30px;
   padding: 28px 24px;
   background-color: #FFF;
 }
@@ -2638,10 +2756,91 @@ footer .footer-bottom .policy {
 .dental-main-section .section-right .quick-contact .quick-contact-content p {
   font-weight: 600;
   font-size: 14px;
+  color: #303030;
 }
 
 .dental-main-section .section-right .quick-contact .quick-contact-content span {
-  font-size: 15px;
+  font-size: 14px;
+  color: #777777;
+}
+
+.clinic-slider {
+  height: 500px;
+  width: 60%;
+  position: relative;
+  border-top: 10px solid #F8F8F8;
+  border-left: 10px solid #F8F8F8;
+  border-right: 10px solid #F8F8F8;
+  border-bottom: 40px solid #F8F8F8;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.clinic-slider .clinic-slider-element {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: .5s all linear;
+  transition: .5s all linear;
+}
+
+.clinic-slider .clinic-slider-element-1 {
+  opacity: 1;
+}
+
+.clinic-slider .clinic-slider-element-2, .clinic-slider .clinic-slider-element-3 {
+  opacity: 0;
+}
+
+.clinic-slider .left-button {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 25px;
+  height: 25px;
+  background-color: #F8F8F8;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.clinic-slider .left-button i {
+  color: #3F3F3F;
+}
+
+.clinic-slider .right-button {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 25px;
+  height: 25px;
+  background-color: #F8F8F8;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.clinic-slider .right-button i {
+  color: #3F3F3F;
+}
+
+.clinic-slider .quit {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  right: 0;
+  bottom: -33px;
+  font-size: 12px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.clinic-slider .quit i {
+  color: #303030;
 }
 
 .standard-main {
@@ -2651,6 +2850,7 @@ footer .footer-bottom .policy {
 
 .standard-main .heading-standard {
   padding: 0 100px;
+  color: #303030;
 }
 
 .standard-main .meta {
@@ -2660,6 +2860,13 @@ footer .footer-bottom .policy {
 .standard-main .meta a {
   font-size: 14px;
   padding: 0 5px;
+  color: #888;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.standard-main .meta a:hover {
+  color: #303030;
 }
 
 .standard-main .ps-img {
@@ -2672,11 +2879,13 @@ footer .footer-bottom .policy {
   font-weight: 600;
   padding-top: 50px;
   line-height: 1.7;
+  color: #303030;
 }
 
 .standard-main p {
   font-size: 14px;
   padding-top: 10px;
+  color: #777777;
 }
 
 .standard-main h5 {
@@ -2692,6 +2901,7 @@ footer .footer-bottom .policy {
 .standard-main .ps-ul li {
   font-size: 14px;
   list-style-type: disc !important;
+  color: #777777;
 }
 
 .standard-main .standard-subtitle {
@@ -2721,10 +2931,18 @@ footer .footer-bottom .policy {
   font-weight: 600;
   font-size: 14px;
   padding-right: 6px;
+  color: #303030;
 }
 
 .standard-main .tags-share .tags-share-text {
   font-size: 14px;
+  color: #777777;
+}
+
+.standard-main .tags-share .social-media i {
+  color: #777777;
+  font-size: 12px;
+  padding-right: 10px;
 }
 
 .standard-main .prev-next {
@@ -2809,7 +3027,7 @@ footer .footer-bottom .policy {
 }
 
 .standard-main .standard-comments .standard-comments-item-6 {
-  margin-left: 60px;
+  padding-left: 60px;
   border-top: 1px solid #e1e1e1;
   margin-top: 40px;
 }
@@ -2904,11 +3122,14 @@ footer .footer-bottom .policy {
   height: 350px;
 }
 
-.standard-main .right-sidebar .archives .contact-banner .button {
-  padding: 16px 36px;
+.standard-main .right-sidebar .archives .contact-banner .btn-container {
+  width: 100%;
   position: absolute;
   bottom: 40px;
-  left: 80px;
+}
+
+.standard-main .right-sidebar .archives .contact-banner .btn-container .button {
+  padding: 16px 36px;
 }
 
 .standard-main .right-sidebar .tags {

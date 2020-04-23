@@ -221,7 +221,7 @@
         <section class="main-frame-2 no-select" style="background-image: url(assets/images/dental-clinic-title.jpg);">
             <div class="container">
                 <div class="frame-item">
-                    <p class="subtitle">Home / Dental Clinic</p>
+                    <p class="subtitle">Home / <span class="changable-subtitle">Dental Clinic</span></p>
                     <p class="heading">Dental Clinic</p>
                     <p class="description">
                         We are here to provide a full range of exceptional quality care for dental services.
@@ -235,7 +235,7 @@
 
 
 
-        <section class="dental-main-section">
+        <section class="dental-main-section no-select">
             <div class="section-left-color"></div>
             <div class="section-right-color"></div>
 
@@ -433,9 +433,24 @@
                         <div class="our-gallery">
                             <h4>Our Gallery</h4>
                             <div class="row gallery-photos">
-                                <img src="assets/images/gallery-p-1.jpg" alt="" class="col-4">
-                                <img src="assets/images/gallery-p-2.jpg" alt="" class="col-4">
-                                <img src="assets/images/gallery-p-3.jpg" alt="" class="col-4">
+                                <div class="col-4">
+                                    <div class="gallery-photo">
+                                        <img src="assets/images/gallery-p-1.jpg" alt="">
+                                        <div class="plus-overlay plus-overlay-1"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="gallery-photo">
+                                        <img src="assets/images/gallery-p-2.jpg" alt="">
+                                        <div class="plus-overlay plus-overlay-2"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="gallery-photo">
+                                        <img src="assets/images/gallery-p-3.jpg" alt="">
+                                        <div class="plus-overlay plus-overlay-3"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -551,11 +566,12 @@
     </main>
     <!-- main ends -->
 
-    <!-- footer starts -->
-    <footer>
+     <!-- footer starts -->
+     <footer class="footer-2  no-select">
         <div class="container">
+            <!-- footer-top starts -->
             <div class="footer-top row">
-                <div class="healthcare col-md-4">
+                <div class="healthcare col-12 col-lg-4">
                     <div class="logo">
                         <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
                     </div>
@@ -563,138 +579,104 @@
                         build great technology to
                         help companies succeed in making healthcare better.</p>
                 </div>
-                <div class="about-us col-md-2">
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Quick Links</h5>
                     <ul>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>About Us</span>
+                            <a href="">About Us</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Departments</span>
+                            <a href="medical-department.html">Departments</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Find A Doctor</span>
+                            <a href="find-doctor.html">Find A Doctor</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>FAQ</span>
+                            <a href="faq.html">FAQ</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Timetable</span>
+                            <a href="schedule.html">Timetable</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>News</span>
+                            <a href="">News</a>
                         </li>
                     </ul>
                 </div>
-                <div class="contact col-md-3">
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Contact</h5>
                     <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
                         info@yourdomain.com<br>
                         +(123) 1800-88-66</p>
                     <div class="social-media d-inline-block">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
-                <div class="news-twitter col-md-3">
-                    <h5 class="footer-top-col-title">News Twitter</h5>
-                    <div class="news-twitter-slider">
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                <div class="instagram col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Instagram</h5>
+                    <div class="container">
+                        <div class="row instagram-contents">
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-1.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-2.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-3.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4 pt-3  pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-4.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-5.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-6.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -702,16 +684,54 @@
                 </div>
             </div>
         </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row justify-content-between">
-                    <span>© 2019 Spyropress. All Rights Reserved</span>
-                    <span>Term & Conditions Privacy Policy</span>
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
                 </div>
             </div>
         </div>
+        <!-- footer-bottom ends -->
     </footer>
     <!-- footer ends -->
+
+    <!-- modal section starts -->
+    <section class="modal">
+        <div class="container modal-container d-flex justify-content-center">
+           <div class="clinic-slider">
+            <div class="clinic-slider-element" style="background-image: url(assets/images/clinic-slider-img-1.jpg);">
+               
+            </div>
+            <div class="clinic-slider-element" style="background-image: url(assets/images/clinic-slider-img-2.jpg);">
+               
+            </div>
+            <div class="clinic-slider-element" style="background-image: url(assets/images/clinic-slider-img-3.jpg);">
+               
+            </div>
+            <div class="left-button d-flex align-items-center justify-content-center">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="right-button d-flex justify-content-center align-items-center">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="quit text-center">
+                <i class="fas fa-times quit-icon"></i>
+            </div>
+           </div>
+        </div>
+    </section>
+    <!-- modal section ends -->
+
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- scroll-top button ends -->
 
 
 

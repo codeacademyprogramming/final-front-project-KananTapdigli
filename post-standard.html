@@ -25,9 +25,9 @@
 
 <body>
 
+    <!-- header starts -->
     <header>
-        <!-- header-bottom-starts -->
-        <div class="header-bottom">
+        <div class="header-bottom no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -36,12 +36,12 @@
                         </div>
                     </div>
                     <nav class="col-10 d-flex justify-content-end">
-                        <ul class="navigation  d-none d-xl-inline-flex">
+                        <ul class="navigation  d-none d-xl-flex">
                             <li class="home">
                                 <span class="title">Home</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Home Main</a>
+                                        <a href="index.html">Home</a>
                                     </div>
                                 </div>
                             </li>
@@ -49,12 +49,12 @@
                                 <span class="title">Pages</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Our Clinic</a>
-                                        <a>FAQ</a>
-                                        <a>Pricing</a>
-                                        <a>Contact us 2</a>
-                                        <a>Book an Appointment</a>
-                                        <a>Schedule</a>
+                                        <a href="our-clinic.html">Our Clinic</a>
+                                        <a href="contact-us.html">Contact us</a>
+                                        <a href="faq.html">FAQ</a>
+                                        <a href="book-appointment.html">Book an Appointment</a>
+                                        <a href="pricings.html">Pricings</a>
+                                        <a href="schedule.html">Schedule</a>
                                     </div>
                                 </div>
                             </li>
@@ -62,8 +62,8 @@
                                 <span class="title">Doctors</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Find A Doctor</a>
-                                        <a>Doctor Single</a>
+                                        <a href="find-doctor.html">Find A Doctor</a>
+                                        <a href="doctor-single.html">Doctor Single</a>
                                     </div>
                                 </div>
                             </li>
@@ -71,16 +71,16 @@
                                 <span class="title">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Medical Department</a>
-                                        <a>Dental Clinic</a>
+                                        <a href="medical-department.html">Medical Department</a>
+                                        <a href="dental-clinic.html">Dental Clinic</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="blog">
-                                <span class="title">Blog</span>
+                                <span class="title active-nav">Blog</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Single Post Standard</a>
+                                        <a href="post-standard.html" class="active-nav">Single Post Standard</a>
                                     </div>
                                 </div>
                             </li>
@@ -88,9 +88,9 @@
                                 <span class="title">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Sidebar left</a>
-                                        <a>Card</a>
-                                        <a>Checkout</a>
+                                        <a href="sidebar-left.html">Sidebar left</a>
+                                        <a href="cart.html">Card</a>
+                                        <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
                             </li>
@@ -103,50 +103,79 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket-menu d-inline-flex">
-                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
-                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-flex align-items-center">
+                            <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
+                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
-                            <li><span>Tab 1</span>
-                                <div>
-                                    tab1
-
+                            <li>
+                                <span>Home</span>
+                                <div class="mn-sub-menu">
+                                    <a href="index.html">Home</a>
                                 </div>
                             </li>
-                            <li><span>Tab 2</span>
-                                <div>
-                                    Tab 3
+                            <li>
+                                <span>Pages</span>
+                                <div class="mn-sub-menu">
+                                    <a href="our-clinic.html">Our Clinic</a>
+                                    <a href="contact-us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="book-appointment.html">Book an Appointment</a>
+                                    <a href="pricings.html">Pricings</a>
+                                    <a href="schedule.html">Schedule</a>
                                 </div>
-
                             </li>
 
-                            <li><span>tab 3</span>
-                                <div>
-                                    tab 3
+                            <li>
+                                <span>Doctors</span>
+                                <div class="mn-sub-menu">
+                                    <a href="find-doctor.html">Find A Doctor</a>
+                                    <a href="doctor-single.html">Doctor Single</a>
                                 </div>
                             </li>
 
-                            <li><span>tab 4</span>
-                                <div>
-                                    Tab 4
+                            <li>
+                                <span>Departments</span>
+                                <div class="mn-sub-menu">
+                                    <a href="medical-department.html">Medical Department</a>
+                                    <a href="dental-clinic.html">Dental Clinic</a>
                                 </div>
-
-
                             </li>
-
+                            <li>
+                                <span class="active-nav">Blog</span>
+                                <div class="mn-sub-menu">
+                                    <a href="post-standard.html" class="active-nav">Single Post Standard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Shop</span>
+                                <div class="mn-sub-menu">
+                                    <a href="sidebar-left.html">Sidebar left</a>
+                                    <a href="cart.html">Card</a>
+                                    <a href="checkout.html">Checkout</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Elements</span>
+                                <div class="mn-sub-menu">
+                                    <a>Coming Soon</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-        <!-- header-bottom-ends -->
+
     </header>
+    <!-- header ends -->
+
 
     <main>
+        <!-- standard-main starts -->
         <section class="standard-main">
             <div class="container">
                 <div class="row">
@@ -160,27 +189,35 @@
                             <a href="">Uncategorized</a>
                         </div>
                         <img src="assets/images/post-standard-1.jpg" alt="" class="ps-img">
-                        <h6>As humans, we spend about one-third of our lives asleep. Though science has taught us about the
+                        <h6>As humans, we spend about one-third of our lives asleep. Though science has taught us about
+                            the
                             human brain’s exquisite control of our daily sleep and wake patterns, tens of millions of
                             Americans still don’t get the sleep they need. Nearly 20% of American adults report using a
-                            sleep medication to help them sleep, despite known side effects and information about how well
-                            they really work. Some people turn to alcohol for relief. And many have tried everything without
+                            sleep medication to help them sleep, despite known side effects and information about how
+                            well
+                            they really work. Some people turn to alcohol for relief. And many have tried everything
+                            without
                             relief.
                         </h6>
                         <p>
-                            Whether your problem is experiencing lack of quality sleep, feeling sleepy during the day, or
-                            not being able to get the seven to nine hours of sleep each night that most people need, first
+                            Whether your problem is experiencing lack of quality sleep, feeling sleepy during the day,
+                            or
+                            not being able to get the seven to nine hours of sleep each night that most people need,
+                            first
                             ask yourself, “What habits can I change to improve my sleep?”
                         </p>
                         <img src="assets/images/post-standard-2.jpg" alt="" class="ps-img">
                         <p>
-                            Do you have good sleep hygiene? In general, sleep hygiene refers to practicing behaviors that
+                            Do you have good sleep hygiene? In general, sleep hygiene refers to practicing behaviors
+                            that
                             promote sleep and stopping behaviors that are bad for sleep:
                         </p>
                         <h5>Nighttime tips to help with sleep</h5>
                         <ul class="ps-ul">
-                            <li>Get up at the same time every day, even on the weekends. A regular wake time helps to set
-                                your body’s natural clock (circadian rhythm) by making sure you do not oversleep. Sleeping
+                            <li>Get up at the same time every day, even on the weekends. A regular wake time helps to
+                                set
+                                your body’s natural clock (circadian rhythm) by making sure you do not oversleep.
+                                Sleeping
                                 in too much can impact your ability to fall and stay asleep the next night, or the night
                                 after that.</li>
                             <br>
@@ -189,13 +226,16 @@
                             <li>Use your bed for sleep and sex only. Doing other activities in bed will train your brain
                                 into thinking that activities other than sleep are appropriate in bed.</li>
                             <br>
-                            <li>Avoid or limit caffeine. Caffeine can make you more alert during the day, but many people
-                                are sensitive to its effects. Even one or two cups in the early part of the day can disrupt
+                            <li>Avoid or limit caffeine. Caffeine can make you more alert during the day, but many
+                                people
+                                are sensitive to its effects. Even one or two cups in the early part of the day can
+                                disrupt
                                 your sleep at night.</li>
                         </ul>
                         <h5>What if I work multiple jobs or do shift work?</h5>
                         <p>Sometimes there are factors that impact our sleep that we can’t control. If you work shifts,
-                            strategies such as taking naps before evening shifts, and minimizing light exposure when coming
+                            strategies such as taking naps before evening shifts, and minimizing light exposure when
+                            coming
                             off evening shifts and planning to sleep, may help.</p>
                         <div class="standard-subtitle d-flex">
                             <blockquote>
@@ -203,15 +243,17 @@
                             </blockquote>
                             <span>
                                 Dr. Bertisch will present “Understanding the Role of Non-Pharmacologic Treatments in
-                                Insomnia” at the Osher Center for Integrative Medicine Grand Rounds at Brigham and Women’s
+                                Insomnia” at the Osher Center for Integrative Medicine Grand Rounds at Brigham and
+                                Women’s
                                 Hospital
                             </span>
                         </div>
                         <p>his may be a sign that you have a clinical sleep problem, such as insomnia disorder or sleep
-                            apnea. If you are doing all the right things and practicing good sleep hygiene, and still have
+                            apnea. If you are doing all the right things and practicing good sleep hygiene, and still
+                            have
                             trouble falling or staying asleep, you may need to see a sleep specialist.
                         </p>
-                        <div class="tags-share d-flex justify-content-between">
+                        <div class="tags-share d-flex justify-content-between" data-aos="fade-up" data-aos-duration="2000">
                             <div><span class="tags-share-title">TAGS: </span><span class="tags-share-text"> healthcare,
                                     medical, stress</span></div>
                             <div><span class="tags-share-title">SHARE:</span><span class="tags-share-text"></span>
@@ -231,33 +273,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="prev-next">
+                        <div class="prev-next" data-aos="fade-up" data-aos-duration="2000">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-6">
                                         <div class="prev">
                                             <div class="row">
-                                                <div class="col-lg-2">
+                                                <div class="col-2">
                                                     <i class="fas fa-arrow-left"></i>
                                                 </div>
-                                                <div class="col-lg-10">
+                                                <div class="col-8 col-md-10">
                                                     <p class="prev-next-title">Prev</p>
-                                                    <h3>No more counting sheep: Proven behaviors to help you sleep</h3>
+                                                    <h3 class="d-none d-lg-block">No more counting sheep: Proven
+                                                        behaviors to help you sleep</h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-6 ">
                                         <div class="next">
                                             <div class="row">
-                                                <div class="row">
-                                                    <div class="col-lg-10 text-right">
-                                                        <p class="prev-next-title">Next</p>
-                                                        <h3 class="rash">What can cause a rash on the face in a baby?</h3>
-                                                    </div>
-                                                    <div class="col-lg-2">
-                                                        <i class="fas fa-arrow-left"></i>
-                                                    </div>
+                                                <div class="col-8 col-md-10 text-right">
+                                                    <p class="prev-next-title">Next</p>
+                                                    <h3 class="rash d-none d-lg-block">What can cause a rash on the face
+                                                        in a baby?
+                                                    </h3>
+                                                </div>
+                                                <div class="col-2">
+                                                    <i class="fas fa-arrow-right"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,18 +308,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="standard-comments">
+                        <div class="standard-comments"  data-aos="fade-up" data-aos-duration="2000">
                             <div class="heading">
                                 7 Comments
                             </div>
                             <div class="standard-comments-item standard-comments-item-1 d-flex">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
-                                    <p>Sometimes there are factors that impact our sleep that we can’t control. If you work
-                                        shifts, strategies such as taking naps before evening shifts, and minimizing light
+                                    <p>Sometimes there are factors that impact our sleep that we can’t control. If you
+                                        work
+                                        shifts, strategies such as taking naps before evening shifts, and minimizing
+                                        light
                                         exposure when coming off evening shifts and planning to sleep, may help.</p>
                                     <div class="date-reply">
                                         <span>March 13, 2019 at 2:16 am</span>
@@ -286,11 +331,12 @@
                             </div>
                             <div class="standard-comments-item standard-comments-item-2 d-flex ">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
-                                    <p>Create a comfortable sleep environment: a place that is cool, dark, and quiet.</p>
+                                    <p>Create a comfortable sleep environment: a place that is cool, dark, and quiet.
+                                    </p>
                                     <div class="date-reply">
                                         <span>March 13, 2019 at 2:16 am</span>
                                         <span class="reply">Reply</span>
@@ -299,11 +345,12 @@
                             </div>
                             <div class="standard-comments-item standard-comments-item-3 d-flex">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
-                                    <p>Use your bed for sleep and sex only. Doing other activities in bed will train your
+                                    <p>Use your bed for sleep and sex only. Doing other activities in bed will train
+                                        your
                                         brain into thinking that activities other than sleep are appropriate in bed</p>
                                     <div class="date-reply">
                                         <span>March 13, 2019 at 2:16 am</span>
@@ -313,12 +360,14 @@
                             </div>
                             <div class="standard-comments-item standard-comments-item-4 d-flex">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
-                                    <p>Avoid or limit caffeine. Caffeine can make you more alert during the day, but many
-                                        people are sensitive to its effects. Even one or two cups in the early part of the
+                                    <p>Avoid or limit caffeine. Caffeine can make you more alert during the day, but
+                                        many
+                                        people are sensitive to its effects. Even one or two cups in the early part of
+                                        the
                                         day can disrupt your sleep at night.</p>
                                     <div class="date-reply">
                                         <span>March 13, 2019 at 2:16 am</span>
@@ -328,7 +377,7 @@
                             </div>
                             <div class="standard-comments-item standard-comments-item-5 d-flex">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
@@ -342,7 +391,7 @@
                             </div>
                             <div class="standard-comments-item standard-comments-item-6 d-flex">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
@@ -355,11 +404,12 @@
                             </div>
                             <div class="standard-comments-item standard-comments-item-7 d-flex">
                                 <div class="user-img-container">
-                                    <img src="assets/images/user.png" alt="" class="user-img">
+                                    <img src="assets/images/user.png" alt="" class="user-img d-none d-md-block">
                                 </div>
                                 <div class="user-comment">
                                     <h5>KEM</h5>
-                                    <p>Use your bed for sleep and sex only. Doing other activities in bed will train your
+                                    <p>Use your bed for sleep and sex only. Doing other activities in bed will train
+                                        your
                                         brain into thinking that activities other than sleep are appropriate in bed.</p>
                                     <div class="date-reply">
                                         <span>March 13, 2019 at 2:16 am</span>
@@ -371,13 +421,13 @@
                         <div class="leave-comment">
                             <h3>Leave A Comment</h3>
                             <p>Your email address will not be published. Required fields are marked *</p>
-                            <input type="text" placeholder="Your Name*"> 
-                            <input type="text" placeholder="Your Email*"> 
+                            <input type="text" placeholder="Your Name*">
+                            <input type="text" placeholder="Your Email*">
                             <textarea name="" id="" cols="30" rows="10" placeholder="Your Comment*"></textarea>
                             <div class="button text-center">Leave A Comment</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 pt-5 pt-lg-0">
                         <div class="right-sidebar">
                             <div class="search">
                                 <h4>Search</h4>
@@ -404,12 +454,15 @@
                             </div>
                             <div class="archives">
                                 <h4>Archives</h4>
-                               <select name="" id="">
-                                   <option value="">Select Month</option>
-                               </select>
-                               <div class="contact-banner" style="background-image: url(assets/images/contact-us-sidebar.jpg);">
-                                <div class="button">Contact Us</div>
-                               </div>
+                                <select name="" id="">
+                                    <option value="">Select Month</option>
+                                </select>
+                                <div class="contact-banner"
+                                    style="background-image: url(assets/images/contact-us-sidebar.jpg);">
+                                    <div class="btn-container text-center">
+                                        <div class="button">Contact Us</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tags">
                                 <h4>Tags</h4>
@@ -422,13 +475,16 @@
                 </div>
             </div>
         </section>
+        <!-- standard-main ends -->
+
     </main>
 
     <!-- footer starts -->
-    <footer>
+    <footer class="footer-2 no-select">
         <div class="container">
+            <!-- footer-top starts -->
             <div class="footer-top row">
-                <div class="healthcare col-md-4">
+                <div class="healthcare col-12 col-lg-4">
                     <div class="logo">
                         <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
                     </div>
@@ -436,138 +492,104 @@
                         build great technology to
                         help companies succeed in making healthcare better.</p>
                 </div>
-                <div class="about-us col-md-2">
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Quick Links</h5>
                     <ul>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>About Us</span>
+                            <a href="">About Us</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Departments</span>
+                            <a href="medical-department.html">Departments</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Find A Doctor</span>
+                            <a href="find-doctor.html">Find A Doctor</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>FAQ</span>
+                            <a href="faq.html">FAQ</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>Timetable</span>
+                            <a href="schedule.html">Timetable</a>
                         </li>
-                        <li>
+                        <li class="footer-pass">
                             <i class="fas fa-arrow-right arrow-right"></i>
-                            <span>News</span>
+                            <a href="">News</a>
                         </li>
                     </ul>
                 </div>
-                <div class="contact col-md-3">
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
                     <h5 class="footer-top-col-title">Contact</h5>
                     <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
                         info@yourdomain.com<br>
                         +(123) 1800-88-66</p>
                     <div class="social-media d-inline-block">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
-                <div class="news-twitter col-md-3">
-                    <h5 class="footer-top-col-title">News Twitter</h5>
-                    <div class="news-twitter-slider">
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                <div class="instagram col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Instagram</h5>
+                    <div class="container">
+                        <div class="row instagram-contents">
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-1.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-2.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-3.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
-                                </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            <div class="col-4 pt-3  pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-4.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="twitter-slider-element">
-                            <div class="twitter-text">
-                                Choles - Multi Concept Blog Wordpress Theme
-                                special character: ඣ, ฿
-                                url :
-                            </div>
-                            <div class="twitter-info d-flex">
-                                <div class="twitter-icon">
-                                    <i class="fab fa-twitter twitter"></i>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-5.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
-                                <div class="twitter-info-right">
-                                    <div class="twitter-url">Web Developer</div>
-                                    <div class="twitter-date">April 17, 2018 2:00 am</div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-6.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -575,16 +597,29 @@
                 </div>
             </div>
         </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row justify-content-between">
-                    <span>© 2019 Spyropress. All Rights Reserved</span>
-                    <span>Term & Conditions Privacy Policy</span>
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
                 </div>
             </div>
         </div>
+        <!-- footer-bottom ends -->
     </footer>
     <!-- footer ends -->
+
+
+
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- scroll-top button ends -->
 
 
 

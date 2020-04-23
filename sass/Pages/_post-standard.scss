@@ -4,6 +4,7 @@
 
     .heading-standard {
         padding: 0 100px;
+        color: $color-black-lighter;
     }
 
     .meta {
@@ -12,6 +13,12 @@
         a {
             font-size: 14px;
             padding: 0 5px;
+            color: $color-dark-light;
+            transition: .3s all linear;
+
+            &:hover{
+                color: $color-black-lighter;
+            }
         }
 
     }
@@ -26,11 +33,13 @@
         font-weight: $font-weight;
         padding-top: 50px;
         line-height: 1.7;
+        color: $color-black-lighter;
     }
 
     p {
         font-size: $font-size;
         padding-top: 10px;
+        color: $color-gray;
     }
 
     h5 {
@@ -45,6 +54,7 @@
         li {
             font-size: $font-size;
             list-style-type: disc !important;
+            color: $color-gray;
         }
     }
 
@@ -75,10 +85,20 @@
             font-weight: $font-weight;
             font-size: $font-size;
             padding-right: 6px;
+            color: $color-black-lighter;
         }
 
         .tags-share-text {
             font-size: $font-size;
+            color: $color-gray;
+        }
+
+        .social-media{
+            i{
+                color: $color-gray;
+                font-size: 12px;
+                padding-right: 10px;
+            }
         }
     }
 
@@ -164,7 +184,7 @@
         }
 
         .standard-comments-item-6 {
-            margin-left: 60px;
+           padding-left: 60px;
             border-top: 1px solid $color-border;
             margin-top: 40px;
         }
@@ -259,12 +279,16 @@
                 width: 100%;
                 height: 350px;
 
-                .button{
-                    padding: 16px 36px;
+                .btn-container{
+                    width: 100%;
                     position: absolute;
                     bottom: 40px;
-                    left: 80px;
+
+                    .button{
+                        padding: 16px 36px;
+                    }
                 }
+
             }
         }
 

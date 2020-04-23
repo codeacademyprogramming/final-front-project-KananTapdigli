@@ -23,7 +23,7 @@
 
 // #endregion main-frame section
 
-
+// #region dental-main-section
 .dental-main-section {
     position: relative;
 
@@ -146,8 +146,43 @@
         .our-gallery {
             padding-top: 50px;
 
+            img {
+                max-width: 100%;
+            }
+
             h4 {
                 font-weight: $font-weight;
+                padding-bottom: 20px;
+            }
+
+            .gallery-photo {
+                position: relative;
+
+                .plus-overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: $overlay-color-3;
+                    opacity: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color-white;
+                    font-size: 35px;
+                    transition: .3s all linear;
+
+                    i {
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover {
+                    .plus-overlay {
+                        opacity: 1;
+                    }
+                }
             }
 
 
@@ -168,6 +203,7 @@
         }
 
         .department-ul {
+            padding-top: 50px;
             li {
                 display: flex;
                 align-items: center;
@@ -176,6 +212,15 @@
                 border-bottom: 1px solid $color-border;
                 font-size: 18px;
                 font-weight: $font-weight;
+                cursor: pointer;
+                transition: .3s all linear;
+                border-right: 5px solid $color-white;
+
+                &:hover{
+                    color: $main-color;
+                    border-right: 5px solid $main-color;
+                }
+
             }
 
             .clinic-heart {
@@ -210,6 +255,7 @@
         }
 
         .clinic-form {
+            margin-top: 30px;
             padding: 32px 25px 26px;
             background-color: $color-white;
 
@@ -232,6 +278,7 @@
                 width: 100%;
                 font-weight: $font-weight-bolder;
                 font-size: $font-size;
+                color: $color-gray;
             }
 
             select {
@@ -252,10 +299,12 @@
             }
         }
 
+
         .working-time {
             padding-top: 80px;
 
             .working-time-ul {
+                margin-top: 30px;
                 padding: 15px 23px 14px;
                 background-color: $color-white;
 
@@ -271,9 +320,13 @@
                     border: none;
                 }
 
-                .day {}
+                .day {
+                    color: $color-gray;
+                }
 
-                .hour {}
+                .hour {
+                    color: $color-black-lighter;
+                }
             }
         }
 
@@ -281,19 +334,107 @@
             padding-top: 80px;
 
             .quick-contact-content {
+                margin-top: 30px;
                 padding: 28px 24px;
                 background-color: $color-white;
 
                 p {
                     font-weight: $font-weight;
                     font-size: 14px;
+                    color: $color-black-lighter;
                 }
 
                 span {
-                    font-size: 15px;
+                    font-size: $font-size;
+                    color: $color-gray;
                 }
             }
         }
     }
+
     // #endregion section-right
 }
+// #endregion dental-main-section
+
+
+// #region clinic-modal-slider
+.clinic-slider {
+    height: 500px;
+    width: 60%;
+    position: relative;
+    border-top: 10px  solid $color-white-light;
+    border-left: 10px  solid $color-white-light;
+    border-right: 10px  solid $color-white-light;
+    border-bottom: 40px  solid $color-white-light;
+    border-radius: $border-radius;
+    background-color: $color-white;
+
+    .clinic-slider-element {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s all linear;
+    }
+    
+    .clinic-slider-element-1{
+        opacity: 1;
+    }
+    
+    .clinic-slider-element-2,.clinic-slider-element-3{
+        opacity: 0;
+    }
+
+    .left-button{
+        position: absolute;
+        left: 0;
+        top: 45%;
+        width: 25px;
+        height: 25px;
+        background-color: $color-white-light;
+        border-radius:0 $border-radius $border-radius 0;
+        cursor: pointer;
+
+        i{
+            color: $color-gray-darker;
+        }
+    }
+
+    .right-button{
+        position: absolute;
+        right: 0;
+        top: 45%;
+        width: 25px;
+        height: 25px;
+        background-color: $color-white-light;
+        border-radius:  $border-radius 0 0 $border-radius ;
+        cursor: pointer;
+
+        i{
+            color: $color-gray-darker;
+        }
+    }
+
+    .quit{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $color-gray-lighter;
+        border: 1px solid $color-border;
+        position: absolute;
+        right: 0;
+        bottom: -33px;
+        font-size: 12px;
+        line-height: 25px;
+        cursor: pointer;
+
+        i{
+            color: $color-black-lighter;
+        }
+    }
+}
+
+
+// #endregion clinic-modal-slider
