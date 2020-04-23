@@ -28,7 +28,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top d-none d-md-block">
+        <div class="header-top cu-header-top  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -46,19 +46,19 @@
                         </span>
                     </div>
                     <div class="social-media col-md-12 col-lg-3  text-lg-right text-md-center mt-md-2 mt-lg-0">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -69,7 +69,7 @@
 
 
         <!-- header-bottom-starts -->
-        <div class="header-bottom">
+        <div class="header-bottom no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -78,12 +78,12 @@
                         </div>
                     </div>
                     <nav class="col-10 d-flex justify-content-end">
-                        <ul class="navigation  d-none d-xl-inline-flex">
+                        <ul class="navigation  d-none d-xl-flex">
                             <li class="home">
                                 <span class="title">Home</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Home Main</a>
+                                        <a href="index.html">Home</a>
                                     </div>
                                 </div>
                             </li>
@@ -91,12 +91,12 @@
                                 <span class="title">Pages</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Our Clinic</a>
-                                        <a>FAQ</a>
-                                        <a>Pricing</a>
-                                        <a>Contact us 2</a>
-                                        <a>Book an Appointment</a>
-                                        <a>Schedule</a>
+                                        <a href="our-clinic.html">Our Clinic</a>
+                                        <a href="contact-us.html">Contact us</a>
+                                        <a href="faq.html">FAQ</a>
+                                        <a href="book-appointment.html">Book an Appointment</a>
+                                        <a href="pricings.html">Pricings</a>
+                                        <a href="schedule.html">Schedule</a>
                                     </div>
                                 </div>
                             </li>
@@ -104,17 +104,17 @@
                                 <span class="title">Doctors</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Find A Doctor</a>
-                                        <a>Doctor Single</a>
+                                        <a href="find-doctor.html">Find A Doctor</a>
+                                        <a href="doctor-single.html">Doctor Single</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="departments">
-                                <span class="title">Departments</span>
+                                <span class="title active-nav">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Medical Department</a>
-                                        <a>Dental Clinic</a>
+                                        <a href="medical-department.html">Medical Department</a>
+                                        <a href="dental-clinic.html" class="active-nav">Dental Clinic</a>
                                     </div>
                                 </div>
                             </li>
@@ -122,7 +122,7 @@
                                 <span class="title">Blog</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Single Post Standard</a>
+                                        <a href="post-standard.html">Single Post Standard</a>
                                     </div>
                                 </div>
                             </li>
@@ -130,9 +130,9 @@
                                 <span class="title">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Sidebar left</a>
-                                        <a>Card</a>
-                                        <a>Checkout</a>
+                                        <a href="sidebar-left.html">Sidebar left</a>
+                                        <a href="cart.html">Card</a>
+                                        <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
                             </li>
@@ -145,36 +145,65 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket-menu d-inline-flex">
-                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
-                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-flex align-items-center">
+                            <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
+                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
-                            <li><span>Tab 1</span>
-                                <div>
-                                    tab1
-
+                            <li>
+                                <span>Home</span>
+                                <div class="mn-sub-menu">
+                                    <a href="index.html">Home</a>
                                 </div>
                             </li>
-                            <li><span>Tab 2</span>
-                                <div>
-                                    Tab 3
+                            <li>
+                                <span>Pages</span>
+                                <div class="mn-sub-menu">
+                                    <a href="our-clinic.html">Our Clinic</a>
+                                    <a href="contact-us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="book-appointment.html">Book an Appointment</a>
+                                    <a href="pricings.html">Pricings</a>
+                                    <a href="schedule.html">Schedule</a>
                                 </div>
-
                             </li>
 
-                            <li><span>tab 3</span>
-                                <div>
-                                    tab 3
+                            <li>
+                                <span>Doctors</span>
+                                <div class="mn-sub-menu">
+                                    <a href="find-doctor.html">Find A Doctor</a>
+                                    <a href="doctor-single.html">Doctor Single</a>
                                 </div>
                             </li>
 
-                            <li><span>tab 4</span>
-                                <div>
-                                    Tab 4
+                            <li>
+                                <span class="active-nav">Departments</span>
+                                <div class="mn-sub-menu">
+                                    <a href="medical-department.html">Medical Department</a>
+                                    <a href="dental-clinic.html" class="active-nav">Dental Clinic</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Blog</span>
+                                <div class="mn-sub-menu">
+                                    <a href="post-standard.html">Single Post Standard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Shop</span>
+                                <div class="mn-sub-menu">
+                                    <a href="sidebar-left.html">Sidebar left</a>
+                                    <a href="cart.html">Card</a>
+                                    <a href="checkout.html">Checkout</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Elements</span>
+                                <div class="mn-sub-menu">
+                                    <a>Coming Soon</a>
                                 </div>
                             </li>
                         </ul>
@@ -189,7 +218,7 @@
     <!-- main starts -->
     <main>
         <!-- main-frame section starts -->
-        <section class="main-frame-2" style="background-image: url(assets/images/dental-clinic-title.jpg);">
+        <section class="main-frame-2 no-select" style="background-image: url(assets/images/dental-clinic-title.jpg);">
             <div class="container">
                 <div class="frame-item">
                     <p class="subtitle">Home / Dental Clinic</p>

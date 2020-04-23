@@ -221,6 +221,9 @@ h3 {
   .section-left-color {
     background-color: #FFF !important;
   }
+  .section-right-color {
+    background-color: #FFF !important;
+  }
   .find-doctor-right {
     padding-top: 0 !important;
     padding-left: 15px !important;
@@ -235,6 +238,14 @@ h3 {
   .appointment-form {
     max-height: 570px !important;
     overflow-y: scroll !important;
+  }
+  .section-right {
+    padding-left: 15px !important;
+    padding-top: 60px !important;
+  }
+  .section-left {
+    padding-right: 15px !important;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -2101,6 +2112,7 @@ footer .footer-bottom .policy {
 .doctor-single .section-left {
   padding-top: 100px;
   padding-right: 30px;
+  padding-bottom: 100px;
 }
 
 .doctor-single .section-left .img-container {
@@ -2164,6 +2176,7 @@ footer .footer-bottom .policy {
   font-size: 15px;
   padding-top: 23px;
   border-top: 1px solid #e1e1e1;
+  color: #777777;
 }
 
 .doctor-single .section-left .contact-info {
@@ -2191,6 +2204,10 @@ footer .footer-bottom .policy {
 
 .doctor-single .section-left .contact-info .contact-info-description i {
   margin-right: 15px;
+}
+
+.doctor-single .section-left .contact-info .contact-info-description span {
+  color: #777777;
 }
 
 .doctor-single .section-left .working-time {
@@ -2221,9 +2238,14 @@ footer .footer-bottom .policy {
   padding-bottom: 10px;
 }
 
+.doctor-single .section-left .working-time .working-time-description li .day {
+  color: #777777;
+}
+
 .doctor-single .section-right {
   padding-top: 100px;
   padding-left: 30px;
+  padding-bottom: 100px;
   background-color: #FFF;
 }
 
@@ -2250,6 +2272,7 @@ footer .footer-bottom .policy {
 
 .doctor-single .section-right .introducting .introducting-text p {
   font-size: 14px;
+  color: #777777;
 }
 
 .doctor-single .section-right .skill {
@@ -2287,6 +2310,10 @@ footer .footer-bottom .policy {
   font-size: 18px;
 }
 
+.items .items-section-title {
+  padding-bottom: 60px;
+}
+
 .items .items-content {
   padding-top: 50px;
 }
@@ -2296,6 +2323,20 @@ footer .footer-bottom .policy {
   text-align: center;
   -webkit-box-shadow: 0px 0px 9px 0px #0000003b;
           box-shadow: 0px 0px 9px 0px #0000003b;
+  position: relative;
+  top: 0;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.items .items-content .md-item:hover {
+  top: -10px;
+}
+
+.items .items-content .md-item:hover .button {
+  background-color: #007DF2;
+  color: #FFF;
+  border: 2px solid #FFF;
 }
 
 .items .items-content .md-item .title {
@@ -2308,6 +2349,7 @@ footer .footer-bottom .policy {
   font-size: 14px;
   padding-top: 20px;
   line-height: 2;
+  color: #777777;
 }
 
 .items .items-content .md-item .button {
@@ -2323,13 +2365,13 @@ footer .footer-bottom .policy {
   background-color: #FFF;
   position: relative;
   max-width: 600px;
-  top: 50px;
+  top: 70px;
   padding: 30px 50px 63px;
   display: inline-block;
   z-index: 1;
   -webkit-box-shadow: 0px 0px 9px 0px #0000003b;
           box-shadow: 0px 0px 9px 0px #0000003b;
-  border-bottom: 4px solid #007DF2;
+  border-bottom: 5px solid #007DF2;
 }
 
 .frame-item .heading {
@@ -2338,6 +2380,8 @@ footer .footer-bottom .policy {
 
 .frame-item .description {
   padding-top: 19px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .dental-main-section {
@@ -2352,6 +2396,7 @@ footer .footer-bottom .policy {
   background-color: #FFF;
   padding-top: 150px;
   padding-right: 30px;
+  padding-bottom: 80px;
 }
 
 .dental-main-section .section-left .left-main-photo {
@@ -2382,6 +2427,7 @@ footer .footer-bottom .policy {
 
 .dental-main-section .section-left .oral-examination .examination-text p {
   font-size: 14px;
+  color: #777777;
 }
 
 .dental-main-section .section-left .oral-examination .examination-text .subtitle {
@@ -2395,20 +2441,21 @@ footer .footer-bottom .policy {
 
 .dental-main-section .section-left .oral-examination .examination-text .therapy li {
   list-style: disc !important;
+  color: #777777;
 }
 
 .dental-main-section .section-left .sc-content {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .dental-main-section .section-left .sc-content li {
   padding-bottom: 14px;
-  font-weight: 600;
 }
 
 .dental-main-section .section-left .sc-content li i {
   color: #007DF2;
-  font-size: 12px;
+  font-size: 15px;
   padding-right: 15px;
 }
 
@@ -2459,6 +2506,7 @@ footer .footer-bottom .policy {
 
 .dental-main-section .section-right {
   padding-left: 30px;
+  padding-bottom: 80px;
 }
 
 .dental-main-section .section-right h4 {
@@ -3184,6 +3232,17 @@ footer .footer-bottom .policy {
   height: 100%;
   position: absolute;
   right: 0;
+}
+
+.form-self h4 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.form-self .form-desc {
+  color: #777777;
+  font-size: 14px;
+  padding-bottom: 30px;
 }
 
 .form-self label {

@@ -1,5 +1,16 @@
 .form-self{
 
+    h4{
+        font-weight: $font-weight;
+        padding-bottom: 20px;
+    }
+
+    .form-desc{
+        color: $color-gray;
+        font-size: $font-size;
+        padding-bottom: 30px;
+    }
+
     label{
         display: block;
         font-size: 14px;

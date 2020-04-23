@@ -1,8 +1,15 @@
+
+// #region items section
 .items {
     padding-top: 100px;
 
+
     .description {
         font-size: 18px;
+    }
+
+    .items-section-title{
+        padding-bottom: 60px;
     }
 
     .items-content {
@@ -12,6 +19,20 @@
             padding: 35px 45px 36px;
             text-align: center;
             box-shadow: $box-shadow;
+            position: relative;
+            top: 0;
+            transition: .3s all linear;
+            
+
+            &:hover{
+                top: -10px;
+
+                .button{
+                    background-color: $main-color;
+                    color: $color-white;
+                    border: 2px solid $color-white;
+                }
+            }
 
             .title{
                 font-size: 24px;
@@ -23,6 +44,7 @@
                 font-size: $font-size;
                 padding-top: 20px;
                 line-height: 2;
+                color: $color-gray;
             }
 
             .button{
@@ -37,3 +59,4 @@
 
     }
 }
+// #endregion items section

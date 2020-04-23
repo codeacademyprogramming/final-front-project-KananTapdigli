@@ -1,13 +1,16 @@
+// #region doctor-single
 .doctor-single {
     position: relative;
 
-    .section-left-color{
+    .section-left-color {
         background-color: $color-gray-lighter;
     }
 
+    // #region section-left
     .section-left {
         padding-top: 100px;
         padding-right: 30px;
+        padding-bottom: 100px;
 
         .img-container {
             width: 95%;
@@ -47,7 +50,7 @@
                     color: $color-white;
                 }
 
-                
+
             }
         }
 
@@ -72,6 +75,7 @@
                 font-size: 15px;
                 padding-top: 23px;
                 border-top: 1px solid $color-border;
+                color: $color-gray;
             }
 
         }
@@ -102,6 +106,7 @@
                 }
 
                 span {
+                    color: $color-gray;
                 }
             }
         }
@@ -133,16 +138,21 @@
                     padding-bottom: 10px;
 
                     .day {
+                        color: $color-gray;
                     }
                 }
             }
         }
     }
 
+    // #endregion section-left
 
+
+    // #region section-right
     .section-right {
         padding-top: 100px;
         padding-left: 30px;
+        padding-bottom: 100px;
         background-color: $color-white;
 
         .introducting {
@@ -171,37 +181,42 @@
             .introducting-text {
                 p {
                     font-size: $font-size;
+                    color: $color-gray;
                 }
 
             }
         }
 
-        .skill{
+        .skill {
             padding-top: 70px;
 
-            .skill-title{
-                h4{
+            .skill-title {
+                h4 {
                     font-weight: $font-weight;
                 }
             }
 
-            .skill-content{
+            .skill-content {
                 padding-top: 40px;
-                 li{
+
+                li {
                     padding-bottom: 14px;
                     font-weight: $font-weight;
 
-                    i{
+                    i {
                         color: $main-color;
-                        font-size:12px;
+                        font-size: 12px;
                         padding-right: 15px;
                     }
 
-                    span{
+                    span {
                         font-size: $font-size;
                     }
-                 }
+                }
             }
         }
     }
+    // #endregion section-right
 }
+
+// #endregion doctor-single

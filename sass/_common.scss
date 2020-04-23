@@ -232,6 +232,10 @@ h3 {
     background-color: $color-white !important;
   }
 
+  .section-right-color{
+    background-color: $color-white !important;
+  }
+
   .find-doctor-right {
     padding-top: 0 !important;
     padding-left: 15px !important;
@@ -253,6 +257,15 @@ h3 {
     overflow-y: scroll !important;
   }
 
+  .section-right{
+    padding-left: 15px !important;
+    padding-top: 60px !important;
+  }
+
+  .section-left{
+    padding-right: 15px !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 
