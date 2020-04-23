@@ -242,6 +242,7 @@
             background: url(../assets/images/search.svg) no-repeat 90% 6px;
             background-size: 17px;
             background-position-y: center;
+            outline: none;
         }
 
         .categories{
@@ -251,6 +252,12 @@
                 padding: 12px 0;
                 color: $color-dark-light;
                 font-size: $font-size;
+                transition: .3s all linear;
+                cursor: pointer;
+
+                &:hover{
+                    color: $main-color;
+                }
             }
         }
 

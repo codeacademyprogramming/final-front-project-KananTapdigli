@@ -400,7 +400,7 @@ $(document).ready(function () {
     //#endregion search-doctor on click
 
     //#region search-doctor on enter press
-    $(document).on('keypress', function (element) {
+    $(document).on('keypress','.search-doctor-input', function (element) {
       if (element.which == 13) {
         let searchValue = $('.search-doctor-input').val().toLowerCase().trim();
         $(".doctor-name").filter(function () {
@@ -496,6 +496,29 @@ $(document).ready(function () {
   }
   TitleClinic()
 
+  function SearchProduct(){
+    //#region search product on click
+    $(document).on("click", '.search-product-icon', function () {
+      let searchProductValue = $('.search-product-input').val().toLowerCase().trim();
+      $(".productt-name").filter(function () {
+        $(this).parent().parent().parent().toggle($(this).text().toLowerCase().trim().indexOf(searchProductValue) > -1)
+      });
+    })
+    //#endregion search product on click
+
+    //#region search product on enter press
+    $(document).on('keypress','.search-product-input', function (element) {
+      if (element.which == 13) {
+        let searchProductValue = $('.search-product-input').val().toLowerCase().trim();
+        $(".productt-name").filter(function () {
+          $(this).parent().parent().parent().toggle($(this).text().toLowerCase().trim().indexOf(searchProductValue) > -1)
+        });
+      }
+    });
+    //#endregion search product on enter press
+    //#endregion search product
+  }
+  SearchProduct()
 
 
   // #region AOS animation

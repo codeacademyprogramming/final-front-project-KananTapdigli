@@ -18,7 +18,6 @@
     <!-- Slider Slick css -->
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <!--main css-->
     <link rel="stylesheet" href="css/style.css">
     <title>Sidebar Left</title>
@@ -28,7 +27,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top d-none d-md-block">
+        <div class="header-top cu-header-top  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -46,19 +45,19 @@
                         </span>
                     </div>
                     <div class="social-media col-md-12 col-lg-3  text-lg-right text-md-center mt-md-2 mt-lg-0">
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -69,7 +68,7 @@
 
 
         <!-- header-bottom-starts -->
-        <div class="header-bottom">
+        <div class="header-bottom no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-2">
@@ -78,12 +77,12 @@
                         </div>
                     </div>
                     <nav class="col-10 d-flex justify-content-end">
-                        <ul class="navigation  d-none d-xl-inline-flex">
+                        <ul class="navigation  d-none d-xl-flex">
                             <li class="home">
                                 <span class="title">Home</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Home Main</a>
+                                        <a href="index.html">Home</a>
                                     </div>
                                 </div>
                             </li>
@@ -91,12 +90,12 @@
                                 <span class="title">Pages</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Our Clinic</a>
-                                        <a>FAQ</a>
-                                        <a>Pricing</a>
-                                        <a>Contact us 2</a>
-                                        <a>Book an Appointment</a>
-                                        <a>Schedule</a>
+                                        <a href="our-clinic.html">Our Clinic</a>
+                                        <a href="contact-us.html">Contact us</a>
+                                        <a href="faq.html">FAQ</a>
+                                        <a href="book-appointment.html">Book an Appointment</a>
+                                        <a href="pricings.html">Pricings</a>
+                                        <a href="schedule.html">Schedule</a>
                                     </div>
                                 </div>
                             </li>
@@ -104,8 +103,8 @@
                                 <span class="title">Doctors</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Find A Doctor</a>
-                                        <a>Doctor Single</a>
+                                        <a href="find-doctor.html">Find A Doctor</a>
+                                        <a href="doctor-single.html">Doctor Single</a>
                                     </div>
                                 </div>
                             </li>
@@ -113,8 +112,8 @@
                                 <span class="title">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Medical Department</a>
-                                        <a>Dental Clinic</a>
+                                        <a href="medical-department.html">Medical Department</a>
+                                        <a href="dental-clinic.html">Dental Clinic</a>
                                     </div>
                                 </div>
                             </li>
@@ -122,17 +121,17 @@
                                 <span class="title">Blog</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Single Post Standard</a>
+                                        <a href="post-standard.html">Single Post Standard</a>
                                     </div>
                                 </div>
                             </li>
                             <li class="shop">
-                                <span class="title">Shop</span>
+                                <span class="title active-nav">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a>Sidebar left</a>
-                                        <a>Card</a>
-                                        <a>Checkout</a>
+                                        <a href="sidebar-left.html" class="active-nav">Sidebar left</a>
+                                        <a href="cart.html">Card</a>
+                                        <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
                             </li>
@@ -145,41 +144,67 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="search-basket-menu d-inline-flex">
-                            <div class="search d-none d-md-block"><i class="fas fa-search"></i></div>
-                            <div class="basket"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="search-basket-menu d-flex align-items-center">
+                            <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
+                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
-                            <li><span>Tab 1</span>
-                                <div>
-                                    tab1
-
+                            <li>
+                                <span>Home</span>
+                                <div class="mn-sub-menu">
+                                    <a href="index.html">Home</a>
                                 </div>
                             </li>
-                            <li><span>Tab 2</span>
-                                <div>
-                                    Tab 3
+                            <li>
+                                <span>Pages</span>
+                                <div class="mn-sub-menu">
+                                    <a href="our-clinic.html">Our Clinic</a>
+                                    <a href="contact-us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="book-appointment.html">Book an Appointment</a>
+                                    <a href="pricings.html">Pricings</a>
+                                    <a href="schedule.html">Schedule</a>
                                 </div>
-
                             </li>
 
-                            <li><span>tab 3</span>
-                                <div>
-                                    tab 3
+                            <li>
+                                <span>Doctors</span>
+                                <div class="mn-sub-menu">
+                                    <a href="find-doctor.html">Find A Doctor</a>
+                                    <a href="doctor-single.html">Doctor Single</a>
                                 </div>
                             </li>
 
-                            <li><span>tab 4</span>
-                                <div>
-                                    Tab 4
+                            <li>
+                                <span>Departments</span>
+                                <div class="mn-sub-menu">
+                                    <a href="medical-department.html">Medical Department</a>
+                                    <a href="dental-clinic.html">Dental Clinic</a>
                                 </div>
-
-
                             </li>
-
+                            <li>
+                                <span>Blog</span>
+                                <div class="mn-sub-menu">
+                                    <a href="post-standard.html">Single Post Standard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Shop</span>
+                                <div class="mn-sub-menu active-nav">
+                                    <a href="sidebar-left.html" class="active-nav">Sidebar left</a>
+                                    <a href="cart.html">Card</a>
+                                    <a href="checkout.html">Checkout</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Elements</span>
+                                <div class="mn-sub-menu">
+                                    <a>Coming Soon</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -189,9 +214,10 @@
     </header>
     <!-- header ends -->
 
+    <!-- main starts -->
     <main>
         <!-- main-frame section starts -->
-        <section class="main-frame" style="background-image: url(assets/images/shop-page-title.jpg);">
+        <section class="main-frame no-select" style="background-image: url(assets/images/shop-page-title.jpg);">
             <div class="main-frame-title">
                 <div class="container">
                     <div class="row text-center">
@@ -211,17 +237,23 @@
         </section>
         <!-- main-frame section ends -->
 
-        <section class="products">
+        <!-- products section starts -->
+        <section class="products no-select">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="left-sidebar">
                             <div class="search">
                                 <h4>Search</h4>
-                                <input type="search" name="" id="" placeholder="Search here...">
+                                <div class="search-product">
+                                    <input type="search" name="" id="" placeholder="Search products"
+                                        class="search-product-input">
+                                    <img src="assets/images/search-product-icon.png" alt="" class="search-product-icon">
+                                </div>
+
                             </div>
                             <div class="categories">
-                                <h4>Categories</h4>
+                                <h4>Product categories</h4>
                                 <ul>
                                     <li>Baby Health (1) </li>
                                     <li>Cancer (3) </li>
@@ -313,39 +345,105 @@
                                     <span>tips</span>
                                 </div>
                             </div>
+                            <div class="instagram pt-4">
+                                <h5 class="footer-top-col-title pb-4">Instagram</h5>
+                                <div class="container">
+                                    <div class="row instagram-contents">
+                                        <div class="col-4">
+                                            <div class="instagram-content">
+                                                <img src="assets/images/instagram-1.jpg" alt="">
+                                                <div class="overlay d-flex align-items-center justify-content-center"><i
+                                                        class="fab fa-instagram insta-icon"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="instagram-content">
+                                                <img src="assets/images/instagram-2.jpg" alt="">
+                                                <div class="overlay d-flex align-items-center justify-content-center"><i
+                                                        class="fab fa-instagram insta-icon"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="instagram-content">
+                                                <img src="assets/images/instagram-3.jpg" alt="">
+                                                <div class="overlay d-flex align-items-center justify-content-center"><i
+                                                        class="fab fa-instagram insta-icon"></i></div>
+            
+                                            </div>
+                                        </div>
+                                        <div class="col-4 pt-3  pt-md-5 pt-lg-2">
+                                            <div class="instagram-content">
+                                                <img src="assets/images/instagram-4.jpg" alt="">
+                                                <div class="overlay d-flex align-items-center justify-content-center"><i
+                                                        class="fab fa-instagram insta-icon"></i></div>
+            
+                                            </div>
+                                        </div>
+                                        <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                            <div class="instagram-content">
+                                                <img src="assets/images/instagram-5.jpg" alt="">
+                                                <div class="overlay d-flex align-items-center justify-content-center"><i
+                                                        class="fab fa-instagram insta-icon"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                            <div class="instagram-content">
+                                                <img src="assets/images/instagram-6.jpg" alt="">
+                                                <div class="overlay d-flex align-items-center justify-content-center"><i
+                                                        class="fab fa-instagram insta-icon"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-9 products-side">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-1.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>A Omron 3 Series Blood Pressure</h5>
+                                        <h5 class="productt-name">A Omron 3 Series Blood Pressure</h5>
                                         <p>$39.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-2.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>A Sialkot Surgical Instruments</h5>
+                                        <h5 class="productt-name">A Sialkot Surgical Instruments</h5>
                                         <p>$20.00</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-3.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Blue Stethoscope</h5>
+                                        <h5 class="productt-name">Blue Stethoscope</h5>
                                         <div class="stars">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -357,24 +455,34 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-4.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>A Sialkot Surgical Instruments</h5>
+                                        <h5 class="productt-name">A Sialkot Surgical Instruments</h5>
                                         <p>$20.00</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-5.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Blue Stethoscope</h5>
+                                        <h5 class="productt-name">Blue Stethoscope</h5>
                                         <div class="stars">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -386,79 +494,114 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-6.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Inox Medical Cups</h5>
+                                        <h5 class="productt-name">Inox Medical Cups</h5>
                                         <p>$39.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-7.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Lidocaine Hydrochloride Injection</h5>
+                                        <h5 class="productt-name">Lidocaine Hydrochloride Injection</h5>
                                         <p>$39.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-8.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Mouth Moisturizer Oral Gel</h5>
+                                        <h5 class="productt-name">Mouth Moisturizer Oral Gel</h5>
                                         <p>$39.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-1.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>A Omron 3 Series Blood Pressure</h5>
+                                        <h5 class="productt-name">A Omron 3 Series Blood Pressure</h5>
                                         <p>$39.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-10.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Polime Oxygen Mask</h5>
+                                        <h5 class="productt-name">Polime Oxygen Mask</h5>
                                         <p>$17.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-10.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>Polime Oxygen Mask</h5>
+                                        <h5 class="productt-name">Polime Oxygen Mask</h5>
                                         <p>$17.99</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 pb-5">
                                 <div class="productt">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-2.jpg);">
+                                        <div class="basket-wishlist-compare d-flex justify-content-center">
+                                            <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
+                                            <div class="wishlist text-center"><i class="far fa-heart"></i></div>
+                                            <div class="compare text-center"><i class="fas fa-exchange-alt"></i></div>
+                                        </div>
                                     </div>
                                     <div class="product-inf">
-                                        <h5>A Sialkot Surgical Instruments</h5>
+                                        <h5 class="productt-name">A Sialkot Surgical Instruments</h5>
                                         <p>$20.00</p>
                                     </div>
                                 </div>
@@ -467,7 +610,149 @@
                     </div>
                 </div>
         </section>
+        <!-- products section ends -->
     </main>
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer class="footer-2 no-select">
+        <div class="container">
+            <!-- footer-top starts -->
+            <div class="footer-top row">
+                <div class="healthcare col-12 col-lg-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
+                    </div>
+                    <p class="healthcare-text">With a background in the healthcare software industry and a desire to
+                        build great technology to
+                        help companies succeed in making healthcare better.</p>
+                </div>
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Quick Links</h5>
+                    <ul>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="medical-department.html">Departments</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="find-doctor.html">Find A Doctor</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="schedule.html">Timetable</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="">News</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Contact</h5>
+                    <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
+                        info@yourdomain.com<br>
+                        +(123) 1800-88-66</p>
+                    <div class="social-media d-inline-block">
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://dribbble.com/">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="instagram col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Instagram</h5>
+                    <div class="container">
+                        <div class="row instagram-contents">
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-1.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-2.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-3.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
+                                </div>
+                            </div>
+                            <div class="col-4 pt-3  pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-4.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
+                                </div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-5.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-6.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom ends -->
+    </footer>
+    <!-- footer ends -->
+
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- scroll-top button ends -->
 
 
 
@@ -482,7 +767,6 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

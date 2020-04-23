@@ -1,9 +1,11 @@
+// #region products region
 .products {
     margin-top: 100px;
 
     .left-sidebar {
         padding: 54px 30px 49px;
         border: 1px solid $color-border;
+        margin-bottom: 50px;
 
         h4 {
             font-size: 18px;
@@ -19,9 +21,41 @@
             width: 100%;
             font-size: $font-size;
             font-weight: $font-weight-bolder;
-            background: url(../assets/images/search.svg) no-repeat 90% 6px;
             background-size: 17px;
             background-position-y: center;
+            outline: none;
+            transition: .3s all linear;
+
+            &:hover {
+                border: 1px solid $main-color;
+                color: $main-color;
+
+                &::placeholder {
+                    color: $main-color;
+                }
+            }
+
+            &:focus {
+                border: 1px solid $main-color;
+                color: $main-color;
+
+                &::placeholder {
+                    color: $main-color;
+                }
+            }
+
+
+        }
+
+        .search-product {
+            position: relative;
+
+            .search-product-icon {
+                position: absolute;
+                top: 8px;
+                right: 4px;
+                cursor: pointer;
+            }
         }
 
         .categories {
@@ -31,6 +65,12 @@
                 padding: 12px 0;
                 color: $color-dark-light;
                 font-size: $font-size;
+                transition: .3s all linear;
+                cursor: pointer;
+
+                &:hover{
+                    color: $main-color;
+                }
             }
         }
 
@@ -43,12 +83,18 @@
 
             .product-photo {
                 max-width: 70px;
-                margin-right: 25px;
+                margin-right: 15px;
             }
 
             .product-title {
                 font-size: 14px;
                 font-weight: $font-weight;
+                cursor: pointer;
+                transition: .3s all linear;
+
+                &:hover{
+                    color: $main-color;
+                }
             }
 
             .stars {
@@ -81,36 +127,84 @@
         .col-lg-4 {
             padding: 0 25px;
 
-            .product-image {
-                background-size: cover;
-                background-position: center;
-                height: 337px;
-            }
-
-            .product-inf{
-                text-align: center;
-                margin-top: 20px;
-                
-                h5{
-                    font-weight: $font-weight;
-                    font-size: 18px;
-                    line-height: 1.7;
+            .productt{
+                &:hover .product-image{
+                    box-shadow: $box-shadow;
                 }
 
-                .stars {
-                    color: #ffb805;
-                    margin: 10px 0;
+                &:hover .basket-wishlist-compare{
+                    opacity: 1 !important;
+                }
+
+                .product-image {
+                    background-size: cover;
+                    background-position: center;
+                    height: 370px;
+                    transition: .3s all linear;
+                    position: relative;
+
+                    .basket-wishlist-compare{
+                        width: 100%;
+                        position: absolute;
+                        bottom: 30px;
+                        opacity: 0;
+                        transition: .3s all linear;
+
+                        div{
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                            background-color: $color-white;
+                            box-shadow: $box-shadow;
+                            color: $color-black-lighter;
+                            margin: 0 10px;
+                            cursor: pointer;
+                            transition: .3s all linear;
+
+                            &:hover{
+                                background-color: $main-color;
+                                color: $color-white;
+                            }
+
+                        }
+                        
+
+                    }
                 }
     
+                .product-inf {
+                    text-align: center;
+                    margin-top: 20px;
+    
+                    h5 {
+                        font-weight: $font-weight;
+                        font-size: 18px;
+                        line-height: 1.7;
+                        transition: .3s all linear;
+                        cursor: pointer;
 
-                p{
-                    color: $color-green;
-                    font-size: 18px;
-                    font-weight: $font-weight;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+    
+                    .stars {
+                        color: #ffb805;
+                        margin: 10px 0;
+                    }
+    
+    
+                    p {
+                        color: $color-green;
+                        font-size: 18px;
+                        font-weight: $font-weight;
+                    }
                 }
             }
+
         }
 
     }
 
 }
+// #endregion products region
