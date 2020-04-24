@@ -146,10 +146,23 @@
                         </ul>
                         <div class="search-basket-menu d-flex align-items-center">
                             <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
-                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
+                            <div class="basket">
+                                <img src="assets/images/shop-basket.png" alt="">
+                                <span class="cart-items-count text-center">0</span>
+                            </div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
+                    <div class="mini-cart">
+                        <span class="no-cart-item">No Products In The Basket</span>
+                        <ul class="cart-items">
+
+                        </ul>
+                        <div class="total-price  justify-content-between"><div class="subtotal">Subtotal:</div><div class="total-count"><span>$</span><span class="total-count-number">0</span></div></div>
+                        <div class="text-center"><a href="" class="button">View Basket</a></div>
+                        <div class="text-center"><a href="" class="button">Checkout</a></div>
+
+                    </div>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
                             <li>
@@ -271,14 +284,7 @@
                                     <li>Urology (5) </li>
                                 </ul>
                             </div>
-                            <div class="filter-price">
-                                <p>
-                                    <label for="amount">Price range:</label>
-                                    <input type="text" id="amount" readonly
-                                        style="border:0; color:#f6931f; font-weight:bold;">
-                                </p>
-                                <div id="slider-range"></div>
-                            </div>
+                           
                             <div class="top-rated-products">
                                 <h4>Top rated products</h4>
                                 <ul>
@@ -401,7 +407,7 @@
                     <div class="col-lg-9 products-side">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="1">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-1.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -412,12 +418,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">A Omron 3 Series Blood Pressure</h5>
-                                        <p>$39.99</p>
+                                        <p><span>$</span><span class="price">39.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="2"> 
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-2.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -428,12 +434,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">A Sialkot Surgical Instruments</h5>
-                                        <p>$20.00</p>
+                                        <p><span>$</span><span class="price">20.00</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4  col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="3">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-3.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -451,12 +457,12 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>$20.00</p>
+                                        <p><span>$</span><span class="price">20.00</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4  col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="4">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-4.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -467,12 +473,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">A Sialkot Surgical Instruments</h5>
-                                        <p>$20.00</p>
+                                        <p><span>$</span><span class="price">20.00</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4  col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="5">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-5.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -490,12 +496,12 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>$20.00</p>
+                                        <p><span>$</span><span class="price">20.00</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4  col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="6">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-6.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -506,12 +512,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">Inox Medical Cups</h5>
-                                        <p>$39.99</p>
+                                        <p><span>$</span><span class="price">39.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4  col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="7">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-7.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -522,12 +528,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">Lidocaine Hydrochloride Injection</h5>
-                                        <p>$39.99</p>
+                                        <p><span>$</span><span class="price">39.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="8">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-8.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -538,12 +544,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">Mouth Moisturizer Oral Gel</h5>
-                                        <p>$39.99</p>
+                                        <p><span>$</span><span class="price">39.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4  col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="9">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-1.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -554,12 +560,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">A Omron 3 Series Blood Pressure</h5>
-                                        <p>$39.99</p>
+                                        <p><span>$</span><span class="price">39.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="10">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-10.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -570,12 +576,12 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">Polime Oxygen Mask</h5>
-                                        <p>$17.99</p>
+                                        <p><span>$</span><span class="price">17.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="11">
                                     <div class="product-image"
                                         style="background-image: url(assets/images/product-10.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
@@ -586,14 +592,14 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">Polime Oxygen Mask</h5>
-                                        <p>$17.99</p>
+                                        <p><span>$</span><span class="price">17.99</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 pb-5">
-                                <div class="productt">
+                                <div class="productt" id="12">
                                     <div class="product-image"
-                                        style="background-image: url(assets/images/product-2.jpg);">
+                                        style="background-image: url(assets/images/product-4.jpg);">
                                         <div class="basket-wishlist-compare d-flex justify-content-center">
                                             <div class="add-basket text-center"><i class="fas fa-shopping-basket"></i></div>
                                             <div class="wishlist text-center"><i class="far fa-heart"></i></div>
@@ -602,7 +608,7 @@
                                     </div>
                                     <div class="product-inf">
                                         <h5 class="productt-name">A Sialkot Surgical Instruments</h5>
-                                        <p>$20.00</p>
+                                        <p><span>$</span><span class="price">20.00</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -767,6 +773,8 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- local storage -->
+    <script src="js/jquery.shoppingcart.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

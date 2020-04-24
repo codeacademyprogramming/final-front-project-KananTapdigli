@@ -11,6 +11,7 @@ $(document).ready(function () {
   SelectingBullet()
 
 
+
   function ShowingBanners() {
 
     //#region showing-banner-page-1
@@ -400,7 +401,7 @@ $(document).ready(function () {
     //#endregion search-doctor on click
 
     //#region search-doctor on enter press
-    $(document).on('keypress','.search-doctor-input', function (element) {
+    $(document).on('keypress', '.search-doctor-input', function (element) {
       if (element.which == 13) {
         let searchValue = $('.search-doctor-input').val().toLowerCase().trim();
         $(".doctor-name").filter(function () {
@@ -496,7 +497,7 @@ $(document).ready(function () {
   }
   TitleClinic()
 
-  function SearchProduct(){
+  function SearchProduct() {
     //#region search product on click
     $(document).on("click", '.search-product-icon', function () {
       let searchProductValue = $('.search-product-input').val().toLowerCase().trim();
@@ -507,7 +508,7 @@ $(document).ready(function () {
     //#endregion search product on click
 
     //#region search product on enter press
-    $(document).on('keypress','.search-product-input', function (element) {
+    $(document).on('keypress', '.search-product-input', function (element) {
       if (element.which == 13) {
         let searchProductValue = $('.search-product-input').val().toLowerCase().trim();
         $(".productt-name").filter(function () {
@@ -519,6 +520,154 @@ $(document).ready(function () {
     //#endregion search product
   }
   SearchProduct()
+
+  // #region OpenMiniCart
+  function OpenMiniCart() {
+    $(document).on('click', '.basket', () => {
+      $('.mini-cart').slideToggle()
+    })
+  }
+  OpenMiniCart()
+  // #endregion OpenMiniCart
+
+
+  // #region TranferringtoCart
+  let cartProduct;
+
+  function TranferringtoCart() {
+    $(document).on('click', '.add-basket', function () {
+      $('.no-cart-item').text('')
+      $('.total-price').show();
+      $('.mini-cart .button').show();
+  
+
+      $(this).addClass('view-basket').removeClass('add-basket').text('View Basket');
+
+
+      $.shoppingcart('add', {
+        'id': $(this).parent().parent().parent().attr('id'),
+        'image': $(this).parent().parent().css('background-image'),
+        'name': $(this).parent().parent().siblings().children().eq(0).text(),
+        'price': parseFloat($(this).parent().parent().siblings().children('p').children('.price').text()),
+        'count': 1
+      });
+
+      cartProduct = $.shoppingcart('getById', $(this).parent().parent().parent().attr('id'));
+      let cartProductImage = $(`<div class='cart-product-image' style='background-image: ${$(cartProduct).attr('image')}' ></div>`)
+      let cartProductName = $(`<p class='cart-product-name'>${$(cartProduct).attr('name')}</p>`)
+      let cartProductPriceQuantity = $(`<span class='cart-product-price-quantity'>${$(cartProduct).attr('count')} ×  $${$(cartProduct).attr('price')}</span>`)
+
+
+      let cartItem = $(`<li id='${$(this).parent().parent().parent().attr('id')}' class='cart-item'></li>`)
+      let cartItemLeft = $(`<div class="cart-item-left"></div>`)
+      let cartItemRight = $(`<div class="cart-item-right"></div>`)
+      let deleteButton = $(`<i class="far fa-trash-alt delete-btn"></i>`)
+
+      $(cartItemLeft).append(cartProductImage)
+      $(cartItemRight).append(cartProductName)
+      $(cartItemRight).append(cartProductPriceQuantity)
+      $(cartItem).append(cartItemLeft)
+      $(cartItem).append(cartItemRight)
+      $(cartItem).append(deleteButton)
+      $('.cart-items').append(cartItem)
+
+      $('.cart-items-count').text($.shoppingcart('getCount'))
+      $('.total-count-number').text($.shoppingcart('getPrice').toFixed(2))
+
+
+      ScrollingMiniCart()
+      DeletingCartItem()
+    })
+  }
+  TranferringtoCart()
+  // #region TranferringtoCart
+
+
+  //#region Get Cart Items in Cart
+  function GetCartItemsinCart() {
+
+
+    let allCartItems = $.shoppingcart('getAll')
+    if ($(allCartItems).length > 0) {
+      $('.no-cart-item').text('');
+      $('.total-price').show();
+      $('.mini-cart .button').show();
+    }
+    else{
+      $('.total-price').hide()
+      $('.mini-cart .button').hide();
+    }
+
+    for (const id in allCartItems)
+      if (allCartItems.hasOwnProperty(id)) {
+        let cartItm = allCartItems[id];
+
+        $(cartItm).each(function () {
+
+          let cartProductImage = $(`<div class='cart-product-image' style='background-image: ${$(this).attr('image')}' ></div>`)
+          let cartProductName = $(`<p class='cart-product-name'>${$(this).attr('name')}</p>`)
+          let cartProductPriceQuantity = $(`<span class='cart-product-price-quantity'>${$(this).attr('count')} ×  $${$(this).attr('price')}</span>`)
+
+          let cartItem = $(`<div id='${$(this).attr('id')}' class='cart-item'></div>`)
+          let cartItemLeft = $(`<div class="cart-item-left"></div>`)
+          let cartItemRight = $(`<div class="cart-item-right"></div>`)
+          let deleteButton = $(`<i class="far fa-trash-alt delete-btn"></i>`)
+
+          $(cartItemLeft).append(cartProductImage)
+          $(cartItemRight).append(cartProductName)
+          $(cartItemRight).append(cartProductPriceQuantity)
+          $(cartItem).append(cartItemLeft)
+          $(cartItem).append(cartItemRight)
+          $(cartItem).append(deleteButton)
+          $('.cart-items').append(cartItem)
+
+          $('.cart-items-count').text($.shoppingcart('getCount'))
+          $('.total-count-number').text($.shoppingcart('getPrice').toFixed(2))
+
+          DeletingCartItem()
+          ScrollingMiniCart()
+        });
+      }
+
+    for (let i = 0; i < $('.cart-items .cart-item').length; i++) {
+      let activeID = ($('.cart-items .cart-item').eq(i).attr('id'))
+      $(`#${activeID}.productt`).children('.product-image').children().children('.add-basket').addClass('view-basket').removeClass('add-basket').text('View Basket');
+    }
+  }
+  GetCartItemsinCart()
+  //#endregion Get Cart Items in Cart
+
+  //  #region DeletingCartItem
+  function DeletingCartItem() {
+    $(document).on('click', '.delete-btn', function () {
+      $.shoppingcart('remove', {
+        'id': $(this).parent().attr('id')
+      });
+      $(this).parent().remove()
+      $(`#${$(this).parent().attr('id')}.productt`).children('.product-image').children().children('.view-basket').addClass('add-basket').removeClass('view-basket').text('').append('<i class="fas fa-shopping-basket"></i>')
+      $('.cart-items-count').text($.shoppingcart('getCount'))
+      $('.total-count-number').text($.shoppingcart('getPrice').toFixed(2))
+      if ($('.cart-item').length == 0) {
+        $('.no-cart-item').text('No Products In The Basket')
+        $('.total-price').hide()
+        $('.mini-cart .button').hide();
+      }
+      ScrollingMiniCart()
+    })
+  }
+  //  #endregion DeletingCartItem
+
+  //  #region ScrollingMiniCart
+  function ScrollingMiniCart() {
+    if ($('.cart-item').length > 1) {
+      $('.mini-cart').addClass('scroll-mini-cart')
+    } else {
+      $('.mini-cart').removeClass('scroll-mini-cart')
+    }
+  }
+  //  #endregion ScrollingMiniCart
+
+
 
 
   // #region AOS animation

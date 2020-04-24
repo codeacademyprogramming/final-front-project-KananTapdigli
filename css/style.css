@@ -11,6 +11,7 @@ a {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 p {
@@ -134,6 +135,10 @@ li {
   color: #007DF2 !important;
 }
 
+.scroll-mini-cart {
+  overflow-y: scroll;
+}
+
 .first-banner {
   z-index: 3 !important;
   opacity: 1 !important;
@@ -185,6 +190,10 @@ h3 {
 }
 
 .header-fixed li:hover .sub-menu {
+  top: 76px !important;
+}
+
+.header-fixed .mini-cart {
   top: 76px !important;
 }
 
@@ -275,6 +284,9 @@ h3 {
   .standard-main {
     padding-top: 70px !important;
   }
+  .mini-cart {
+    top: 188px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -342,6 +354,9 @@ h3 {
   }
   .heading-standard {
     padding: 0 !important;
+  }
+  .mini-cart {
+    top: 105px !important;
   }
 }
 
@@ -421,6 +436,9 @@ h3 {
   }
   .space {
     height: 40px !important;
+  }
+  .mini-cart {
+    top: 75px !important;
   }
 }
 
@@ -526,6 +544,97 @@ header .container {
   color: #007DF2 !important;
 }
 
+.header-bottom .mini-cart {
+  width: 300px;
+  position: absolute;
+  top: 155px;
+  right: 15px;
+  z-index: 99999;
+  padding: 30px 24px 30px 20px;
+  background-color: #fff;
+  display: none;
+  max-width: 390px;
+  line-height: normal;
+  max-height: 300px;
+  -webkit-box-shadow: 0px 0px 9px 0px #0000003b;
+          box-shadow: 0px 0px 9px 0px #0000003b;
+}
+
+.header-bottom .mini-cart .button {
+  padding: 12px 20px;
+  font-size: 12px;
+  background-color: #303030;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+  margin: 5px 0;
+}
+
+.header-bottom .mini-cart .button:hover {
+  background-color: #007DF2;
+  color: #FFF;
+}
+
+.header-bottom .mini-cart .no-cart-item {
+  color: #303030;
+  font-size: 14px;
+}
+
+.header-bottom .mini-cart .cart-item {
+  margin: 0 0 27px;
+  padding: 12px 15px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-bottom .mini-cart .cart-item .cart-item-left {
+  margin-right: 20px;
+}
+
+.header-bottom .mini-cart .cart-item .cart-item-left .cart-product-image {
+  height: 66px;
+  width: 66px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+
+.header-bottom .mini-cart .cart-item .cart-item-right .cart-product-name {
+  font-size: 16px;
+}
+
+.header-bottom .mini-cart .cart-item .cart-item-right .cart-product-price-quantity {
+  font-size: 14px;
+  padding-top: 5px;
+  color: #9E9EAB;
+}
+
+.header-bottom .mini-cart .cart-item .delete-btn {
+  color: #777777;
+  font-size: 14px;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
+
+.header-bottom .mini-cart .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.header-bottom .mini-cart .total-price .subtotal {
+  font-size: 15px;
+  color: #303030;
+  font-weight: 600;
+}
+
+.header-bottom .mini-cart .total-price .total-count {
+  font-size: 14px;
+  color: #9E9EAB;
+}
+
 .header-bottom .mobile-nav {
   display: none;
   position: absolute;
@@ -603,6 +712,20 @@ header .container {
 
 .header-bottom .search-basket-menu .basket {
   cursor: pointer;
+  position: relative;
+}
+
+.header-bottom .search-basket-menu .basket .cart-items-count {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  line-height: 17px;
+  font-size: 10px;
+  color: #FFF;
+  position: absolute;
+  background-color: #007DF2;
+  right: 0px;
+  top: -3px;
 }
 
 .header-bottom .search-basket-menu .burger-menu {
@@ -3301,7 +3424,7 @@ footer .footer-bottom .policy {
   transition: .3s all linear;
 }
 
-.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div {
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div, .products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket {
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -3315,9 +3438,17 @@ footer .footer-bottom .policy {
   transition: .3s all linear;
 }
 
-.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div:hover {
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div:hover, .products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket:hover {
   background-color: #007DF2;
   color: #FFF;
+}
+
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket {
+  width: 90px;
+  font-size: 13px;
+  font-weight: 600;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .products .products-side .col-lg-4 .productt .product-inf {

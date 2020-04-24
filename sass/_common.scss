@@ -11,6 +11,7 @@ a {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 p {
@@ -124,6 +125,10 @@ li {
   color: $main-color !important;
 }
 
+.scroll-mini-cart{
+  overflow-y: scroll;
+}
+
 .first-banner {
   z-index: 3 !important;
   opacity: 1 !important;
@@ -179,6 +184,10 @@ h3 {
 
 
   li:hover .sub-menu {
+    top: 76px !important;
+  }
+
+  .mini-cart{
     top: 76px !important;
   }
 
@@ -297,6 +306,9 @@ h3 {
     padding-top: 70px !important;
   }
 
+  .mini-cart{
+    top: 188px !important;
+  }
 }
 
 
@@ -386,6 +398,10 @@ h3 {
 
   .heading-standard{
     padding: 0 !important;
+  }
+
+  .mini-cart{
+    top: 105px !important;
   }
 
 }
@@ -491,6 +507,10 @@ h3 {
 
   .space{
     height: 40px !important;
+  }
+
+  .mini-cart{
+    top: 75px !important;
   }
 }
 

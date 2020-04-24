@@ -150,7 +150,7 @@
                         opacity: 0;
                         transition: .3s all linear;
 
-                        div{
+                        div,.view-basket{
                             width: 60px;
                             height: 60px;
                             line-height: 60px;
@@ -166,6 +166,13 @@
                                 color: $color-white;
                             }
 
+                        }
+
+                        .view-basket{
+                            width: 90px;
+                            font-size: 13px;
+                            font-weight: $font-weight;
+                            transition: none;
                         }
                         
 

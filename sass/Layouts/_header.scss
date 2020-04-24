@@ -74,7 +74,7 @@ header {
             }
 
             &:hover .sub-menu {
-               display: block;
+                display: block;
             }
 
             &:hover .title {
@@ -115,6 +115,93 @@ header {
             }
         }
     }
+
+    .mini-cart {
+        width: 300px;
+        position: absolute;
+        top: 155px;
+        right: 15px;
+        z-index: 99999;
+        padding: 30px 24px 30px 20px;
+        background-color: #fff;
+        display: none;
+        max-width: 390px;
+        line-height: normal;
+        max-height: 300px;
+        box-shadow: $box-shadow;
+
+        .button{
+            padding: 12px 20px;
+            font-size: 12px;
+            background-color: $color-black-lighter;
+            transition: .3s all linear;
+            margin: 5px 0;
+
+            &:hover{
+                background-color: $main-color;
+                color: $color-white;
+            }
+        }
+
+        .no-cart-item{
+            color: $color-black-lighter;
+            font-size: $font-size;
+        }
+
+            .cart-item {
+                margin: 0 0 27px;
+                padding: 12px 15px 0 0;
+                display: flex;
+
+                .cart-item-left {
+                    margin-right: 20px;
+
+                    .cart-product-image {
+                        height: 66px;
+                        width: 66px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 18px;
+                    }
+                }
+
+                .cart-item-right {
+                    .cart-product-name {
+                        font-size: 16px;
+                    }
+
+                    .cart-product-price-quantity {
+                        font-size: $font-size;
+                        padding-top: 5px;
+                        color: $color-grey;
+                    }
+                }
+
+                .delete-btn{
+                    color: $color-gray;
+                    font-size: $font-size;
+                    position: relative;
+                    top: 5px;
+                    cursor: pointer;
+                }
+            }
+        
+            .total-price{
+                display: flex;
+                margin-bottom: 25px;
+                .subtotal{
+                    font-size: 15px;
+                    color: $color-black-lighter;
+                    font-weight: $font-weight;
+                }
+
+                .total-count{
+                    font-size: $font-size;
+                    color: $color-grey;
+                }
+            }
+    
+        }
 
     .mobile-nav {
         display: none;
@@ -195,6 +282,20 @@ header {
 
         .basket {
             cursor: pointer;
+            position: relative;
+
+            .cart-items-count {
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                line-height: 17px;
+                font-size: 10px;
+                color: $color-white;
+                position: absolute;
+                background-color: $main-color;
+                right: 0px;
+                top: -3px;
+            }
         }
 
         .burger-menu {
