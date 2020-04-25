@@ -1,0 +1,80 @@
+// #region checkout section
+.checkout {
+    padding-top: 90px;
+
+    .checkout-content {
+        .checkout-content-top {
+            padding: 21px 60px;
+            background-color: $main-color;
+
+            h5 {
+                font-weight: $font-weight;
+                color: $color-white;
+                margin: 0;
+            }
+        }
+
+        .checkout-content-bottom {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+            padding: 50px 68px;
+
+            h5{
+                font-weight: $font-weight;
+                margin-bottom: 40px;
+            }
+
+            input,select,textarea{
+                padding: 20px;
+                font-size: $font-size;
+                color: $color-black-lighter;
+                width: 100%;
+                outline: none;
+                appearance: none;
+                margin-bottom: 25px;
+                border: 1px solid $color-border;
+            }
+            
+            select{
+                background: url(../assets/images/down-arrow.svg) no-repeat 96% 6px #FFF;
+                background-size: 10px;
+                background-position-y: center;
+                font-weight: $font-weight-bolder;
+            }
+
+            textarea{
+                font-style: italic;
+                font-size: 12px;
+                transition: .3s all linear;
+
+                &:hover{
+                    background-color: $color-white;
+                    border: 1px solid $main-color;
+                }
+                &:focus{
+                    background-color: $color-white;
+                    border: 1px solid $main-color;
+                }
+            }
+
+            input{
+                font-style: italic;
+                font-size: 12px;
+                font-weight: $font-weight;
+                transition: .3s  linear;
+
+                &:hover{
+                    background-color: $color-white;
+                    border: 1px solid $main-color;
+                }
+                &:focus{
+                    background-color: $color-white;
+                    border: 1px solid $main-color;
+                }
+            }
+
+        }
+    }
+}
+
+
+// #endregion checkout section

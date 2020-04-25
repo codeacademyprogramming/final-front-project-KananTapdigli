@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     <!--main css-->
     <link rel="stylesheet" href="css/style.css">
-    <title>Medical Department</title>
+    <title>Cart</title>
 </head>
 
 <body>
@@ -109,10 +109,10 @@
                                 </div>
                             </li>
                             <li class="departments">
-                                <span class="title active-nav">Departments</span>
+                                <span class="title">Departments</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
-                                        <a href="medical-department.html" class="active-nav">Medical Department</a>
+                                        <a href="medical-department.html">Medical Department</a>
                                         <a href="dental-clinic.html">Dental Clinic</a>
                                     </div>
                                 </div>
@@ -126,11 +126,11 @@
                                 </div>
                             </li>
                             <li class="shop">
-                                <span class="title">Shop</span>
+                                <span class="title active-nav">Shop</span>
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
                                         <a href="sidebar-left.html">Sidebar left</a>
-                                        <a href="cart.html">Cart</a>
+                                        <a href="cart.html" class="active-nav">Cart</a>
                                         <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
@@ -156,11 +156,14 @@
                     <div class="mini-cart">
                         <span class="no-cart-item">No Products In The Basket</span>
                         <ul class="cart-items">
-    
+
                         </ul>
-                        <div class="total-price  justify-content-between"><div class="subtotal">Subtotal:</div><div class="total-count"><span>$</span><span class="total-count-number">0</span></div></div>
-                        <div class="text-center"><a href="" class="button">View Basket</a></div>
-                        <div class="text-center"><a href="" class="button">Checkout</a></div>
+                        <div class="total-price  justify-content-between">
+                            <div class="subtotal">Subtotal:</div>
+                            <div class="total-count"><span>$</span><span class="total-count-number">0</span></div>
+                        </div>
+                        <div class="text-center"><a href="cart.html" class="button">View Basket</a></div>
+                        <div class="text-center"><a href="checkout.html" class="button">Checkout</a></div>
                     </div>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
@@ -191,9 +194,9 @@
                             </li>
 
                             <li>
-                                <span class="active-nav">Departments</span>
+                                <span>Departments</span>
                                 <div class="mn-sub-menu">
-                                    <a href="medical-department.html" class="active-nav">Medical Department</a>
+                                    <a href="medical-department.html">Medical Department</a>
                                     <a href="dental-clinic.html">Dental Clinic</a>
                                 </div>
                             </li>
@@ -205,9 +208,9 @@
                             </li>
                             <li>
                                 <span>Shop</span>
-                                <div class="mn-sub-menu">
+                                <div class="mn-sub-menu active-nav">
                                     <a href="sidebar-left.html">Sidebar left</a>
-                                    <a href="cart.html">Cart</a>
+                                    <a href="cart.html" class="active-nav">Cart</a>
                                     <a href="checkout.html">Checkout</a>
                                 </div>
                             </li>
@@ -226,153 +229,89 @@
     </header>
     <!-- header ends -->
 
-
     <!-- main starts -->
     <main>
         <!-- main-frame section starts -->
-        <section class="main-frame-2 no-select" style="background-image: url(assets/images/medical-department.jpg);">
-            <div class="container">
-                <div class="row main-frame-2-title align-items-center">
-                    <div class="col-md-6 main-frame-2-title-text">Medical Department</div>
-                    <div class="col-md-6 text-md-right main-frame-2-title-breadcrumb">Home / Medical Department</div>
+        <section class="main-frame-2 no-select" style="background-image: url(assets/images/cart-frame.jpg);">
+            <div class="main-frame-2-title">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="main-frame-2-title-text custom-title-text">
+                                Cart
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="main-frame-2-breadcrumb">
+                                Home / Cart
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="overlay"></div>
         </section>
         <!-- main-frame section ends -->
 
-        <!-- item section starts -->
-        <section class="items no-select">
+        <!-- product-table -->
+        <section class="product-table no-select">
             <div class="container">
-                <div class="row items-section-title align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="heading" data-aos="fade-up" data-aos-duration="2000">
-                            Expert physician and caring clinical staff provide you with an <span
-                                class="defaultcolor">exceptional patient care.</span>
-                        </h2>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="description" data-aos="fade-up" data-aos-duration="2000">
-                            Syring Medical Center provide patients with choices to ask for the conducting and analyzing
-                            of several lab tests on-site at no cost for prioritized patients or at 70% for people with
-                            an insurance. Additional testing can be ordered off site; those costs are the responsibility
-                            of the enquirers.
-                        </p>
-                    </div>
-                </div>
-                <div class="row items-content"  data-aos="fade-up" data-aos-duration="2000" >
-                    <div class="col-lg-4">
-                        <div class="md-item" >
-                            <div class="md-item-icon">
-                                <img src="assets/images/md-icon-1.png" alt="">
-                            </div>
-                            <div class="title">
-                                Cardiology
-                            </div>
-                            <p class="subtitle">
-                                We are here to provide a full range of exceptional quality care for dental services.
-                            </p>
-                            <div class="button">More Details >></div>
+                <form action="" class="pr-form">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="pr-name text-left" colspan="2">Product</th>
+                                <th class="pr-price text-center">Price</th>
+                                <th class="pr-quantity text-center">Quantity</th>
+                                <th class="pr-subtotal text-center">Total</th>
+                                <th class="pr-remove"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    <div class="row cart-buttons">
+                        <div class="col-12 col-xl-8 text-center text-lg-right text-xl-left">
+                            <a href="sidebar-left.html" class="button continue">Continue Shopping</a>
+                            <input type="text" placeholder="ENTER YOUR COUPON" class="coupon">
+                            <div class="button confirm">Confirm</div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="md-item">
-                            <div class="md-item-icon">
-                                <img src="assets/images/md-icon-2.png" alt="">
+                        <div class="col-12 col-xl-4 text-center text-lg-right mt-0 mt-sm-5 mt-xl-0">
+                            <div class="button clear">Clear Cart</div>
+                            <div class="button update">Update Cart</div>
+                            <div class="deliver pt-5">
+                                <div class="container">
+                                    <div class="row  deliver-parametr">
+                                        <div class="col-6 text-left">Subtotal:</div>
+                                        <div class="col-6 text-left"><span>$</span><span class="total-price-num"></span></div>
+                                    </div>
+                                    <div class="row deliver-parametr align-items-center">
+                                        <div class="col-6 text-left">Shipping:</div>
+                                        <div class="col-6 text-left">
+                                            <div><input type="radio" name="shipping" id="" class="mr-2"><span>Free Shipping</span></div>
+                                            <div><input type="radio" name="shipping" id="" class="mr-2"><span>Flat rate</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="row deliver-parametr text-left">
+                                        <div class="col-6">Total:</div>
+                                        <div class="col-6 text-left"><span>$</span><span class="total-price-num"></span></div>
+                                    </div>
+                                    <div class="button d-block mt-4 text-center">Proceed To Checkout</div>
+                                </div>
                             </div>
-                            <div class="title">
-                                Neurology
-                            </div>
-                            <p class="subtitle">
-                                We are here to provide a full range of exceptional quality care for dental services.
-                            </p>
-                            <div class="button">More Details >></div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="md-item">
-                            <div class="md-item-icon">
-                                <img src="assets/images/md-icon-3.png" alt="">
-                            </div>
-                            <div class="title">
-                                Prthopaedics
-                            </div>
-                            <p class="subtitle">
-                                We are here to provide a full range of exceptional quality care for dental services.
-                            </p>
-                            <div class="button">More Details >></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-lg-5">
-                        <div class="md-item">
-                            <div class="md-item-icon">
-                                <img src="assets/images/md-icon-4.png" alt="">
-                            </div>
-                            <div class="title">
-                                Dental Clinic
-                            </div>
-                            <p class="subtitle">
-                                We are here to provide a full range of exceptional quality care for dental services.
-                            </p>
-                            <div class="button">More Details >></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4  mt-lg-5">
-                        <div class="md-item">
-                            <div class="md-item-icon">
-                                <img src="assets/images/md-icon-5.png" alt="">
-                            </div>
-                            <div class="title">
-                                Pulmonary
-                            </div>
-                            <p class="subtitle">
-                                We are here to provide a full range of exceptional quality care for dental services.
-                            </p>
-                            <div class="button">More Details >></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4  mt-lg-5">
-                        <div class="md-item">
-                            <div class="md-item-icon">
-                                <img src="assets/images/md-icon-6.png" alt="">
-                            </div>
-                            <div class="title">
-                                Urology
-                            </div>
-                            <p class="subtitle">
-                                We are here to provide a full range of exceptional quality care for dental services.
-                            </p>
-                            <div class="button">More Details >></div>
-                        </div>
-                    </div>
-                </div>
+                    </div>   
+                </form>
+                <p class="empty-cart-alert">Your basket is currently empty.</p>
+                <a href="sidebar-left.html" class="return-btn button">Return To Shop</a>
             </div>
         </section>
-        <!-- item section ends -->
 
-        <!-- book-appoinment section starts -->
-        <section class="book-appoinment no-select">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-lg-7">
-                        <div class="appoinment-text" data-aos="fade-up" data-aos-duration="1500">
-                            Contact to book your appointment!
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-5 text-lg-right pt-4 pt-lg-0">
-                        <div class="appoinment-button" data-aos="fade-up" data-aos-duration="1500">
-                            Book An Appoinment
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- book-appoinment section ends -->
     </main>
     <!-- main ends -->
 
-     <!-- footer starts -->
-     <footer class="footer-2  no-select">
+    <!-- footer starts -->
+    <footer class="footer-2 no-select">
         <div class="container">
             <!-- footer-top starts -->
             <div class="footer-top row">
@@ -505,12 +444,11 @@
     </footer>
     <!-- footer ends -->
 
-      <!-- scroll-top button starts -->
-      <div class="st-btn">
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
         <i class="fas fa-chevron-up"></i>
     </div>
     <!-- scroll-top button ends -->
-
 
 
 
@@ -524,8 +462,8 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
-     <!-- local storage -->
-     <script src="js/jquery.shoppingcart.js"></script>
+    <!-- local storage -->
+    <script src="js/jquery.shoppingcart.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

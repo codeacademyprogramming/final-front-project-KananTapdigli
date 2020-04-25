@@ -132,7 +132,7 @@
                                 <div class="sub-menu">
                                     <div class="sub-menu-wrapper">
                                         <a href="sidebar-left.html">Sidebar left</a>
-                                        <a href="cart.html">Card</a>
+                                        <a href="cart.html">Cart</a>
                                         <a href="checkout.html">Checkout</a>
                                     </div>
                                 </div>
@@ -148,10 +148,22 @@
                         </ul>
                         <div class="search-basket-menu d-flex align-items-center">
                             <div class="search d-none d-md-block"><img src="assets/images/search-icon.png" alt=""></div>
-                            <div class="basket"><img src="assets/images/shop-basket.png" alt=""></div>
+                            <div class="basket">
+                                <img src="assets/images/shop-basket.png" alt="">
+                                <span class="cart-items-count text-center">0</span>
+                            </div>
                             <div class="burger-menu d-block d-xl-none"><i class="fas fa-bars"></i></div>
                         </div>
                     </nav>
+                    <div class="mini-cart">
+                        <span class="no-cart-item">No Products In The Basket</span>
+                        <ul class="cart-items">
+    
+                        </ul>
+                        <div class="total-price  justify-content-between"><div class="subtotal">Subtotal:</div><div class="total-count"><span>$</span><span class="total-count-number">0</span></div></div>
+                        <div class="text-center"><a href="" class="button">View Basket</a></div>
+                        <div class="text-center"><a href="" class="button">Checkout</a></div>
+                    </div>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
                             <li>
@@ -197,7 +209,7 @@
                                 <span>Shop</span>
                                 <div class="mn-sub-menu">
                                     <a href="sidebar-left.html">Sidebar left</a>
-                                    <a href="cart.html">Card</a>
+                                    <a href="cart.html">Cart</a>
                                     <a href="checkout.html">Checkout</a>
                                 </div>
                             </li>
@@ -643,8 +655,11 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- local storage -->
+    <script src="js/jquery.shoppingcart.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <!-- calendar js -->
     <script src="js/calendar.js"></script>
     <!--bootstrap-->
     <script src="assets/bootstrap/bootstrap.min.js"></script>

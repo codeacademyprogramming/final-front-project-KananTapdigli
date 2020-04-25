@@ -84,29 +84,30 @@ li {
   align-items: center;
 }
 
-.active-app-form{
+.active-app-form {
   display: flex;
   align-items: center;
   z-index: 99;
   position: absolute !important;
 }
 
-.active-td{
-  background-color:$main-color ;
-   
-  .doctor-name{
+.active-td {
+  background-color: $main-color;
+
+  .doctor-name {
     color: $color-white !important;
   }
 
-  .speciality{
+  .speciality {
     color: $color-white !important;
   }
 }
 
-.non-active-slide{
+.non-active-slide {
   opacity: 0 !important;
 }
-.active-slide{
+
+.active-slide {
   opacity: 1 !important;
 }
 
@@ -114,18 +115,18 @@ li {
   background-color: $color-today !important;
 }
 
-.active-date{
+.active-date {
   color: $color-white !important;
   background-color: $main-color !important;
 }
 
-.active-clinic-tab{
+.active-clinic-tab {
   box-shadow: $box-shadow !important;
   border-right: 5px solid $main-color !important;
   color: $main-color !important;
 }
 
-.scroll-mini-cart{
+.scroll-mini-cart {
   overflow-y: scroll;
 }
 
@@ -187,7 +188,7 @@ h3 {
     top: 76px !important;
   }
 
-  .mini-cart{
+  .mini-cart {
     top: 76px !important;
   }
 
@@ -239,9 +240,12 @@ h3 {
     font-size: 54px !important;
   }
 
-  .heading-standard{
+  .heading-standard {
     padding: 0 80px !important;
   }
+
+ 
+
 
 }
 
@@ -258,7 +262,7 @@ h3 {
     background-color: $color-white !important;
   }
 
-  .section-right-color{
+  .section-right-color {
     background-color: $color-white !important;
   }
 
@@ -278,36 +282,66 @@ h3 {
     }
   }
 
-  .appointment-form{
+  .appointment-form {
     max-height: 570px !important;
     overflow-y: scroll !important;
   }
 
-  .section-right{
+  .section-right {
     padding-left: 15px !important;
     padding-top: 60px !important;
   }
 
-  .section-left{
+  .section-left {
     padding-right: 15px !important;
     padding-bottom: 0 !important;
   }
 
-  .clinic-slider{
+  .clinic-slider {
     height: 450px !important;
     width: 80% !important;
   }
 
-  .prev,.next{
+  .prev,
+  .next {
     padding: 15px 15px 0 15px !important;
   }
 
-  .standard-main{
+  .standard-main {
     padding-top: 70px !important;
   }
 
-  .mini-cart{
+  .mini-cart {
     top: 188px !important;
+  }
+
+  .product-table {
+    tr{
+      margin-top: 50px !important;
+    }
+    td {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      margin: 15px 0 !important;
+      padding: 15px 0 28px !important;
+      text-align: right !important;
+
+      &::before {
+        content: attr(data-title);
+      }
+    }
+
+    th {
+      display: none !important;
+    }
+
+    .coupon{
+      width: 290px !important;
+      margin-right: 20px !important;
+    }
+
+
   }
 }
 
@@ -362,47 +396,65 @@ h3 {
     }
   }
 
-  .appointment-form{
+  .appointment-form {
     max-height: 450px !important;
     overflow-y: scroll !important;
   }
 
-  .clinic-slider{
+  .clinic-slider {
     height: 400px !important;
     width: 100% !important;
   }
 
-  .user-img-container{
+  .user-img-container {
     padding: 0 !important;
   }
 
-  .standard-comments-item-2{
+  .standard-comments-item-2 {
     padding-left: 10px !important;
   }
 
-  .standard-comments-item-3{
+  .standard-comments-item-3 {
     padding-left: 20px !important;
   }
 
-  .standard-comments-item-4{
+  .standard-comments-item-4 {
     padding-left: 30px !important;
   }
 
-  .standard-comments-item-5{
+  .standard-comments-item-5 {
     padding-left: 40px !important;
   }
 
-  .standard-comments-item-6{
+  .standard-comments-item-6 {
     padding-left: 30px !important;
   }
 
-  .heading-standard{
+  .heading-standard {
     padding: 0 !important;
   }
 
-  .mini-cart{
+  .mini-cart {
     top: 105px !important;
   }
+
+  .product-table{
+    .coupon{
+      width: 180px !important;
+      margin-right: 15px !important;
+    }
+
+    .continue{
+      padding: 16px 20px !important;
+      margin-right: 15px !important;
+    }
+
+    .confirm{
+      padding: 16px 20px !important;
+    }
+
+  }
+
 
 }
 
@@ -476,7 +528,8 @@ h3 {
     padding: 20px 0 !important;
   }
 
-  .footer-1,.footer-2 {
+  .footer-1,
+  .footer-2 {
     padding-top: 60px;
   }
 
@@ -492,26 +545,43 @@ h3 {
     }
   }
 
-  .appointment-form{
+  .appointment-form {
     padding: 41px 25px !important;
   }
 
-  .appointment-form{
+  .appointment-form {
     max-height: 350px !important;
     overflow-y: scroll !important;
   }
 
-  .doctor-timetable{
+  .doctor-timetable {
     padding: 80px 0 !important;
   }
 
-  .space{
+  .space {
     height: 40px !important;
   }
 
-  .mini-cart{
+  .mini-cart {
     top: 75px !important;
   }
+
+  .product-table{
+    .continue,.coupon,.confirm,.clear,.update{
+      display: block !important;
+      width: 100% !important;
+      margin: 15px 0;
+    }
+
+    .update{
+      margin-left: 0 !important;
+    }
+
+
+
+  }
+
+
 }
 
 @media (min-width: 1200px) {
