@@ -160,10 +160,10 @@
                         </ul>
                         <div class="total-price  justify-content-between">
                             <div class="subtotal">Subtotal:</div>
-                            <div class="total-count"><span>$</span><span class="total-count-number">0</span></div>
+                            <div class="total-price-self"><span>$</span><span class="total-price-number">0</span></div>
                         </div>
-                        <div class="text-center"><a href="" class="button">View Basket</a></div>
-                        <div class="text-center"><a href="" class="button">Checkout</a></div>
+                        <div class="text-center"><a href="cart.html" class="button">View Basket</a></div>
+                        <div class="text-center"><a href="checkout.html" class="button">Checkout</a></div>
                     </div>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
@@ -210,8 +210,8 @@
                                 <span class="active-nav">Shop</span>
                                 <div class="mn-sub-menu">
                                     <a href="sidebar-left.html">Sidebar left</a>
-                                    <a href="cart.html" class="active-nav">Cart</a>
-                                    <a href="checkout.html">Checkout</a>
+                                    <a href="cart.html">Cart</a>
+                                    <a href="checkout.html" class="active-nav">Checkout</a>
                                 </div>
                             </li>
                             <li>
@@ -229,47 +229,238 @@
     </header>
     <!-- header ends -->
 
+    <!-- main starts -->
     <main>
+        <!-- checkout section starts -->
         <section class="checkout">
             <div class="container">
+                <p class="checkout-alert">Checkout is not available, your basket is empty.</p>
                 <div class="checkout-content">
-                    <div class="checkout-content-top d-flex justify-content-between align-items-center">
-                        <h5>Cart Checkout</h5>
-                        <h5><a href="cart.html">Return to shoping cart</a></h5>
+                    <div class="checkout-content-top d-flex flex-wrap justify-content-between align-items-center">
+                        <h5 class="d-block">Cart Checkout</h5>
+                        <h5><a href="cart.html" class="return-cart">Return to shoping cart</a></h5>
                     </div>
 
                     <form class="checkout-content-bottom">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <h5>Billing Details</h5>
-                                 <select name="" id="">
-                                     <option value="Azerbaijan">Azerbaijan</option>
-                                 </select>
-                                 <input type="text" name="" id="" placeholder="First Name*">
-                                 <input type="text" name="" id="" placeholder="Last Name*">
-                                 <input type="text" name="" id="" placeholder="Company Name">
-                                 <input type="text" name="" id="" placeholder="House number and street name*">
-                                 <input type="text" name="" id="" placeholder="Apartment,suite,unit, etc.(optional)">
-                                 <input type="text" name="" id="" placeholder="City">
-                                 <input type="text" name="" id="" placeholder="State">
-                                 <input type="text" name="" id="" placeholder="Postcode">
-                                 <input type="text" name="" id="" placeholder="Phone*">
-                                 <input type="text" name="" id="" placeholder="Email Address*">
-                                 <h5>Your Order</h5>
+                                <select name="" id="">
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                </select>
+                                <input type="text" name="" id="" placeholder="First Name*">
+                                <input type="text" name="" id="" placeholder="Last Name*">
+                                <input type="text" name="" id="" placeholder="Company Name">
+                                <input type="text" name="" id="" placeholder="House number and street name*">
+                                <input type="text" name="" id="" placeholder="Apartment,suite,unit, etc.(optional)">
+                                <input type="text" name="" id="" placeholder="City">
+                                <input type="text" name="" id="" placeholder="State">
+                                <input type="number" name="" id="" placeholder="Postcode">
+                                <input type="tel" name="" id="" placeholder="Phone*">
+                                <input type="email" name="" id="" placeholder="Email Address*">
+                                <h5 class="pt-5 pb-3">Your Order</h5>
+                                <table class="pro-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="pro-name">Product</th>
+                                            <th class="pro-total">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Subtotal</th>
+                                            <td class="pro-sub-price"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping</th>
+                                            <td>
+                                                <div><input type="radio" name="shipping" id="" class="mr-2"><span>Free
+                                                        Shipping</span></div>
+                                                <div><input type="radio" name="shipping" id="" class="mr-2"><span>Flat
+                                                        rate</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total</th>
+                                            <td class="pro-total-price"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 pt-5 pt-md-0">
                                 <h5>Deliver to a different address?</h5>
                                 <textarea name="" id="" cols="30" rows="20" placeholder="Order Notes"></textarea>
                             </div>
                         </div>
+                        <h5 class="pt-5 d-block">Payment Method</h5>
+                        <div class="pt-2"><input type="radio" name="payment" id=""><span class="p-method">Direct bank
+                                transfer</span></div>
+                        <div class="pt-2 d-block"><input type="radio" name="payment" id=""><span class="p-method">Check
+                                payments</span></div>
+                        <div class="pt-2 d-block"><input type="radio" name="payment" id=""><span class="p-method">Cash
+                                on delivery</span></div>
+                        <div class="pt-2 d-block"><input type="radio" name="payment" id=""><span
+                                class="p-method">PayPal</span></div>
+                        <p class="description pt-3">Your personal data will be used to process your order, support your
+                            experience
+                            throughout this website, and for other purposes described in our privacy
+                            policy.</p>
+                        <div class="button mt-4 place-order">Place Order</div>
                     </form>
                 </div>
             </div>
         </section>
+        <!-- checkout section ends -->
     </main>
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer class="footer-2 no-select">
+        <div class="container">
+            <!-- footer-top starts -->
+            <div class="footer-top row">
+                <div class="healthcare col-12 col-lg-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/images/white-logo.svg" alt=""></a>
+                    </div>
+                    <p class="healthcare-text">With a background in the healthcare software industry and a desire to
+                        build great technology to
+                        help companies succeed in making healthcare better.</p>
+                </div>
+                <div class="about-us col-12 col-lg-2 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Quick Links</h5>
+                    <ul>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="medical-department.html">Departments</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="find-doctor.html">Find A Doctor</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="schedule.html">Timetable</a>
+                        </li>
+                        <li class="footer-pass">
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                            <a href="">News</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Contact</h5>
+                    <p class="contact-text">34th Avenue – New York, W2 3XE United State.<br>
+                        info@yourdomain.com<br>
+                        +(123) 1800-88-66</p>
+                    <div class="social-media d-inline-block">
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://dribbble.com/">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="instagram col-12 col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="footer-top-col-title">Instagram</h5>
+                    <div class="container">
+                        <div class="row instagram-contents">
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-1.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-2.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-3.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
+                                </div>
+                            </div>
+                            <div class="col-4 pt-3  pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-4.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+
+                                </div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-5.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-4 pt-3 pt-md-5 pt-lg-2">
+                                <div class="instagram-content">
+                                    <img src="assets/images/instagram-6.jpg" alt="">
+                                    <div class="overlay d-flex align-items-center justify-content-center"><i
+                                            class="fab fa-instagram insta-icon"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-top ends -->
+
+        <!-- footer-bottom starts -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <span class="col-12 col-lg-6 mt-3 mt-lg-0">© 2019 Spyropress. All Rights Reserved</span>
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-lg-right"><span>Term & Conditions</span><span
+                            class="policy">Privacy Policy</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom ends -->
+    </footer>
+    <!-- footer ends -->
+
+    <!-- scroll-top button starts -->
+    <div class="st-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- scroll-top button ends -->
 
 
-     <!--scripts start-->
+
+    <!--scripts start-->
     <!--Animations-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

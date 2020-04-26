@@ -51,7 +51,7 @@ header {
     background-color: $color-white;
     transition: .5s linear;
     top: -150px;
-
+    box-shadow: 1px 8px 20px -22px black;
 
     .logo {
         line-height: $header-bottom-line-height;
@@ -195,7 +195,7 @@ header {
                     font-weight: $font-weight;
                 }
 
-                .total-count{
+                .total-price-self{
                     font-size: $font-size;
                     color: $color-grey;
                 }
@@ -306,3 +306,16 @@ header {
 }
 
 // #endregion header-bottom
+
+// #region header-2
+.header-top-2 {
+    span {
+        color: $color-gray;
+    }
+
+    i {
+        color: $color-gray;
+    }
+}
+
+// #endregion header-2

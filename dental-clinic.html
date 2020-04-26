@@ -28,7 +28,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top cu-header-top  d-none d-md-block no-select">
+        <div class="header-top header-top-2 d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -157,11 +157,14 @@
                     <div class="mini-cart">
                         <span class="no-cart-item">No Products In The Basket</span>
                         <ul class="cart-items">
-    
+
                         </ul>
-                        <div class="total-price  justify-content-between"><div class="subtotal">Subtotal:</div><div class="total-count"><span>$</span><span class="total-count-number">0</span></div></div>
-                        <div class="text-center"><a href="" class="button">View Basket</a></div>
-                        <div class="text-center"><a href="" class="button">Checkout</a></div>
+                        <div class="total-price  justify-content-between">
+                            <div class="subtotal">Subtotal:</div>
+                            <div class="total-price-self"><span>$</span><span class="total-price-number">0</span></div>
+                        </div>
+                        <div class="text-center"><a href="cart.html" class="button">View Basket</a></div>
+                        <div class="text-center"><a href="checkout.html" class="button">Checkout</a></div>
                     </div>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
@@ -246,7 +249,7 @@
         <!-- main-frame section ends -->
 
 
-
+        <!-- dental main section starts -->
         <section class="dental-main-section no-select">
             <div class="section-left-color"></div>
             <div class="section-right-color"></div>
@@ -575,11 +578,12 @@
                 </div>
             </div>
         </section>
+        <!-- dental main section ends -->
     </main>
     <!-- main ends -->
 
-     <!-- footer starts -->
-     <footer class="footer-2  no-select">
+    <!-- footer starts -->
+    <footer class="footer-2  no-select">
         <div class="container">
             <!-- footer-top starts -->
             <div class="footer-top row">
@@ -715,26 +719,29 @@
     <!-- modal section starts -->
     <section class="modal">
         <div class="container modal-container d-flex justify-content-center">
-           <div class="clinic-slider">
-            <div class="clinic-slider-element" style="background-image: url(assets/images/clinic-slider-img-1.jpg);">
-               
+            <div class="clinic-slider">
+                <div class="clinic-slider-element"
+                    style="background-image: url(assets/images/clinic-slider-img-1.jpg);">
+
+                </div>
+                <div class="clinic-slider-element"
+                    style="background-image: url(assets/images/clinic-slider-img-2.jpg);">
+
+                </div>
+                <div class="clinic-slider-element"
+                    style="background-image: url(assets/images/clinic-slider-img-3.jpg);">
+
+                </div>
+                <div class="left-button d-flex align-items-center justify-content-center">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="right-button d-flex justify-content-center align-items-center">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="quit text-center">
+                    <i class="fas fa-times quit-icon"></i>
+                </div>
             </div>
-            <div class="clinic-slider-element" style="background-image: url(assets/images/clinic-slider-img-2.jpg);">
-               
-            </div>
-            <div class="clinic-slider-element" style="background-image: url(assets/images/clinic-slider-img-3.jpg);">
-               
-            </div>
-            <div class="left-button d-flex align-items-center justify-content-center">
-                <i class="fas fa-angle-left"></i>
-            </div>
-            <div class="right-button d-flex justify-content-center align-items-center">
-                <i class="fas fa-angle-right"></i>
-            </div>
-            <div class="quit text-center">
-                <i class="fas fa-times quit-icon"></i>
-            </div>
-           </div>
         </div>
     </section>
     <!-- modal section ends -->
@@ -759,8 +766,8 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
-     <!-- local storage -->
-     <script src="js/jquery.shoppingcart.js"></script>
+    <!-- local storage -->
+    <script src="js/jquery.shoppingcart.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

@@ -397,6 +397,17 @@ h3 {
   .product-table .confirm {
     padding: 16px 20px !important;
   }
+  .checkout-content-bottom {
+    padding: 50px 0 0 0 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .checkout-content-top h5 {
+    font-size: 15px !important;
+  }
+  .facilities .facilities-top .photo-self {
+    height: 300px !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -490,7 +501,7 @@ h3 {
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px !important;
   }
@@ -531,6 +542,8 @@ header .container {
   -webkit-transition: .5s linear;
   transition: .5s linear;
   top: -150px;
+  -webkit-box-shadow: 1px 8px 20px -22px black;
+          box-shadow: 1px 8px 20px -22px black;
 }
 
 .header-bottom .logo {
@@ -678,7 +691,7 @@ header .container {
   font-weight: 600;
 }
 
-.header-bottom .mini-cart .total-price .total-count {
+.header-bottom .mini-cart .total-price .total-price-self {
   font-size: 14px;
   color: #9E9EAB;
 }
@@ -779,6 +792,14 @@ header .container {
 .header-bottom .search-basket-menu .burger-menu {
   margin-left: 20px;
   cursor: pointer;
+}
+
+.header-top-2 span {
+  color: #777777;
+}
+
+.header-top-2 i {
+  color: #777777;
 }
 
 footer {
@@ -1498,14 +1519,6 @@ footer .footer-bottom .policy {
   cursor: pointer;
 }
 
-.oc-header-top span {
-  color: #777777;
-}
-
-.oc-header-top i {
-  color: #777777;
-}
-
 .facilities {
   padding: 100px 0;
   background-color: #f5f5f5;
@@ -1685,32 +1698,6 @@ footer .footer-bottom .policy {
   color: white;
 }
 
-.book-appoinment {
-  background-color: #007DF2;
-  padding: 39px 0;
-}
-
-.book-appoinment .appoinment-text {
-  font-size: 36px;
-  font-weight: 600;
-  color: #FFF;
-}
-
-.book-appoinment .appoinment-button {
-  display: inline-block;
-  padding: 16.5px 35px;
-  background-color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  -webkit-transition: .5s all linear;
-  transition: .5s all linear;
-}
-
-.book-appoinment .appoinment-button:hover {
-  background-color: #000000;
-  color: #FFF;
-}
-
 .pricings {
   padding: 100px 0;
   background-color: #f5f5f5;
@@ -1799,14 +1786,6 @@ footer .footer-bottom .policy {
   font-weight: 600;
   -webkit-transition: .5s all linear;
   transition: .5s all linear;
-}
-
-.cu-header-top span {
-  color: #777777;
-}
-
-.cu-header-top i {
-  color: #777777;
 }
 
 .form {
@@ -1963,10 +1942,6 @@ footer .footer-bottom .policy {
   border-bottom: 1px solid #e1e1e1;
 }
 
-.appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour .button {
-  padding: 16px 36px;
-}
-
 .appointment-calendar .appointment-date .appointment-date-wrapper .appointment-hour .clock-icon {
   color: #007DF2;
   margin-right: 10px;
@@ -2109,7 +2084,6 @@ footer .footer-bottom .policy {
 
 .find-doctor .find-doctor-left .search-doctor-content .search-doctor-content-wrapper .button {
   margin-top: 30px;
-  padding: 15px 36px;
   width: 100%;
 }
 
@@ -2262,32 +2236,6 @@ footer .footer-bottom .policy {
 
 .find-doctor .find-doctor-right .pagination {
   padding-top: 80px;
-}
-
-.find-doctor .find-doctor-right .pagination .pagination-element {
-  height: 41px;
-  width: 41px;
-  background-color: white;
-  border: 1px solid #e1e1e1;
-  text-align: center;
-  line-height: 41px;
-  color: #777777;
-  margin-right: 10px;
-  -webkit-transition: .5s background-color linear;
-  transition: .5s background-color linear;
-  cursor: pointer;
-}
-
-.find-doctor .find-doctor-right .pagination .pagination-element:hover {
-  color: #FFF;
-  background-color: #007DF2;
-  border: 1px solid #FFF;
-}
-
-.find-doctor .find-doctor-right .pagination .pagination-active {
-  color: #FFF;
-  background-color: #007DF2;
-  border: 1px solid #FFF;
 }
 
 .appointment-form {
@@ -2499,7 +2447,7 @@ footer .footer-bottom .policy {
 }
 
 .items {
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .items .description {
@@ -3293,7 +3241,7 @@ footer .footer-bottom .policy {
 }
 
 .products {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 .products .left-sidebar {
@@ -3472,7 +3420,8 @@ footer .footer-bottom .policy {
   transition: .3s all linear;
 }
 
-.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div, .products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket {
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div,
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket {
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -3486,7 +3435,8 @@ footer .footer-bottom .policy {
   transition: .3s all linear;
 }
 
-.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div:hover, .products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket:hover {
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare div:hover,
+.products .products-side .col-lg-4 .productt .product-image .basket-wishlist-compare .view-basket:hover {
   background-color: #007DF2;
   color: #FFF;
 }
@@ -3659,7 +3609,6 @@ footer .footer-bottom .policy {
 }
 
 .product-table .cart-buttons .button {
-  padding: 16px 36px;
   background-color: #303030;
   border-radius: 0;
   color: #FFF;
@@ -3675,7 +3624,6 @@ footer .footer-bottom .policy {
 }
 
 .product-table .return-btn {
-  padding: 16px 36px;
   background-color: #303030;
   color: #FFF !important;
   -webkit-transition: .3s all linear;
@@ -3688,7 +3636,11 @@ footer .footer-bottom .policy {
 }
 
 .checkout {
-  padding-top: 90px;
+  padding: 90px 0;
+}
+
+.checkout .checkout-content .checkout-alert {
+  display: none;
 }
 
 .checkout .checkout-content .checkout-content-top {
@@ -3702,6 +3654,15 @@ footer .footer-bottom .policy {
   margin: 0;
 }
 
+.checkout .checkout-content .checkout-content-top .return-cart {
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.checkout .checkout-content .checkout-content-top .return-cart:hover {
+  color: #f5f5f5;
+}
+
 .checkout .checkout-content .checkout-content-bottom {
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
@@ -3713,7 +3674,12 @@ footer .footer-bottom .policy {
   margin-bottom: 40px;
 }
 
-.checkout .checkout-content .checkout-content-bottom input, .checkout .checkout-content .checkout-content-bottom select, .checkout .checkout-content .checkout-content-bottom textarea {
+.checkout .checkout-content .checkout-content-bottom input[type=text],
+.checkout .checkout-content .checkout-content-bottom input[type=email],
+.checkout .checkout-content .checkout-content-bottom input[type=tel],
+.checkout .checkout-content .checkout-content-bottom input[type=number],
+.checkout .checkout-content .checkout-content-bottom select,
+.checkout .checkout-content .checkout-content-bottom textarea {
   padding: 20px;
   font-size: 14px;
   color: #303030;
@@ -3750,22 +3716,60 @@ footer .footer-bottom .policy {
   border: 1px solid #007DF2;
 }
 
-.checkout .checkout-content .checkout-content-bottom input {
+.checkout .checkout-content .checkout-content-bottom input[type=text],
+.checkout .checkout-content .checkout-content-bottom input[type=email],
+.checkout .checkout-content .checkout-content-bottom input[type=tel],
+.checkout .checkout-content .checkout-content-bottom input[type=number] {
   font-style: italic;
   font-size: 12px;
   font-weight: 600;
-  -webkit-transition: .3s  linear;
-  transition: .3s  linear;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
-.checkout .checkout-content .checkout-content-bottom input:hover {
+.checkout .checkout-content .checkout-content-bottom input[type=text]:hover,
+.checkout .checkout-content .checkout-content-bottom input[type=email]:hover,
+.checkout .checkout-content .checkout-content-bottom input[type=tel]:hover,
+.checkout .checkout-content .checkout-content-bottom input[type=number]:hover {
   background-color: #FFF;
   border: 1px solid #007DF2;
 }
 
-.checkout .checkout-content .checkout-content-bottom input:focus {
+.checkout .checkout-content .checkout-content-bottom input[type=text]:focus,
+.checkout .checkout-content .checkout-content-bottom input[type=email]:focus,
+.checkout .checkout-content .checkout-content-bottom input[type=tel]:focus,
+.checkout .checkout-content .checkout-content-bottom input[type=number]:focus {
   background-color: #FFF;
   border: 1px solid #007DF2;
+}
+
+.checkout .checkout-content .checkout-content-bottom .pro-table {
+  width: 100%;
+  text-align: center;
+}
+
+.checkout .checkout-content .checkout-content-bottom .pro-table th, .checkout .checkout-content .checkout-content-bottom .pro-table td {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  color: #777777;
+  font-weight: 600;
+}
+
+.checkout .checkout-content .checkout-content-bottom .p-method {
+  color: #777777;
+  font-size: 13px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.checkout .checkout-content .checkout-content-bottom .place-order {
+  background-color: #303030;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.checkout .checkout-content .checkout-content-bottom .place-order:hover {
+  background-color: #007DF2;
 }
 
 .button {
@@ -3782,6 +3786,7 @@ footer .footer-bottom .policy {
   transition-property: opacity,transform,background-color !important;
   transition-property: opacity,transform,background-color,-webkit-transform !important;
   cursor: pointer;
+  padding: 16px 36px;
 }
 
 .button:hover {
@@ -3916,13 +3921,43 @@ footer .footer-bottom .policy {
 
 .book-appoinment .appoinment-button {
   display: inline-block;
-  padding: 16.5px 35px;
   background-color: white;
   border-radius: 5px;
   -webkit-transition-property: opacity,background-color,-webkit-transform !important;
   transition-property: opacity,background-color,-webkit-transform !important;
   transition-property: opacity,transform,background-color !important;
   transition-property: opacity,transform,background-color,-webkit-transform !important;
+  padding: 16px 36px;
+}
+
+.pagination {
+  width: 100%;
+}
+
+.pagination .pagination-element {
+  height: 41px;
+  width: 41px;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  line-height: 41px;
+  color: #777777;
+  margin-right: 10px;
+  -webkit-transition: .5s background-color linear;
+  transition: .5s background-color linear;
+  cursor: pointer;
+}
+
+.pagination .pagination-element:hover {
+  color: #FFF;
+  background-color: #007DF2;
+  border: 1px solid #FFF;
+}
+
+.pagination .pagination-active {
+  color: #FFF;
+  background-color: #007DF2;
+  border: 1px solid #FFF;
 }
 
 .main-frame-2 {

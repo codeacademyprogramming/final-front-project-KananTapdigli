@@ -28,7 +28,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top oc-header-top  d-none d-md-block no-select">
+        <div class="header-top header-top-2  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -159,9 +159,12 @@
                         <ul class="cart-items">
 
                         </ul>
-                        <div class="total-price  justify-content-between"><div class="subtotal">Subtotal:</div><div class="total-count"><span>$</span><span class="total-count-number">0</span></div></div>
-                        <div class="text-center"><a href="" class="button">View Basket</a></div>
-                        <div class="text-center"><a href="" class="button">Checkout</a></div>
+                        <div class="total-price  justify-content-between">
+                            <div class="subtotal">Subtotal:</div>
+                            <div class="total-price-self"><span>$</span><span class="total-price-number">0</span></div>
+                        </div>
+                        <div class="text-center"><a href="cart.html" class="button">View Basket</a></div>
+                        <div class="text-center"><a href="checkout.html" class="button">Checkout</a></div>
                     </div>
                     <nav class="mobile-nav d-xl-none">
                         <ul id="accordion">
@@ -255,7 +258,7 @@
         <!-- about section starts -->
         <section class="about about-oc no-select">
             <div class="container" style="overflow: hidden">
-                <div class="row" >
+                <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="about-content" data-aos="fade-right" data-aos-duration="2000">
                             <span class="sub-heading">About Us</span>
@@ -294,7 +297,10 @@
         <section class="facilities no-select">
             <div class="container">
                 <div class="row facilities-top" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="col-12 photo-self" style="background-image: url(assets/images/our-clinic-2.jpg);"></div>
+                    <div class="col-12">
+                        <div class="photo-self" style="background-image: url(assets/images/our-clinic-2.jpg);">
+                        </div>
+                    </div>
                 </div>
                 <div class="row facilities-center" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-sm-12 col-md-6">
@@ -551,8 +557,8 @@
     </script>
     <!--jquery-->
     <script src="js/jquery-3.4.1.min.js"></script>
-     <!-- local storage -->
-     <script src="js/jquery.shoppingcart.js"></script>
+    <!-- local storage -->
+    <script src="js/jquery.shoppingcart.js"></script>
     <!--Slider Slick Js-->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!--bootstrap-->

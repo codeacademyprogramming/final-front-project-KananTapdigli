@@ -27,7 +27,7 @@
     <!-- header start -->
     <header>
         <!-- header-top-start -->
-        <div class="header-top cu-header-top  d-none d-md-block no-select">
+        <div class="header-top header-top-2  d-none d-md-block no-select">
             <div class="container">
                 <div class="row">
                     <div class="contact col-md-12 col-lg-9  text-md-center text-lg-left">
@@ -160,7 +160,7 @@
                         </ul>
                         <div class="total-price  justify-content-between">
                             <div class="subtotal">Subtotal:</div>
-                            <div class="total-count"><span>$</span><span class="total-count-number">0</span></div>
+                            <div class="total-price-self"><span>$</span><span class="total-price-number">0</span></div>
                         </div>
                         <div class="text-center"><a href="cart.html" class="button">View Basket</a></div>
                         <div class="text-center"><a href="checkout.html" class="button">Checkout</a></div>
@@ -207,8 +207,8 @@
                                 </div>
                             </li>
                             <li>
-                                <span>Shop</span>
-                                <div class="mn-sub-menu active-nav">
+                                <span class="active-nav">Shop</span>
+                                <div class="mn-sub-menu">
                                     <a href="sidebar-left.html">Sidebar left</a>
                                     <a href="cart.html" class="active-nav">Cart</a>
                                     <a href="checkout.html">Checkout</a>
@@ -252,7 +252,7 @@
         </section>
         <!-- main-frame section ends -->
 
-        <!-- product-table -->
+        <!-- product-table section starts -->
         <section class="product-table no-select">
             <div class="container">
                 <form action="" class="pr-form">
@@ -267,7 +267,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+
                         </tbody>
                     </table>
                     <div class="row cart-buttons">
@@ -283,29 +283,36 @@
                                 <div class="container">
                                     <div class="row  deliver-parametr">
                                         <div class="col-6 text-left">Subtotal:</div>
-                                        <div class="col-6 text-left"><span>$</span><span class="total-price-num"></span></div>
+                                        <div class="col-6 text-left"><span>$</span><span class="total-price-num"></span>
+                                        </div>
                                     </div>
                                     <div class="row deliver-parametr align-items-center">
                                         <div class="col-6 text-left">Shipping:</div>
                                         <div class="col-6 text-left">
-                                            <div><input type="radio" name="shipping" id="" class="mr-2"><span>Free Shipping</span></div>
-                                            <div><input type="radio" name="shipping" id="" class="mr-2"><span>Flat rate</span></div>
+                                            <div><input type="radio" name="shipping" id="" class="mr-2"><span>Free
+                                                    Shipping</span></div>
+                                            <div><input type="radio" name="shipping" id="" class="mr-2"><span>Flat
+                                                    rate</span></div>
                                         </div>
                                     </div>
                                     <div class="row deliver-parametr text-left">
                                         <div class="col-6">Total:</div>
-                                        <div class="col-6 text-left"><span>$</span><span class="total-price-num"></span></div>
+                                        <div class="col-6 text-left"><span>$</span><span class="total-price-num"></span>
+                                        </div>
                                     </div>
-                                    <div class="button d-block mt-4 text-center">Proceed To Checkout</div>
+                                    <a href="checkout.html" class="button d-block mt-4 text-center">Proceed To
+                                        Checkout</a>
                                 </div>
                             </div>
                         </div>
-                    </div>   
+                    </div>
                 </form>
                 <p class="empty-cart-alert">Your basket is currently empty.</p>
                 <a href="sidebar-left.html" class="return-btn button">Return To Shop</a>
             </div>
         </section>
+        <!-- product-table section ends -->
+
 
     </main>
     <!-- main ends -->

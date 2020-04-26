@@ -9,6 +9,7 @@
     transition: .3s background-color linear;
     transition-property: opacity,transform,background-color !important;
     cursor: pointer;
+    padding: 16px 36px;
 
     &:hover{
         background-color: $color-dark-gray;

@@ -218,7 +218,7 @@ h3 {
 }
 
 
-
+// If screen less than 1200px /starts
 @media only screen and (max-width: 1200px) {
   .about-image {
     width: 220px !important;
@@ -248,7 +248,9 @@ h3 {
 
 
 }
+// If screen less than 1200px /ends
 
+// If screen less than 992px /starts
 @media only screen and (max-width: 992px) {
   .about-image {
     width: 180px !important;
@@ -344,9 +346,9 @@ h3 {
 
   }
 }
+// If screen less than 992px /ends
 
-
-
+// If screen less than 768px /starts
 @media only screen and (max-width: 768px) {
 
   .about-image {
@@ -455,9 +457,25 @@ h3 {
 
   }
 
+  .checkout-content-bottom{
+    padding: 50px 0 0 0 !important;
+    box-shadow: none !important;
+  }
+
+  .checkout-content-top{
+    h5{
+      font-size: 15px !important;
+    }
+  }
+
+  .facilities .facilities-top .photo-self{
+    height: 300px !important;
+  }
 
 }
+// If screen less than 768px /ends
 
+// If screen less than 576px /starts
 @media only screen and (max-width: 576px) {
 
   .banner {
@@ -578,14 +596,15 @@ h3 {
     }
 
 
-
   }
 
-
 }
+// If screen less than 576px /ends
 
-@media (min-width: 1200px) {
+// If screen bigger than 1200px /starts
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px !important;
   }
 }
+// If screen bigger than 1200px /ends
