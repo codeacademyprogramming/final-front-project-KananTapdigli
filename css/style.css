@@ -567,7 +567,13 @@ header .container {
 }
 
 .header-bottom .navigation li:hover .sub-menu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-bottom .navigation li:hover .sub-menu a {
+  visibility: visible;
+  opacity: 1;
 }
 
 .header-bottom .navigation li:hover .title {
@@ -579,7 +585,10 @@ header .container {
   position: absolute;
   top: 100px;
   border-bottom: 4px solid #007DF2;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
   z-index: 99;
 }
 
@@ -595,6 +604,8 @@ header .container {
   -webkit-transition: .3s all linear;
   transition: .3s all linear;
   min-width: 200px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .header-bottom .navigation .sub-menu a:hover {

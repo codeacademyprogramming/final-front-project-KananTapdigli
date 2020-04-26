@@ -74,7 +74,13 @@ header {
             }
 
             &:hover .sub-menu {
-                display: block;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &:hover .sub-menu a {
+                visibility: visible;
+                opacity: 1;
             }
 
             &:hover .title {
@@ -88,7 +94,9 @@ header {
             position: absolute;
             top: 100px;
             border-bottom: 4px solid $main-color;
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
             z-index: 99;
 
 
@@ -103,6 +111,8 @@ header {
                 cursor: pointer;
                 transition: .3s all linear;
                 min-width: 200px;
+                visibility: hidden;
+                opacity: 0;
 
 
                 &:hover {
