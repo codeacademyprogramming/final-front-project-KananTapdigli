@@ -2038,6 +2038,7 @@ footer .footer-bottom .policy {
   -webkit-transition: .3s all linear;
   transition: .3s all linear;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .doctor-timetable .timetable-bottom tbody td .doctor-name:hover {
@@ -2806,6 +2807,22 @@ footer .footer-bottom .policy {
   font-weight: 500;
   font-size: 14px;
   color: #777777;
+  outline: none;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+  border: 1px solid #FFF;
+}
+
+.dental-main-section .section-right .clinic-form input:hover {
+  background-color: #FFF;
+  color: #007DF2;
+  border: 1px solid #007DF2;
+}
+
+.dental-main-section .section-right .clinic-form input:focus {
+  background-color: #FFF;
+  color: #007DF2;
+  border: 1px solid #007DF2;
 }
 
 .dental-main-section .section-right .clinic-form select {
@@ -2816,6 +2833,7 @@ footer .footer-bottom .policy {
   background: url(../assets/images/down-arrow.svg) no-repeat 90% 6px #f5f5f5;
   background-size: 10px;
   background-position-y: center;
+  outline: none;
 }
 
 .dental-main-section .section-right .clinic-form .button {
@@ -3952,6 +3970,12 @@ footer .footer-bottom .policy {
   transition-property: opacity,transform,background-color !important;
   transition-property: opacity,transform,background-color,-webkit-transform !important;
   padding: 16px 36px;
+  cursor: pointer;
+}
+
+.book-appoinment .appoinment-button:hover {
+  background-color: #303030;
+  color: #FFF !important;
 }
 
 .pagination {

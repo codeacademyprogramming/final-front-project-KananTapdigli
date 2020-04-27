@@ -278,6 +278,25 @@
                 font-weight: $font-weight-bolder;
                 font-size: $font-size;
                 color: $color-gray;
+                outline: none;
+                transition: .3s all linear;
+                border: 1px solid $color-white;
+
+            
+            }
+
+            input{
+                &:hover{
+                    background-color: $color-white;
+                    color: $main-color;
+                    border: 1px solid $main-color;
+                }
+
+                &:focus{
+                    background-color: $color-white;
+                    color: $main-color;
+                    border: 1px solid $main-color;
+                }
             }
 
             select {
@@ -288,6 +307,7 @@
                 background: url(../assets/images/down-arrow.svg) no-repeat 90% 6px $color-gray-lighter;
                 background-size: 10px;
                 background-position-y: center;
+                outline: none;
             }
 
             .button {
