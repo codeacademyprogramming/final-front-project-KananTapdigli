@@ -3187,6 +3187,7 @@ footer .footer-bottom .policy {
   border: 1px solid #e1e1e1;
   margin-top: 20px;
   font-size: 14px;
+  outline: none;
 }
 
 .standard-main .leave-comment .button {
