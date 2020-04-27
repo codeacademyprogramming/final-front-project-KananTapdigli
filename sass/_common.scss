@@ -244,10 +244,14 @@ h3 {
     padding: 0 80px !important;
   }
 
- 
-
+  .doctor-timetable .timetable-bottom tbody th{
+    line-height: initial !important;
+  }
 
 }
+
+
+
 // If screen less than 1200px /ends
 
 // If screen less than 992px /starts
@@ -318,9 +322,10 @@ h3 {
   }
 
   .product-table {
-    tr{
+    tr {
       margin-top: 50px !important;
     }
+
     td {
       display: flex !important;
       align-items: center !important;
@@ -338,21 +343,22 @@ h3 {
       display: none !important;
     }
 
-    .coupon{
+    .coupon {
       width: 290px !important;
       margin-right: 20px !important;
     }
 
   }
 
-  .modal-video{
+  .modal-video {
     height: 450px !important;
   }
 
-  .pr-image{
+  .pr-image {
     border-bottom: none !important;
   }
 }
+
 // If screen less than 992px /ends
 
 // If screen less than 768px /starts
@@ -447,39 +453,40 @@ h3 {
     top: 105px !important;
   }
 
-  .product-table{
-    .coupon{
+  .product-table {
+    .coupon {
       width: 180px !important;
       margin-right: 15px !important;
     }
 
-    .continue{
+    .continue {
       padding: 16px 20px !important;
       margin-right: 15px !important;
     }
 
-    .confirm{
+    .confirm {
       padding: 16px 20px !important;
     }
 
   }
 
-  .checkout-content-bottom{
+  .checkout-content-bottom {
     padding: 50px 0 0 0 !important;
     box-shadow: none !important;
   }
 
-  .checkout-content-top{
-    h5{
+  .checkout-content-top {
+    h5 {
       font-size: 15px !important;
     }
   }
 
-  .facilities .facilities-top .photo-self{
+  .facilities .facilities-top .photo-self {
     height: 300px !important;
   }
 
 }
+
 // If screen less than 768px /ends
 
 // If screen less than 576px /starts
@@ -591,14 +598,19 @@ h3 {
     top: 75px !important;
   }
 
-  .product-table{
-    .continue,.coupon,.confirm,.clear,.update{
+  .product-table {
+
+    .continue,
+    .coupon,
+    .confirm,
+    .clear,
+    .update {
       display: block !important;
       width: 100% !important;
       margin: 15px 0;
     }
 
-    .update{
+    .update {
       margin-left: 0 !important;
     }
 
@@ -606,6 +618,7 @@ h3 {
   }
 
 }
+
 // If screen less than 576px /ends
 
 // If screen bigger than 1200px /starts
@@ -614,4 +627,5 @@ h3 {
     max-width: 1200px !important;
   }
 }
+
 // If screen bigger than 1200px /ends
