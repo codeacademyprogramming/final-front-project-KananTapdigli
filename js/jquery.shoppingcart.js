@@ -53,7 +53,7 @@
     			}
     			
     			// Get items
-    			var shoppingcartArray = JSON.parse( localStorage.getItem('shoppingcartProducts') );
+				var shoppingcartArray = JSON.parse( localStorage.getItem('shoppingcartProducts') );
     			
     			// Check if item already in cart
     			index = FindItem( content.id );

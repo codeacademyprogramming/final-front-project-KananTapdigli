@@ -30,14 +30,13 @@
                 text-align: center;
                 color: $color-gray;
                 font-weight: $font-weight-bolder;
-                border-bottom:  1px solid $color-border;
+                border-bottom: 1px solid $color-border;
             }
 
             .pr-image {
                 width: 90px;
                 height: 120px;
                 padding: 20px 5px;
-                border-bottom: none;
 
                 .pr-img {
                     background-position: center;
@@ -47,7 +46,7 @@
                 }
             }
 
-            .pr-name{
+            .pr-name {
                 padding-left: 20px;
             }
 
@@ -92,39 +91,39 @@
                 }
             }
 
-            .pr-remove{
-                .x{
+            .pr-remove {
+                .x {
                     font-size: 20px;
                     cursor: pointer;
                 }
             }
 
-            .cart-buttons{
-                input{
+            .cart-buttons {
+                input {
                     border-radius: 0;
                 }
 
-                .update{
-                  margin-left: 20px;
+                .update {
+                    margin-left: 20px;
                 }
             }
 
         }
     }
-    
-    .pr-form{
+
+    .pr-form {
         display: none;
     }
 
-    .cart-buttons{
+    .cart-buttons {
         margin-top: 30px;
 
-       .update{
-           margin-left: 25px;
-       }
+        .update {
+            margin-left: 25px;
+        }
 
-        .deliver{
-            .deliver-parametr{
+        .deliver {
+            .deliver-parametr {
                 border-bottom: 1px solid $color-border;
                 padding: 15px 0;
                 color: $color-black-lighter;
@@ -133,8 +132,8 @@
             }
         }
 
-       
-        .coupon{
+
+        .coupon {
             padding: 17px 18px;
             border: 1px solid $color-border;
             width: 360px;
@@ -142,37 +141,38 @@
             font-size: 13px;
             font-weight: $font-weight;
             outline: none;
-            margin-right: 25px ;
+            margin-right: 25px;
         }
 
-        .button{
+        .button {
             background-color: $color-black-lighter;
             border-radius: 0;
             color: $color-white;
 
-    
-            &:hover{
+
+            &:hover {
                 background-color: $main-color;
                 color: $color-white;
             }
         }
-    
-        .continue{
+
+        .continue {
             margin-right: 26px;
         }
     }
 
-    .return-btn{
+    .return-btn {
         background-color: $color-black-lighter;
         color: $color-white !important;
         transition: .3s all linear;
         margin-top: 30px;
 
-        &:hover{
+        &:hover {
             background-color: $main-color;
         }
     }
 
 }
+
 // #endregion product table section
 // #endregion cart

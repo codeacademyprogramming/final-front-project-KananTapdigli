@@ -86,10 +86,11 @@ $(document).ready(function () {
 
       customIndex += 1;
 
-    }, 10000)
+    }, 7000)
     //#endregion showing banner-pages with setInterval
   }
   ShowingBanners()
+
 
   function TestimonialsSlider() {
     //#region testimonials slider
@@ -169,6 +170,7 @@ $(document).ready(function () {
   }
   SliderLatestNews()
 
+
   function NewsTwitterSlider() {
     //#region news-twitter slider
     $('.news-twitter-slider').slick({
@@ -210,6 +212,7 @@ $(document).ready(function () {
     //#endregion Tranffering Tab Title
   }
   TranferTabTitle()
+
 
   function PricingSlider() {
     //#region Pricing-Slider
@@ -500,7 +503,6 @@ $(document).ready(function () {
   }
   clinicSlide()
   // #endregion Clinic Slide
-
 
 
   // #region Changing Title of Clinic
@@ -872,6 +874,7 @@ $(document).ready(function () {
   }
   //  #endregion ScrollingMiniCart
 
+
   //  #region ChangeInputValueinCart
   function ChangeInputValue() {
     // #region increasing inputValue in Cart
@@ -879,10 +882,12 @@ $(document).ready(function () {
       var oldValue = parseInt($(this).siblings('.quantity-input').val());
       var newVal = oldValue + 1;
       $(this).siblings('.quantity-input').val(newVal);
+      // #region Changing Item Count in LocalStorage when Click Increase Button
       $.shoppingcart('edit', {
         'id': `${$(this).parent().parent().parent().attr('id')}`,
         'count': $(this).siblings('.quantity-input').val()
       })
+      // #endregion Changing Item Count in LocalStorage when Click Increase Button
     })
     // #endregion increasing inputValue in Cart
 
@@ -896,13 +901,17 @@ $(document).ready(function () {
       } else {
         var newVal = oldValue - 1;
       }
+      // #region Changing Item Count in LocalStorage when Click Decrease Button
       $(this).siblings('.quantity-input').val(newVal);
       $.shoppingcart('edit', {
         'id': `${$(this).parent().parent().parent().attr('id')}`,
         'count': $(this).siblings('.quantity-input').val()
       })
+      // #endregion Changing Item Count in LocalStorage when Click Decrease Button
     })
     // #region decreasing inputValue in Cart
+
+
   }
   ChangeInputValue()
   //  #endregion ChangeInputValueinCart
@@ -911,7 +920,20 @@ $(document).ready(function () {
   // #region UpdatingCart
   function UpdateCart() {
     $(document).on('click', '.update', () => {
-      location.reload();
+      // #region User Include Count Manually 
+      $('.quantity-input').each(function () {
+        if (!$(this).val() || $(this).val() <= 0) {
+          $(this).val(1)
+        }
+        // #endregion User Include Count Manually 
+        // #region Edit LocalStorage Item
+        $.shoppingcart('edit', {
+          'id': `${$(this).parent().parent().parent().attr('id')}`,
+          'count': $(this).val()
+        })
+        // #endregion Edit LocalStorage Item
+      });
+      location.reload()
     })
   }
   UpdateCart()
@@ -959,8 +981,7 @@ $(document).ready(function () {
     if ($('.cart-item').length == 0) {
       $('.checkout-content').hide()
       $('.checkout-alert').show()
-    }
-    else{
+    } else {
       $('.checkout-alert').hide()
     }
   }

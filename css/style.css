@@ -315,6 +315,12 @@ h3 {
     width: 290px !important;
     margin-right: 20px !important;
   }
+  .modal-video {
+    height: 450px !important;
+  }
+  .pr-image {
+    border-bottom: none !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3522,7 +3528,6 @@ footer .footer-bottom .policy {
   width: 90px;
   height: 120px;
   padding: 20px 5px;
-  border-bottom: none;
 }
 
 .product-table table tbody .pr-image .pr-img {
